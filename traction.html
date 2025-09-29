@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Traction — An ADHD‑friendly Todo App</title>
+  <meta name="description" content="Traction is an ADHD‑friendly todo app with smart recurrence, sticky reminders, and a calm UI for iPhone, iPad, and Mac." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0b1020; --panel:#0f162e; --text:#e6eefc; --muted:#9fb3d4; --accent:#4fc3f7; }
+    html, body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+    .glass { background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(8px); }
+  </style>
+</head>
+<body class="bg-[var(--bg)] text-[var(--text)]">
+  <header class="sticky top-0 z-50 backdrop-blur border-b border-white/10 bg-[var(--bg)]/60">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center">
+        <img src="/img/logo.png" alt="Interactive MM logo" class="h-10 w-auto"/>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm text-[var(--muted)]">
+        <a class="hover:text-white" href="/traction.html">Traction</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+    <section class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold">Traction</h1>
+        <p class="mt-4 text-[var(--muted)]">An ADHD‑friendly todo app that keeps focus, not friction. Smart recurrence without clutter, sticky reminders that gently persist, and an interface designed for calm momentum.</p>
+        <ul class="mt-6 grid gap-3 text-[var(--muted)]">
+          <li class="glass rounded-xl p-4"><span class="font-semibold text-white">Ultra‑fast capture</span> — jot tasks instantly from anywhere in the app.</li>
+          <li class="glass rounded-xl p-4"><span class="font-semibold text-white">Smart recurrence</span> — rule‑based scheduling with projections (no endless duplicates).</li>
+          <li class="glass rounded-xl p-4"><span class="font-semibold text-white">Sticky reminders</span> — gentle nudges at intervals you choose.</li>
+          <li class="glass rounded-xl p-4"><span class="font-semibold text-white">ADHD‑friendly UI</span> — big tap targets, minimal choices, soothing motion.</li>
+          <li class="glass rounded-xl p-4"><span class="font-semibold text-white">Apple platforms</span> — iPhone, iPad, Mac; offline‑first with iCloud sync.</li>
+        </ul>
+      </div>
+      <div class="glass rounded-3xl overflow-hidden flex items-center justify-center p-6 bg-white/5">
+        <img src="/img/traction-logo.png" alt="Traction app logo" class="w-56 h-56 object-contain" />
+      </div>
+    </section>
+
+    <section class="mt-16">
+      <div class="glass rounded-2xl p-6">
+        <h2 class="text-2xl font-bold">Status</h2>
+        <p class="mt-2 text-[var(--muted)]">Currently in development. TestFlight planned; subscribe for updates soon.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 mt-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 text-sm text-[var(--muted)]">
+      <p>© <span id="year"></span> Interactive MM</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

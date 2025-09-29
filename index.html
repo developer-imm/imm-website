@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive MM — Web & Product Studio</title>
+  <meta name="description" content="Interactive MM is a Cincinnati-based software company dedicated to building applications that merge innovation with simplicity." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0b1020; --panel:#0f162e; --text:#e6eefc; --muted:#9fb3d4; --accent:#4fc3f7; --accent-2:#00e5a8; }
+    html, body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .glass { background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(8px); }
+    .grid-fade { background: radial-gradient(1200px 600px at 50% -10%, rgba(79,195,247,0.15), transparent 60%), radial-gradient(800px 400px at 90% 10%, rgba(0,229,168,0.15), transparent 60%); }
+  </style>
+</head>
+<body class="bg-[var(--bg)] text-[var(--text)]">
+  <!-- Top bar -->
+  <header class="sticky top-0 z-50 backdrop-blur border-b border-white/10 bg-[var(--bg)]/60">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center">
+        <img src="/img/logo.png" alt="Interactive MM logo" class="h-10 w-auto"/>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm text-[var(--muted)]">
+        <a class="hover:text-white" href="#about">About</a>
+        <a class="hover:text-white" href="/traction.html">Traction</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden grid-fade">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">Interactive MM is a Cincinnati-based software company dedicated to building applications that merge innovation with simplicity.</h1>
+        <p class="mt-4 text-lg text-[var(--muted)]">From mobile apps to custom solutions, we focus on clarity, reliability, and human-centered design to help people and businesses make real progress.</p>
+      </div>
+      <!-- Coding image -->
+      <div class="glass rounded-3xl p-2 h-72 md:h-96 overflow-hidden">
+        <img src="/img/coding.png" alt="Coding in progress" class="w-full h-full object-cover rounded-2xl"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillars / About -->
+  <section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="glass rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Strategy × Execution</h3>
+        <p class="mt-2 text-[var(--muted)]">From discovery to launch, we connect product strategy to tangible outcomes.</p>
+      </article>
+      <article class="glass rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Calm, Crafted Interfaces</h3>
+        <p class="mt-2 text-[var(--muted)]">Interfaces that feel thoughtful, fast, and accessible.</p>
+      </article>
+      <article class="glass rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Reliable Engineering</h3>
+        <p class="mt-2 text-[var(--muted)]">Modern stacks, testing where it matters, performance by default.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 text-sm text-[var(--muted)]">
+      <p>MIT licensed with ❤️ by Interactive MM.</p>
+      <p class="mt-2">© <span id="year"></span> Interactive MM</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
