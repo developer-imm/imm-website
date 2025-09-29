@@ -1,0 +1,9 @@
+title: Interactive MM
+description: Software built with care in Cincinnati, Ohio.
+url: https://interactivemm.com
+author: Interactive MM
+lang: en
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
