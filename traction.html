@@ -13,16 +13,25 @@
 </head>
 <body class="traction bg-[var(--bg)] text-[var(--text)]">
   <header class="sticky top-0 z-50 backdrop-blur border-b border-white/10 bg-[var(--bg)]/60">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-      <a href="/" class="flex items-center">
-        <span class="glass inline-flex items-center gap-3 rounded-xl px-3 py-2 bg-white/30">
-          <img src="/img/logo.png" alt="Interactive MM logo" class="h-10 w-auto drop-shadow-[0_3px_12px_rgba(0,0,0,0.25)]"/>
-          <span class="text-lg font-semibold tracking-tight">Interactive MM</span>
-        </span>
-      </a>
-      <nav class="hidden sm:flex items-center gap-6 text-sm text-[var(--muted)]">
-        <a class="hover:text-white" href="/traction.html">Traction</a>
-      </nav>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4">
+      <div class="relative flex items-center justify-between gap-4">
+        <a href="/" class="flex items-center">
+          <span class="glass inline-flex items-center gap-3 rounded-xl px-3 py-2 bg-white/30">
+            <img src="/img/logo.png" alt="Interactive MM logo" class="h-10 w-auto drop-shadow-[0_3px_12px_rgba(0,0,0,0.25)]"/>
+            <span class="text-lg font-semibold tracking-tight">Interactive MM</span>
+          </span>
+        </a>
+        <nav id="primary-navigation" class="hidden absolute left-0 right-0 top-full mt-3 flex-col gap-3 rounded-2xl border border-white/10 bg-[var(--bg)]/95 p-4 text-sm text-[var(--muted)] shadow-lg sm:static sm:flex sm:flex-row sm:items-center sm:gap-6 sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none">
+          <a class="hover:text-white" href="/">Home</a>
+          <a class="hover:text-white" href="/traction.html">Traction</a>
+        </nav>
+        <button type="button" class="sm:hidden inline-flex items-center justify-center rounded-full border border-white/20 p-2 text-white transition hover:border-white/40" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
+          <span class="sr-only">Toggle navigation</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -60,6 +69,57 @@
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+
+    const menuToggle = document.querySelector('[data-menu-toggle]');
+    const navId = menuToggle ? menuToggle.getAttribute('aria-controls') : null;
+    const nav = navId ? document.getElementById(navId) : null;
+
+    if (menuToggle && nav) {
+      const closeMenu = () => {
+        nav.classList.add('hidden');
+        nav.classList.remove('flex');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      };
+
+      menuToggle.addEventListener('click', () => {
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        if (expanded) {
+          closeMenu();
+        } else {
+          nav.classList.remove('hidden');
+          nav.classList.add('flex');
+          menuToggle.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      nav.addEventListener('click', (event) => {
+        if (event.target.closest('a') && window.innerWidth < 640) {
+          closeMenu();
+        }
+      });
+
+      window.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
+          closeMenu();
+          menuToggle.focus();
+        }
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth >= 640) {
+          nav.classList.remove('hidden');
+          nav.classList.remove('flex');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        } else if (menuToggle.getAttribute('aria-expanded') === 'false') {
+          closeMenu();
+        }
+      });
+    }
+  </script>
 </body>
 </html>
