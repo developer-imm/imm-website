@@ -15,13 +15,11 @@
   <header class="sticky top-0 z-50 backdrop-blur border-b border-white/10 bg-[var(--bg)]/60">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4">
       <div class="relative flex items-center justify-between gap-4">
-        <a href="/" class="flex items-center">
-          <span class="glass inline-flex items-center gap-3 rounded-xl px-3 py-2 bg-white/30">
-            <img src="/img/logo.png" alt="Interactive MM logo" class="h-10 w-auto drop-shadow-[0_3px_12px_rgba(0,0,0,0.25)]"/>
-            <span class="text-lg font-semibold tracking-tight">Interactive MM</span>
-          </span>
+        <a href="/" class="flex items-center gap-3">
+          <img src="/img/logo.png" alt="Interactive MM logo" class="h-10 w-auto drop-shadow-[0_3px_12px_rgba(0,0,0,0.25)]"/>
+          <span class="text-lg font-semibold tracking-tight">Interactive MM</span>
         </a>
-        <nav id="primary-navigation" class="hidden absolute left-0 right-0 top-full mt-3 flex-col gap-3 rounded-2xl border border-white/10 bg-[var(--bg)]/95 p-4 text-sm text-[var(--muted)] shadow-lg sm:static sm:flex sm:flex-row sm:items-center sm:gap-6 sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none">
+        <nav id="primary-navigation" class="mobile-menu hidden absolute right-4 top-full mt-3 flex-col gap-3 w-max max-w-[calc(100vw-2rem)] rounded-2xl border border-white/10 bg-[var(--bg)]/95 p-4 text-sm text-[var(--muted)] shadow-lg sm:static sm:flex sm:flex-row sm:items-center sm:gap-6 sm:w-auto sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none">
           <a class="hover:text-white" href="/">Home</a>
           <a class="hover:text-white" href="/traction.html">Traction</a>
         </nav>
@@ -80,10 +78,61 @@
     const nav = navId ? document.getElementById(navId) : null;
 
     if (menuToggle && nav) {
-      const closeMenu = () => {
-        nav.classList.add('hidden');
-        nav.classList.remove('flex');
+      let pendingCloseHandler = null;
+
+      const clearPendingCloseHandler = () => {
+        if (pendingCloseHandler) {
+          nav.removeEventListener('transitionend', pendingCloseHandler);
+          pendingCloseHandler = null;
+        }
+      };
+
+      const finishClose = () => {
+        if (window.innerWidth < 640) {
+          nav.classList.add('hidden');
+          nav.classList.remove('flex');
+        }
+      };
+
+      const openMenu = () => {
+        clearPendingCloseHandler();
+        nav.classList.remove('hidden');
+        nav.classList.add('flex');
+        menuToggle.setAttribute('aria-expanded', 'true');
+
+        if (!nav.classList.contains('mobile-menu--open')) {
+          requestAnimationFrame(() => {
+            nav.classList.add('mobile-menu--open');
+          });
+        }
+      };
+
+      const closeMenu = ({ immediate = false } = {}) => {
+        clearPendingCloseHandler();
         menuToggle.setAttribute('aria-expanded', 'false');
+
+        if (immediate) {
+          nav.classList.remove('mobile-menu--open');
+          finishClose();
+          return;
+        }
+
+        if (!nav.classList.contains('mobile-menu--open')) {
+          finishClose();
+          return;
+        }
+
+        nav.classList.remove('mobile-menu--open');
+
+        pendingCloseHandler = (event) => {
+          if (event.target !== nav) {
+            return;
+          }
+          finishClose();
+          clearPendingCloseHandler();
+        };
+
+        nav.addEventListener('transitionend', pendingCloseHandler);
       };
 
       menuToggle.addEventListener('click', () => {
@@ -91,9 +140,7 @@
         if (expanded) {
           closeMenu();
         } else {
-          nav.classList.remove('hidden');
-          nav.classList.add('flex');
-          menuToggle.setAttribute('aria-expanded', 'true');
+          openMenu();
         }
       });
 
@@ -112,11 +159,18 @@
 
       window.addEventListener('resize', () => {
         if (window.innerWidth >= 640) {
+          clearPendingCloseHandler();
           nav.classList.remove('hidden');
           nav.classList.remove('flex');
+          nav.classList.remove('mobile-menu--open');
           menuToggle.setAttribute('aria-expanded', 'false');
-        } else if (menuToggle.getAttribute('aria-expanded') === 'false') {
-          closeMenu();
+          return;
+        }
+
+        if (menuToggle.getAttribute('aria-expanded') === 'true') {
+          openMenu();
+        } else {
+          closeMenu({ immediate: true });
         }
       });
     }

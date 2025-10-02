@@ -22,3 +22,25 @@ body {
   background: radial-gradient(1200px 600px at 50% -10%, rgba(79, 195, 247, 0.15), transparent 60%),
     radial-gradient(800px 400px at 90% 10%, rgba(0, 229, 168, 0.15), transparent 60%);
 }
+
+.mobile-menu {
+  opacity: 0;
+  transform: translateY(-8px) scale(0.98);
+  transform-origin: top right;
+  transition: opacity 180ms ease, transform 180ms ease;
+  pointer-events: none;
+}
+
+.mobile-menu.mobile-menu--open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+@media (min-width: 640px) {
+  .mobile-menu {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+}
