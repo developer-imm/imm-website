@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Traction — An ADHD‑friendly Todo App</title>
-  <meta name="description" content="Traction is an ADHD‑friendly todo app with smart recurrence, sticky reminders, and a calm UI for iPhone, iPad, and Mac." />
+  <title>Contact Interactive MM</title>
+  <meta name="description" content="Get in touch with Interactive MM for product support or new development projects. We're here to help keep your ideas moving." />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="traction bg-[var(--bg)] text-[var(--text)]">
+<body class="contact bg-[var(--bg)] text-[var(--text)]">
   <header class="sticky top-0 z-50 backdrop-blur border-b border-white/10 bg-[var(--bg)]/60">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4">
       <div class="relative flex items-center justify-between gap-4">
@@ -21,9 +21,8 @@
         </a>
         <nav id="primary-navigation" class="mobile-menu hidden absolute right-4 top-full mt-3 flex-col gap-3 w-max max-w-[calc(100vw-2rem)] rounded-2xl border border-white/10 bg-[var(--bg)]/95 p-4 text-sm text-[var(--muted)] shadow-lg sm:static sm:flex sm:flex-row sm:items-center sm:gap-6 sm:w-auto sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none">
           <a class="hover:text-white" href="/">Home</a>
-          <a class="hover:text-white" href="/#about">About</a>
-          <a class="hover:text-white text-white" href="/traction/" aria-current="page">Traction</a>
-          <a class="hover:text-white" href="/contact-us/">Contact</a>
+          <a class="hover:text-white" href="/traction/">Traction</a>
+          <a class="hover:text-white text-white" href="/contact-us/" aria-current="page">Contact</a>
         </nav>
         <button type="button" class="sm:hidden inline-flex items-center justify-center rounded-full border border-white/20 p-2 text-white transition hover:border-white/40" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
           <span class="sr-only">Toggle navigation</span>
@@ -39,31 +38,50 @@
     <section class="relative overflow-hidden grid-fade">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <h1 class="text-4xl md:text-5xl font-extrabold">Traction</h1>
-          <p class="mt-4 text-[var(--muted)]">An ADHD‑friendly todo app that keeps focus, not friction. Smart recurrence without clutter, sticky reminders that gently persist, and an interface designed for calm momentum.</p>
-          <ul class="mt-6 grid gap-3 text-[var(--muted)]">
-            <li class="glass rounded-xl p-4"><span class="font-semibold text-white">Ultra‑fast capture</span> — jot tasks instantly from anywhere in the app.</li>
-            <li class="glass rounded-xl p-4"><span class="font-semibold text-white">Smart recurrence</span> — rule‑based scheduling with projections (no endless duplicates).</li>
-            <li class="glass rounded-xl p-4"><span class="font-semibold text-white">Sticky reminders</span> — gentle nudges at intervals you choose.</li>
-            <li class="glass rounded-xl p-4"><span class="font-semibold text-white">ADHD‑friendly UI</span> — big tap targets, minimal choices, soothing motion.</li>
-            <li class="glass rounded-xl p-4"><span class="font-semibold text-white">Apple platforms</span> — iPhone, iPad, Mac; offline‑first with iCloud sync.</li>
-          </ul>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Let’s build the next thing together.</h1>
+          <p class="mt-4 text-lg text-[var(--muted)]">Whether you need a quick support answer or a partner to design and ship new features, Interactive MM is ready to help.</p>
+          <div class="mt-8 glass rounded-2xl p-6 space-y-4 text-[var(--muted)]">
+            <div>
+              <p class="text-sm uppercase tracking-wide text-white/70">Support</p>
+              <a class="mt-1 inline-flex items-center gap-2 text-white font-semibold" href="mailto:support@interactivemm.com">
+                support@interactivemm.com
+              </a>
+              <p class="mt-1">Reach out for product help, billing questions, and account updates.</p>
+            </div>
+            <div class="border-t border-white/10 pt-4">
+              <p class="text-sm uppercase tracking-wide text-white/70">Development</p>
+              <a class="mt-1 inline-flex items-center gap-2 text-white font-semibold" href="mailto:developer@interactivemm.com">
+                developer@interactivemm.com
+              </a>
+              <p class="mt-1">Share your roadmap, request a quote, or explore a new build with our team.</p>
+            </div>
+          </div>
         </div>
-        <div class="glass rounded-3xl overflow-hidden flex items-center justify-center p-6 bg-white/5">
-          <img src="/img/traction-logo.png" alt="Traction app logo" class="w-56 h-56 object-contain" />
+        <div class="glass rounded-3xl p-2 h-72 md:h-96 overflow-hidden">
+          <img src="/img/coding_collaboration.png" alt="Team collaborating on product design" class="w-full h-full object-cover rounded-2xl"/>
         </div>
       </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 mt-16">
-      <div class="glass rounded-2xl p-6">
-        <h2 class="text-2xl font-bold">Status</h2>
-        <p class="mt-2 text-[var(--muted)]">Currently in development. TestFlight planned; subscribe for updates soon.</p>
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-20">
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="glass rounded-2xl p-6">
+          <h2 class="text-xl font-bold text-white">What to expect</h2>
+          <p class="mt-2 text-[var(--muted)]">We typically respond within one business day with next steps or a quick check-in.</p>
+        </article>
+        <article class="glass rounded-2xl p-6">
+          <h2 class="text-xl font-bold text-white">Working together</h2>
+          <p class="mt-2 text-[var(--muted)]">Product discovery, design sprints, and full-stack builds—tailored to your team.</p>
+        </article>
+        <article class="glass rounded-2xl p-6">
+          <h2 class="text-xl font-bold text-white">Based in Cincinnati</h2>
+          <p class="mt-2 text-[var(--muted)]">Available for remote engagements or on-site collaboration across the Midwest.</p>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-white/10 mt-16">
+  <footer class="border-t border-white/10">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 text-sm text-[var(--muted)]">
       <p>© <span id="year"></span> Interactive MM</p>
     </div>
@@ -161,18 +179,13 @@
 
       window.addEventListener('resize', () => {
         if (window.innerWidth >= 640) {
+          nav.classList.add('flex');
+          nav.classList.remove('hidden', 'mobile-menu--open');
           clearPendingCloseHandler();
-          nav.classList.remove('hidden');
-          nav.classList.remove('flex');
-          nav.classList.remove('mobile-menu--open');
           menuToggle.setAttribute('aria-expanded', 'false');
-          return;
-        }
-
-        if (menuToggle.getAttribute('aria-expanded') === 'true') {
-          openMenu();
-        } else {
-          closeMenu({ immediate: true });
+        } else if (!nav.classList.contains('mobile-menu--open')) {
+          nav.classList.add('hidden');
+          nav.classList.remove('flex');
         }
       });
     }
