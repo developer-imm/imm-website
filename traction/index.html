@@ -69,11 +69,6 @@
         <p class="mt-2 text-[var(--muted)]">Reach out if you want to follow progress or hop into the TestFlight as seats open. We’ll only use this info to coordinate Traction updates.</p>
         <form id="traction-waitlist-form" class="mt-6 grid gap-5" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSehizycV5_S7Tc2r_vit0DNOrKUiARuHj8mORhG1kmayDm-Dw/formResponse">
           <input type="hidden" name="entry.1457791917_sentinel" value="" />
-          <input type="hidden" name="fvv" value="1" />
-          <input type="hidden" name="draftResponse" value="" />
-          <input type="hidden" name="pageHistory" value="0" />
-          <input type="hidden" name="fbzx" value="" />
-          <input type="hidden" name="submit" value="Submit" />
           <div class="grid gap-5 md:grid-cols-2">
             <div class="grid gap-2">
               <label class="text-sm font-semibold text-white/80" for="waitlist-name">Name</label>
@@ -117,8 +112,9 @@
   </main>
 
   <footer class="border-t border-white/10 mt-16">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 text-sm text-[var(--muted)]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 text-xs text-[var(--muted)] flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
       <p>© <span id="year"></span> Interactive MM</p>
+      <span aria-hidden="true">Build 2510161723</span>
     </div>
   </footer>
 
@@ -238,10 +234,6 @@
 
         waitlistSuccess.classList.add('hidden');
         waitlistError.classList.add('hidden');
-
-        const fbzxSeed = `${Date.now()}${Math.random().toString(36).slice(2)}`;
-        waitlistForm.querySelector('input[name="fbzx"]').value = fbzxSeed;
-        waitlistForm.querySelector('input[name="draftResponse"]').value = `[null,null,"${fbzxSeed}"]`;
 
         const formData = new FormData(waitlistForm);
 
