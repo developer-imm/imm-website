@@ -67,8 +67,18 @@
       <div class="glass rounded-2xl p-6">
         <h2 class="text-2xl font-bold">Join the waitlist</h2>
         <p class="mt-2 text-[var(--muted)]">Reach out if you want to follow progress or hop into the TestFlight as seats open. We’ll only use this info to coordinate Traction updates.</p>
+<<<<<<< HEAD
         <form id="traction-waitlist-form" class="mt-6 grid gap-5" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSehizycV5_S7Tc2r_vit0DNOrKUiARuHj8mORhG1kmayDm-Dw/formResponse" target="traction-waitlist-target">
           <input type="hidden" name="entry.1457791917_sentinel" value="" />
+=======
+        <form id="traction-waitlist-form" class="mt-6 grid gap-5" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSehizycV5_S7Tc2r_vit0DNOrKUiARuHj8mORhG1kmayDm-Dw/formResponse">
+          <input type="hidden" name="entry.1457791917_sentinel" value="" />
+          <input type="hidden" name="fvv" value="1" />
+          <input type="hidden" name="draftResponse" value="" />
+          <input type="hidden" name="pageHistory" value="0" />
+          <input type="hidden" name="fbzx" value="" />
+          <input type="hidden" name="submit" value="Submit" />
+>>>>>>> e3f8f47 (Changed the Contact page navigation to " Contact Us". Added form for Traction.)
           <div class="grid gap-5 md:grid-cols-2">
             <div class="grid gap-2">
               <label class="text-sm font-semibold text-white/80" for="waitlist-name">Name</label>
@@ -105,8 +115,13 @@
             <p class="text-xs text-[var(--muted)]">We’ll follow up directly with next steps.</p>
           </div>
           <p id="traction-waitlist-success" class="hidden rounded-xl border border-emerald-400/20 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-200" role="status" aria-live="polite">Thanks! We’ve got your request and will email you with the next TestFlight update.</p>
+<<<<<<< HEAD
         </form>
         <iframe name="traction-waitlist-target" id="traction-waitlist-target" class="hidden" title="Traction waitlist submission"></iframe>
+=======
+          <p id="traction-waitlist-error" class="hidden rounded-xl border border-rose-400/20 bg-rose-500/10 px-4 py-3 text-sm text-rose-200" role="alert">Hmm, that didn’t send. Please try again or email <a class="underline decoration-dotted" href="mailto:developer@interactivemm.com">developer@interactivemm.com</a>.</p>
+        </form>
+>>>>>>> e3f8f47 (Changed the Contact page navigation to " Contact Us". Added form for Traction.)
       </div>
     </section>
   </main>
@@ -225,6 +240,7 @@
     }
 
     const waitlistForm = document.getElementById('traction-waitlist-form');
+<<<<<<< HEAD
     const waitlistFrame = document.getElementById('traction-waitlist-target');
     const waitlistSuccess = document.getElementById('traction-waitlist-success');
     if (waitlistForm && waitlistFrame && waitlistSuccess) {
@@ -240,6 +256,34 @@
         isSubmitting = false;
         waitlistForm.reset();
         waitlistSuccess.classList.remove('hidden');
+=======
+    const waitlistSuccess = document.getElementById('traction-waitlist-success');
+    const waitlistError = document.getElementById('traction-waitlist-error');
+    if (waitlistForm && waitlistSuccess && waitlistError && window.fetch) {
+      waitlistForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        waitlistSuccess.classList.add('hidden');
+        waitlistError.classList.add('hidden');
+
+        const fbzxSeed = `${Date.now()}${Math.random().toString(36).slice(2)}`;
+        waitlistForm.querySelector('input[name="fbzx"]').value = fbzxSeed;
+        waitlistForm.querySelector('input[name="draftResponse"]').value = `[null,null,"${fbzxSeed}"]`;
+
+        const formData = new FormData(waitlistForm);
+
+        try {
+          await fetch(waitlistForm.action, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: formData,
+          });
+          waitlistForm.reset();
+          waitlistSuccess.classList.remove('hidden');
+        } catch (error) {
+          waitlistError.classList.remove('hidden');
+        }
+>>>>>>> e3f8f47 (Changed the Contact page navigation to " Contact Us". Added form for Traction.)
       });
     }
   </script>
