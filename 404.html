@@ -15,7 +15,45 @@
     <h1 class="text-6xl font-bold">404</h1>
     <p class="mt-4 text-lg">Sorry, the page you’re looking for doesn’t exist.</p>
     <a href="/" class="mt-6 inline-block px-6 py-3 bg-blue-500 text-white rounded-lg">Go Home</a>
-    <p class="mt-6 text-xs text-white/60" aria-hidden="true">Build 2510161723</p>
+    <p class="mt-6 text-xs text-white/60" aria-hidden="true" id="build-tag" data-repo="developer-imm/imm-website">Build loading…</p>
   </div>
+  <script>
+    (function () {
+      const buildTag = document.getElementById('build-tag');
+      if (!buildTag) return;
+
+      const applyBuildLabel = (value) => {
+        buildTag.textContent = `Build ${value}`;
+      };
+
+      const fallbackBuildLabel = () => {
+        applyBuildLabel('local');
+      };
+
+      fallbackBuildLabel();
+
+      const repo = buildTag.dataset.repo;
+      if (!(repo && window.fetch)) {
+        return;
+      }
+
+      const endpoint = `https://api.github.com/repos/${repo}/commits?per_page=1`;
+      fetch(endpoint, {
+        headers: {
+          Accept: 'application/vnd.github+json'
+        }
+      })
+        .then((response) => (response.ok ? response.json() : null))
+        .then((data) => {
+          const latest = Array.isArray(data) ? data[0] : null;
+          if (latest && latest.sha) {
+            applyBuildLabel(latest.sha.slice(0, 7));
+          }
+        })
+        .catch(() => {
+          // Ignore errors; fallback already applied.
+        });
+    })();
+  </script>
 </body>
 </html>
