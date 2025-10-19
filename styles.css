@@ -1,5 +1,6 @@
 :root {
   --bg: #11264a;
+  --bg-rgb: 17, 38, 74;
   --panel: #142b57;
   --text: #e6eefc;
   --muted: #9fb3d4;
@@ -29,6 +30,11 @@ body {
   transform-origin: top right;
   transition: opacity 180ms ease, transform 180ms ease;
   pointer-events: none;
+  background: rgba(var(--bg-rgb), 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 24px 48px -16px rgba(6, 16, 35, 0.55);
 }
 
 .mobile-menu.mobile-menu--open {
@@ -42,5 +48,10 @@ body {
     opacity: 1;
     transform: none;
     pointer-events: auto;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 }
