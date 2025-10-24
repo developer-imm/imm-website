@@ -2,20 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://interactivemm.com/</loc>
-    <lastmod>2025-10-23</lastmod>
+    <lastmod>2025-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://interactivemm.com/traction/</loc>
-    <lastmod>2025-10-23</lastmod>
+    <lastmod>2025-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://interactivemm.com/contact-us/</loc>
-    <lastmod>2025-10-23</lastmod>
+    <lastmod>2025-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://interactivemm.com/insights/</loc>
+    <lastmod>2025-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
   </url>
 </urlset>

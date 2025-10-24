@@ -22,6 +22,7 @@
   <meta name="twitter:image" content="https://interactivemm.com/img/traction-logo.png" />
   <meta name="twitter:image:alt" content="Traction productivity app logo" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preload" href="/img/traction-logo.png" as="image" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -30,18 +31,44 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Traction",
-      "applicationCategory": "ProductivityApplication",
-      "operatingSystem": "iOS, iPadOS, macOS",
-      "url": "https://interactivemm.com/traction/",
-      "description": "Traction is an ADHD-friendly todo app with smart recurrence, sticky reminders, and a calm UI for Apple platforms.",
-      "softwareVersion": "TestFlight Preview",
-      "author": {
-        "@type": "Organization",
-        "name": "Interactive MM",
-        "url": "https://interactivemm.com/"
-      }
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Traction",
+          "applicationCategory": "ProductivityApplication",
+          "operatingSystem": "iOS, iPadOS, macOS",
+          "url": "https://interactivemm.com/traction/",
+          "description": "Traction is an ADHD-friendly todo app with smart recurrence, sticky reminders, and a calm UI for Apple platforms.",
+          "softwareVersion": "TestFlight Preview",
+          "author": {
+            "@type": "Organization",
+            "name": "Interactive MM",
+            "url": "https://interactivemm.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Interactive MM",
+            "url": "https://interactivemm.com/"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://interactivemm.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Traction",
+              "item": "https://interactivemm.com/traction/"
+            }
+          ]
+        }
+      ]
     }
   </script>
 </head>
@@ -57,6 +84,7 @@
           <a class="hover:text-white" href="/">Home</a>
           <a class="hover:text-white" href="/#about">About</a>
           <a class="hover:text-white text-white" href="/traction/" aria-current="page">Traction</a>
+          <a class="hover:text-white" href="/insights/">Insights</a>
           <a class="hover:text-white" href="/contact-us/">Contact Us</a>
         </nav>
         <button type="button" class="sm:hidden inline-flex items-center justify-center rounded-full border border-white/20 p-2 text-white transition hover:border-white/40" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
@@ -74,7 +102,7 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
         <div>
           <h1 class="text-4xl md:text-5xl font-extrabold">Traction</h1>
-          <p class="mt-4 text-[var(--muted)]">An ADHD‑friendly todo app that keeps focus, not friction. Smart recurrence without clutter, sticky reminders that gently persist, and an interface designed for calm momentum.</p>
+          <p class="mt-4 text-[var(--muted)]">An ADHD‑friendly todo app that keeps focus, not friction. Smart recurrence without clutter, sticky reminders that gently persist, and an interface designed for calm momentum. Read how we coach teams to adopt the system inside <a href="/insights/" class="text-white hover:underline">Interactive MM Insights</a>.</p>
           <ul class="mt-6 grid gap-3 text-[var(--muted)]">
             <li class="glass rounded-xl p-4"><span class="font-semibold text-white">Ultra‑fast capture</span> — jot tasks instantly from anywhere in the app.</li>
             <li class="glass rounded-xl p-4"><span class="font-semibold text-white">Smart recurrence</span> — rule‑based scheduling with projections (no endless duplicates).</li>
@@ -84,7 +112,7 @@
           </ul>
         </div>
         <div class="glass rounded-3xl overflow-hidden flex items-center justify-center p-6 bg-white/5">
-          <img src="../img/traction-logo.png" alt="Traction app logo" class="w-56 h-56 object-contain" />
+          <img src="../img/traction-logo.png" alt="Traction app logo" width="1024" height="1024" class="w-56 h-56 object-contain" />
         </div>
       </div>
     </section>
