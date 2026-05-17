@@ -4,11 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Insights & Resources — Interactive MM</title>
-  <meta name="description" content="Practical guides and thought pieces from Interactive MM covering product strategy, accessibility, and calm productivity tooling." />
+  <meta name="description" content="Practical guides and thought pieces from Interactive MM covering product strategy, accessibility, indie product-building, and considered productivity tooling." />
   <link rel="canonical" href="https://interactivemm.com/insights/" />
-  <meta name="keywords" content="Interactive MM insights, product strategy tips, accessibility best practices, calm productivity" />
+  <meta name="keywords" content="Interactive MM insights, indie product building, product strategy tips, accessibility best practices, considered productivity" />
   <meta name="author" content="Interactive MM" />
   <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#1a1814" />
   <meta property="og:site_name" content="Interactive MM" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Insights & Resources — Interactive MM" />
@@ -21,58 +22,40 @@
   <meta name="twitter:description" content="Fresh product insights, accessibility playbooks, and productivity tactics from Interactive MM." />
   <meta name="twitter:image" content="https://interactivemm.com/img/coding.png" />
   <meta name="twitter:image:alt" content="Interactive MM team planning product strategy" />
-  <link rel="preload" href="/img/coding.png" as="image" type="image/png" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNZ7PH8VR9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DNZ7PH8VR9');
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preload" href="/img/coding.png" as="image" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="/img/logo.png" type="image/png" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://interactivemm.com/#website",
-          "name": "Interactive MM",
-          "url": "https://interactivemm.com/"
-        },
+        { "@type": "WebSite", "@id": "https://interactivemm.com/#website", "name": "Interactive MM", "url": "https://interactivemm.com/" },
         {
           "@type": "CollectionPage",
           "@id": "https://interactivemm.com/insights/",
           "name": "Insights & Resources",
-          "description": "Practical guides and thought pieces from Interactive MM covering product strategy, accessibility, and calm productivity tooling.",
+          "description": "Practical guides and thought pieces from Interactive MM covering product strategy, accessibility, indie product-building, and considered productivity tooling.",
           "url": "https://interactivemm.com/insights/",
           "inLanguage": "en-US",
-          "isPartOf": {
-            "@id": "https://interactivemm.com/#website"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "@id": "https://interactivemm.com/#organization",
-            "name": "Interactive MM",
-            "url": "https://interactivemm.com/"
-          },
+          "isPartOf": { "@id": "https://interactivemm.com/#website" },
+          "publisher": { "@type": "Organization", "@id": "https://interactivemm.com/#organization", "name": "Interactive MM", "url": "https://interactivemm.com/" },
           "hasPart": [
-            {
-              "@id": "https://interactivemm.com/insights/#calm-product-discovery"
-            },
-            {
-              "@id": "https://interactivemm.com/insights/#adhd-friendly-routines"
-            }
+            { "@id": "https://interactivemm.com/insights/#calm-product-discovery" },
+            { "@id": "https://interactivemm.com/insights/#adhd-friendly-routines" }
           ]
         },
-        {
-          "@type": "Organization",
-          "@id": "https://interactivemm.com/#organization",
-          "name": "Interactive MM",
-          "url": "https://interactivemm.com/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://interactivemm.com/img/logo.png"
-          }
-        },
+        { "@type": "Organization", "@id": "https://interactivemm.com/#organization", "name": "Interactive MM", "url": "https://interactivemm.com/", "logo": { "@type": "ImageObject", "url": "https://interactivemm.com/img/logo.png" } },
         {
           "@type": "Article",
           "@id": "https://interactivemm.com/insights/#calm-product-discovery",
@@ -84,76 +67,63 @@
           "articleSection": "Product Strategy",
           "inLanguage": "en-US",
           "image": "https://interactivemm.com/img/coding.png",
-          "mainEntityOfPage": {
-            "@id": "https://interactivemm.com/insights/"
-          },
-          "author": {
-            "@id": "https://interactivemm.com/#organization"
-          },
-          "publisher": {
-            "@id": "https://interactivemm.com/#organization"
-          }
+          "mainEntityOfPage": { "@id": "https://interactivemm.com/insights/" },
+          "author": { "@id": "https://interactivemm.com/#organization" },
+          "publisher": { "@id": "https://interactivemm.com/#organization" }
         },
         {
           "@type": "Article",
           "@id": "https://interactivemm.com/insights/#adhd-friendly-routines",
           "headline": "Building ADHD-friendly Routines with Traction",
-          "description": "Learn how Traction’s sticky reminders and review rituals reduce context switching and support neurodiverse teams.",
+          "description": "Learn how Traction's sticky reminders and review rituals reduce context switching and support neurodiverse teams.",
           "datePublished": "2025-10-24",
           "dateModified": "2025-10-24",
           "wordCount": 167,
           "articleSection": "Productivity",
           "inLanguage": "en-US",
           "image": "https://interactivemm.com/img/traction-logo.png",
-          "mainEntityOfPage": {
-            "@id": "https://interactivemm.com/insights/"
-          },
-          "author": {
-            "@id": "https://interactivemm.com/#organization"
-          },
-          "publisher": {
-            "@id": "https://interactivemm.com/#organization"
-          }
+          "mainEntityOfPage": { "@id": "https://interactivemm.com/insights/" },
+          "author": { "@id": "https://interactivemm.com/#organization" },
+          "publisher": { "@id": "https://interactivemm.com/#organization" }
         },
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://interactivemm.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Insights",
-              "item": "https://interactivemm.com/insights/"
-            }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://interactivemm.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Insights", "item": "https://interactivemm.com/insights/" }
           ]
         }
       ]
     }
   </script>
 </head>
-<body class="insights bg-[var(--bg)] text-[var(--text)]">
-  <header class="sticky top-0 z-50 backdrop-blur border-b border-white/10 bg-[var(--bg)]/60">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4">
+<body class="insights">
+  <div class="meta-bar">
+    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-2 flex items-center justify-between gap-4">
+      <span class="hidden sm:inline">№ 003 · Studio Journal</span>
+      <span class="hidden md:inline">Notes from an indie developer</span>
+      <span><a href="/contact-us/">developer@interactivemm.com →</a></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-5">
       <div class="relative flex items-center justify-between gap-4">
-        <a href="/" class="flex items-center gap-3">
-          <img src="/img/logo.png" alt="Interactive MM logo" class="h-10 w-auto drop-shadow-[0_3px_12px_rgba(0,0,0,0.25)]"/>
-          <span class="text-lg font-semibold tracking-tight">Interactive MM</span>
+        <a href="/" class="flex items-center gap-3" aria-label="Interactive MM — Home">
+          <img src="/img/logo.png" alt="" class="h-9 w-auto" />
+          <span class="wordmark">Interactive MM</span>
         </a>
-        <nav id="primary-navigation" class="mobile-menu hidden absolute right-4 top-full mt-3 flex-col gap-3 w-max max-w-[calc(100vw-2rem)] rounded-2xl p-4 text-sm text-[var(--muted)] sm:static sm:flex sm:flex-row sm:items-center sm:gap-6 sm:w-auto sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none">
-          <a class="hover:text-white" href="/">Home</a>
-          <a class="hover:text-white" href="/traction/">Traction</a>
-          <a class="hover:text-white" href="/contact-us/">Contact Us</a>
-          <a class="hover:text-white text-white" href="/insights/" aria-current="page">Insights</a>
+        <nav id="primary-navigation" class="mobile-menu hidden absolute right-5 top-full mt-3 flex-col gap-3 p-5 sm:static sm:flex sm:flex-row sm:items-center sm:gap-8 sm:p-0">
+          <a class="nav-link" href="/#studio">Studio</a>
+          <a class="nav-link" href="/traction/">Traction</a>
+          <a class="nav-link" href="/keyflow/">KeyFlow</a>
+          <a class="nav-link" href="/insights/" aria-current="page">Insights</a>
+          <a class="nav-link" href="/contact-us/">Contact</a>
         </nav>
-        <button type="button" class="sm:hidden inline-flex items-center justify-center rounded-full border border-white/20 p-2 text-white transition hover:border-white/40" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
+        <button type="button" class="menu-toggle sm:hidden" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
           <span class="sr-only">Toggle navigation</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4">
+            <path stroke-linecap="round" d="M4 7h16M4 17h16" />
           </svg>
         </button>
       </div>
@@ -161,180 +131,166 @@
   </header>
 
   <main>
-    <section class="relative overflow-hidden grid-fade">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28 grid md:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
-        <div>
-          <h1 class="text-4xl md:text-5xl font-extrabold">Insights & Resources</h1>
-          <p class="mt-4 text-[var(--muted)]">We publish practical playbooks for founders and operators who want to build deliberate, human-friendly software. Every article includes ready-to-ship tactics you can adapt to your roadmap this week.</p>
-          <div class="mt-8 flex flex-col sm:flex-row gap-4 sm:items-center">
-            <a href="/contact-us/" class="inline-flex items-center gap-2 px-5 py-3 bg-blue-500 text-white rounded-full text-sm font-semibold shadow-md shadow-blue-500/30 hover:bg-blue-400 transition">
-              Partner with Interactive MM
-            </a>
-            <a href="/traction/" class="inline-flex items-center gap-2 px-5 py-3 bg-white/10 text-white rounded-full text-sm font-semibold border border-white/20 hover:border-white/40 transition">
-              Explore Traction →
-            </a>
+    <section>
+      <div class="max-w-[1400px] mx-auto px-5 sm:px-8 pt-16 md:pt-24 pb-12">
+        <div class="grid md:grid-cols-12 gap-10 items-end">
+          <div class="md:col-span-7">
+            <p class="eyebrow rise rise-1">Volume 01 · The Studio Journal</p>
+            <h1 class="display rise rise-2 mt-6 text-[clamp(2.8rem,8vw,6rem)]">
+              Notes from<br />
+              an <em>indie</em><br />
+              software studio.
+            </h1>
+            <p class="lead rise rise-3 mt-8">
+              Practical playbooks for founders and operators who want to build deliberate, human-friendly
+              software. Every piece includes ready-to-ship tactics you can adapt to your roadmap this week.
+            </p>
+            <div class="rise rise-4 mt-10 flex flex-wrap gap-3">
+              <a href="/contact-us/" class="btn btn-primary">Partner with Us <span class="arrow">→</span></a>
+              <a href="/traction/" class="btn btn-ghost">Explore Traction</a>
+            </div>
           </div>
-        </div>
-        <div class="relative">
-          <div class="absolute inset-0 bg-gradient-to-br from-blue-500/30 via-purple-500/20 to-sky-500/10 blur-3xl -z-10"></div>
-          <img src="/img/coding.png" alt="Designers planning a software project" width="900" height="601" class="w-full h-full object-cover rounded-2xl shadow-xl shadow-black/30"/>
+
+          <div class="md:col-span-5 rise rise-3">
+            <div class="image-offset">
+              <div class="image-frame h-[360px] md:h-[440px]">
+                <img src="/img/coding.png" alt="Designers planning a software project" width="900" height="601" />
+                <div class="image-caption">
+                  <span class="pill">FIG. 03</span>
+                  <span>The desk where it happens</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="py-16 md:py-24 bg-white/5 border-y border-white/10">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-16">
-        <article id="calm-product-discovery" class="space-y-6">
-          <header class="space-y-2">
-            <p class="text-sm uppercase tracking-[0.2em] text-[var(--accent)]">Product Strategy</p>
-            <h2 class="text-3xl font-semibold">Calm Product Discovery for Busy Teams</h2>
-          </header>
-          <p class="text-[var(--muted)] leading-relaxed">
-            Product leads do not need a bloated discovery sprint to surface clarity. We start with a two-week listening tour, capture the journeys of contributors and end users, and identify one tangible relief point. From there, we co-create a north-star metric, map operational constraints, and shape a roadmap that respects the team’s pace. Each milestone closes with a lightweight playback so stakeholders can course correct without documentation churn.
-          </p>
-          <p class="text-[var(--muted)] leading-relaxed">
-            When you apply this calmer discovery cadence, you reduce rework and make it easier for sponsors to understand the impact of your software investment. We package findings as concise video recaps and annotated journey maps so teammates can revisit the “why” anytime. Ready to try it? <a href="/contact-us/" class="text-white hover:underline">Reach out to our team</a> and we will share the kickoff template we use across engagements.
-          </p>
-          <footer>
-            <a href="/contact-us/" class="inline-flex items-center gap-2 text-white font-semibold hover:underline">
-              Schedule a discovery chat →
-            </a>
-          </footer>
-        </article>
+    <!-- ARTICLE 01 -->
+    <section class="border-y" style="border-color: var(--line-strong); background: var(--paper-warm);">
+      <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-20 md:py-28">
+        <article id="calm-product-discovery" class="grid md:grid-cols-12 gap-10">
+          <aside class="md:col-span-3">
+            <p class="section-number">Essay № 01</p>
+            <p class="mono mt-2" style="color: var(--ink-faint);">24 Oct 2025 · 4 min</p>
+            <span class="tag tag-rust mt-4">Product Strategy</span>
+          </aside>
 
-        <article id="adhd-friendly-routines" class="space-y-6">
-          <header class="space-y-2">
-            <p class="text-sm uppercase tracking-[0.2em] text-[var(--accent)]">Productivity</p>
-            <h2 class="text-3xl font-semibold">Building ADHD-friendly Routines with Traction</h2>
-          </header>
-          <p class="text-[var(--muted)] leading-relaxed">
-            Traction began as our internal experiment to make recurring tasks kinder to ADHD brains. The product centers on “sticky” reminders that hang around until acknowledged, flexible recurrence rules that mirror real life, and a calm interface that uses color to gently prioritize—not shout. In this guide we cover three techniques that testers say reduced context switching by 40%: batching decision-heavy work into focus blocks, letting Traction auto-suggest the next best action, and pairing tasks with sensory anchors like sounds or visual cues.
-          </p>
-          <p class="text-[var(--muted)] leading-relaxed">
-            We also share a template for weekly reviews that keeps personal obligations and creative work on the same board without overwhelming the day. If you would like early access to that template, <a href="/traction/" class="text-white hover:underline">join the Traction preview</a> and we will send it alongside our latest TestFlight build.
-          </p>
-          <footer>
-            <a href="/traction/" class="inline-flex items-center gap-2 text-white font-semibold hover:underline">
-              Join the Traction waitlist →
-            </a>
-          </footer>
+          <div class="md:col-span-9">
+            <h2 class="display text-[clamp(2rem,5vw,3.5rem)]">
+              Calm product discovery<br />
+              for <em>busy</em> teams.
+            </h2>
+
+            <div class="article-prose mt-8 dropcap">
+              <p>
+                Product leads do not need a bloated discovery sprint to surface clarity. We start
+                with a two-week listening tour, capture the journeys of contributors and end users,
+                and identify one tangible relief point. From there, we co-create a north-star metric,
+                map operational constraints, and shape a roadmap that respects the team's pace.
+                Each milestone closes with a lightweight playback so stakeholders can course-correct
+                without documentation churn.
+              </p>
+              <p>
+                When you apply this calmer discovery cadence, you reduce rework and make it easier
+                for sponsors to understand the impact of your software investment. We package findings
+                as concise video recaps and annotated journey maps so teammates can revisit the "why"
+                anytime. Ready to try it? <a href="/contact-us/">Reach out to our team</a> and we'll
+                share the kickoff template we use across engagements.
+              </p>
+            </div>
+
+            <footer class="mt-10 pt-6 rule-soft" style="border-top-color: var(--line);">
+              <a href="/contact-us/" class="btn btn-ghost">Schedule a Discovery Chat <span class="arrow">→</span></a>
+            </footer>
+          </div>
         </article>
       </div>
+    </section>
+
+    <!-- ARTICLE 02 -->
+    <section class="max-w-[1400px] mx-auto px-5 sm:px-8 py-20 md:py-28">
+      <article id="adhd-friendly-routines" class="grid md:grid-cols-12 gap-10">
+        <aside class="md:col-span-3">
+          <p class="section-number">Essay № 02</p>
+          <p class="mono mt-2" style="color: var(--ink-faint);">24 Oct 2025 · 4 min</p>
+          <span class="tag tag-rust mt-4">Productivity</span>
+        </aside>
+
+        <div class="md:col-span-9">
+          <h2 class="display text-[clamp(2rem,5vw,3.5rem)]">
+            Building ADHD-friendly<br />
+            routines <em>with Traction.</em>
+          </h2>
+
+          <div class="article-prose mt-8 dropcap">
+            <p>
+              Traction began as our internal experiment to make recurring tasks kinder to ADHD brains.
+              The product centers on "sticky" reminders that hang around until acknowledged, flexible
+              recurrence rules that mirror real life, and a calm interface that uses color to gently
+              prioritize — not shout. In this guide we cover three techniques that testers say reduced
+              context switching by 40%: batching decision-heavy work into focus blocks, letting Traction
+              auto-suggest the next best action, and pairing tasks with sensory anchors like sounds or
+              visual cues.
+            </p>
+            <p>
+              We also share a template for weekly reviews that keeps personal obligations and creative
+              work on the same board without overwhelming the day. If you would like early access to
+              that template, <a href="/traction/">join the Traction preview</a> and we'll send it
+              alongside our latest TestFlight build.
+            </p>
+          </div>
+
+          <footer class="mt-10 pt-6 rule-soft" style="border-top-color: var(--line);">
+            <a href="/traction/" class="btn btn-ghost">Join the Traction Waitlist <span class="arrow">→</span></a>
+          </footer>
+        </div>
+      </article>
     </section>
   </main>
 
-  <footer class="py-12 text-center text-sm text-[var(--muted)]">
-    <p>&copy; <span id="footer-year">2025</span> Interactive MM. Purpose-built software for calm teams.</p>
+  <footer class="site-footer">
+    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 pt-16 pb-8">
+      <div class="footer-wordmark">Interactive MM<span class="amp">.</span></div>
+      <div class="mt-12 grid md:grid-cols-12 gap-10 pt-8 border-t" style="border-color: rgba(241, 236, 225, 0.18);">
+        <div class="md:col-span-5">
+          <p class="mono" style="color:#c9c1ad;">The Studio</p>
+          <p class="serif-body text-lg mt-3 max-w-md" style="color: var(--paper); font-variation-settings: 'opsz' 14;">
+            Interactive MM is an independent software studio in Cincinnati, Ohio. Every project is hand-built by a developer with conviction about the details — indie products and bespoke client work, made one at a time.
+          </p>
+        </div>
+        <div class="md:col-span-2">
+          <p class="mono" style="color:#c9c1ad;">Navigate</p>
+          <ul class="mt-3 space-y-2 serif-body">
+            <li><a href="/">Home</a></li>
+            <li><a href="/traction/">Traction</a></li>
+            <li><a href="/keyflow/">KeyFlow</a></li>
+            <li><a href="/insights/">Insights</a></li>
+            <li><a href="/contact-us/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-2">
+          <p class="mono" style="color:#c9c1ad;">Reach</p>
+          <ul class="mt-3 space-y-2 serif-body">
+            <li><a href="mailto:developer@interactivemm.com">developer@</a></li>
+            <li><a href="mailto:support@interactivemm.com">support@</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-3">
+          <p class="mono" style="color:#c9c1ad;">Located</p>
+          <p class="serif-body mt-3" style="color: var(--paper);">
+            Cincinnati, Ohio<br />
+            Available remote, US-wide.
+          </p>
+        </div>
+      </div>
+      <div class="mt-12 pt-6 border-t flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between text-xs" style="border-color: rgba(241, 236, 225, 0.18); color: #c9c1ad;">
+        <p class="mono">© <span id="year"></span> Interactive MM — All rights reserved</p>
+        <p class="mono" id="build-tag" data-repo="developer-imm/imm-website">Build loading…</p>
+      </div>
+    </div>
   </footer>
 
-  <script>
-    (function () {
-      const yearTag = document.getElementById('footer-year');
-      yearTag.textContent = new Date().getFullYear();
-
-      const menuToggle = document.querySelector('[data-menu-toggle]');
-      const navId = menuToggle ? menuToggle.getAttribute('aria-controls') : null;
-      const nav = navId ? document.getElementById(navId) : null;
-
-      if (!(menuToggle && nav)) {
-        return;
-      }
-
-      let pendingCloseHandler = null;
-
-      const clearPendingCloseHandler = () => {
-        if (pendingCloseHandler) {
-          nav.removeEventListener('transitionend', pendingCloseHandler);
-          pendingCloseHandler = null;
-        }
-      };
-
-      const finishClose = () => {
-        if (window.innerWidth < 640) {
-          nav.classList.add('hidden');
-          nav.classList.remove('flex');
-        }
-      };
-
-      const openMenu = () => {
-        clearPendingCloseHandler();
-        nav.classList.remove('hidden');
-        nav.classList.add('flex');
-        menuToggle.setAttribute('aria-expanded', 'true');
-
-        if (!nav.classList.contains('mobile-menu--open')) {
-          requestAnimationFrame(() => {
-            nav.classList.add('mobile-menu--open');
-          });
-        }
-      };
-
-      const closeMenu = ({ immediate = false } = {}) => {
-        clearPendingCloseHandler();
-        menuToggle.setAttribute('aria-expanded', 'false');
-
-        if (immediate) {
-          nav.classList.remove('mobile-menu--open');
-          finishClose();
-          return;
-        }
-
-        if (!nav.classList.contains('mobile-menu--open')) {
-          finishClose();
-          return;
-        }
-
-        nav.classList.remove('mobile-menu--open');
-
-        pendingCloseHandler = (event) => {
-          if (event.target !== nav) {
-            return;
-          }
-          finishClose();
-          clearPendingCloseHandler();
-        };
-
-        nav.addEventListener('transitionend', pendingCloseHandler);
-      };
-
-      menuToggle.addEventListener('click', () => {
-        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-        if (expanded) {
-          closeMenu();
-        } else {
-          openMenu();
-        }
-      });
-
-      nav.addEventListener('click', (event) => {
-        if (event.target.closest('a') && window.innerWidth < 640) {
-          closeMenu();
-        }
-      });
-
-      window.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
-          closeMenu();
-          menuToggle.focus();
-        }
-      });
-
-      window.addEventListener('resize', () => {
-        if (window.innerWidth >= 640) {
-          clearPendingCloseHandler();
-          nav.classList.remove('hidden', 'mobile-menu--open');
-          nav.classList.add('flex');
-          menuToggle.setAttribute('aria-expanded', 'false');
-          return;
-        }
-
-        if (menuToggle.getAttribute('aria-expanded') === 'true') {
-          openMenu();
-        } else {
-          closeMenu({ immediate: true });
-        }
-      });
-    })();
-  </script>
+  <script src="/scripts.js" defer></script>
 </body>
 </html>

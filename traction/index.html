@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Traction — An ADHD‑friendly Todo App</title>
+  <title>Traction — An ADHD‑friendly Todo App by Interactive MM</title>
   <meta name="description" content="Traction is an ADHD‑friendly todo app with smart recurrence, sticky reminders, and a calm UI for iPhone, iPad, and Mac." />
   <link rel="canonical" href="https://interactivemm.com/traction/" />
   <meta name="keywords" content="Traction app, ADHD-friendly todo app, Interactive MM, productivity app, smart recurrence, sticky reminders, TestFlight, Apple task manager" />
   <meta name="author" content="Interactive MM" />
   <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#1a1814" />
   <meta property="og:site_name" content="Interactive MM" />
   <meta property="og:type" content="product" />
   <meta property="og:title" content="Traction — An ADHD-friendly Todo App by Interactive MM" />
@@ -21,12 +22,19 @@
   <meta name="twitter:description" content="Stay on track with Traction's smart recurrence, sticky reminders, and calm interface across iPhone, iPad, and Mac." />
   <meta name="twitter:image" content="https://interactivemm.com/img/traction-logo.png" />
   <meta name="twitter:image:alt" content="Traction productivity app logo" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNZ7PH8VR9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DNZ7PH8VR9');
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preload" href="/img/traction-logo.png" as="image" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="/img/logo.png" type="image/png" />
   <script type="application/ld+json">
     {
@@ -40,57 +48,47 @@
           "url": "https://interactivemm.com/traction/",
           "description": "Traction is an ADHD-friendly todo app with smart recurrence, sticky reminders, and a calm UI for Apple platforms.",
           "softwareVersion": "TestFlight Preview",
-          "author": {
-            "@type": "Organization",
-            "name": "Interactive MM",
-            "url": "https://interactivemm.com/"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Interactive MM",
-            "url": "https://interactivemm.com/"
-          }
+          "author": { "@type": "Organization", "name": "Interactive MM", "url": "https://interactivemm.com/" },
+          "publisher": { "@type": "Organization", "name": "Interactive MM", "url": "https://interactivemm.com/" }
         },
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://interactivemm.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Traction",
-              "item": "https://interactivemm.com/traction/"
-            }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://interactivemm.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Traction", "item": "https://interactivemm.com/traction/" }
           ]
         }
       ]
     }
   </script>
 </head>
-<body class="traction bg-[var(--bg)] text-[var(--text)]">
-  <header class="sticky top-0 z-50 backdrop-blur border-b border-white/10 bg-[var(--bg)]/60">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4">
+<body class="traction">
+  <div class="meta-bar">
+    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-2 flex items-center justify-between gap-4">
+      <span class="hidden sm:inline">№ 002 · Featured Product</span>
+      <span class="hidden md:inline">TestFlight · Preview Build</span>
+      <span><a href="/contact-us/">developer@interactivemm.com →</a></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-5">
       <div class="relative flex items-center justify-between gap-4">
-        <a href="/" class="flex items-center gap-3">
-          <img src="../img/logo.png" alt="Interactive MM logo" class="h-10 w-auto drop-shadow-[0_3px_12px_rgba(0,0,0,0.25)]"/>
-          <span class="text-lg font-semibold tracking-tight">Interactive MM</span>
+        <a href="/" class="flex items-center gap-3" aria-label="Interactive MM — Home">
+          <img src="/img/logo.png" alt="" class="h-9 w-auto" />
+          <span class="wordmark">Interactive MM</span>
         </a>
-        <nav id="primary-navigation" class="mobile-menu hidden absolute right-4 top-full mt-3 flex-col gap-3 w-max max-w-[calc(100vw-2rem)] rounded-2xl p-4 text-sm text-[var(--muted)] sm:static sm:flex sm:flex-row sm:items-center sm:gap-6 sm:w-auto sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none">
-          <a class="hover:text-white" href="/">Home</a>
-          <a class="hover:text-white" href="/#about">About</a>
-          <a class="hover:text-white text-white" href="/traction/" aria-current="page">Traction</a>
-          <a class="hover:text-white" href="/insights/">Insights</a>
-          <a class="hover:text-white" href="/contact-us/">Contact Us</a>
+        <nav id="primary-navigation" class="mobile-menu hidden absolute right-5 top-full mt-3 flex-col gap-3 p-5 sm:static sm:flex sm:flex-row sm:items-center sm:gap-8 sm:p-0">
+          <a class="nav-link" href="/#studio">Studio</a>
+          <a class="nav-link" href="/traction/" aria-current="page">Traction</a>
+          <a class="nav-link" href="/keyflow/">KeyFlow</a>
+          <a class="nav-link" href="/insights/">Insights</a>
+          <a class="nav-link" href="/contact-us/">Contact</a>
         </nav>
-        <button type="button" class="sm:hidden inline-flex items-center justify-center rounded-full border border-white/20 p-2 text-white transition hover:border-white/40" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
+        <button type="button" class="menu-toggle sm:hidden" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
           <span class="sr-only">Toggle navigation</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4">
+            <path stroke-linecap="round" d="M4 7h16M4 17h16" />
           </svg>
         </button>
       </div>
@@ -98,252 +96,205 @@
   </header>
 
   <main>
-    <section class="relative overflow-hidden grid-fade">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h1 class="text-4xl md:text-5xl font-extrabold">Traction</h1>
-          <p class="mt-4 text-[var(--muted)]">An ADHD‑friendly todo app that keeps focus, not friction. Smart recurrence without clutter, sticky reminders that gently persist, and an interface designed for calm momentum. Read how we coach teams to adopt the system inside <a href="/insights/" class="text-white hover:underline">Interactive MM Insights</a>.</p>
-          <ul class="mt-6 grid gap-3 text-[var(--muted)]">
-            <li class="glass rounded-xl p-4"><span class="font-semibold text-white">Ultra‑fast capture</span> — jot tasks instantly from anywhere in the app.</li>
-            <li class="glass rounded-xl p-4"><span class="font-semibold text-white">Smart recurrence</span> — rule‑based scheduling with projections (no endless duplicates).</li>
-            <li class="glass rounded-xl p-4"><span class="font-semibold text-white">Sticky reminders</span> — gentle nudges at intervals you choose.</li>
-            <li class="glass rounded-xl p-4"><span class="font-semibold text-white">ADHD‑friendly UI</span> — big tap targets, minimal choices, soothing motion.</li>
-            <li class="glass rounded-xl p-4"><span class="font-semibold text-white">Apple platforms</span> — iPhone, iPad, Mac; offline‑first with iCloud sync.</li>
-          </ul>
-        </div>
-        <div class="glass rounded-3xl overflow-hidden flex items-center justify-center p-6 bg-white/5">
-          <img src="../img/traction-logo.png" alt="Traction app logo" width="1024" height="1024" class="w-56 h-56 object-contain" />
+    <!-- HERO -->
+    <section>
+      <div class="max-w-[1400px] mx-auto px-5 sm:px-8 pt-16 md:pt-24 pb-12">
+        <div class="grid md:grid-cols-12 gap-10 items-end">
+          <div class="md:col-span-7">
+            <p class="eyebrow rise rise-1">Product № 01 — Traction</p>
+            <h1 class="display rise rise-2 mt-6 text-[clamp(3rem,9vw,7rem)]">
+              <em class="display-italic" style="color:var(--rust)">Traction</em><br />
+              the todo app<br />
+              for ADHD brains.
+            </h1>
+            <p class="lead rise rise-3 mt-8">
+              Focus, not friction. Smart recurrence without clutter, sticky reminders that gently
+              persist, and an interface designed for calm momentum. iPhone, iPad, Mac — offline-first,
+              with iCloud sync.
+            </p>
+            <div class="rise rise-4 mt-10 flex flex-wrap gap-3 items-center">
+              <a href="#waitlist" class="btn btn-primary">Join the Waitlist <span class="arrow">→</span></a>
+              <span class="status-pill"><span class="status-dot"></span> TestFlight in Progress</span>
+            </div>
+          </div>
+
+          <div class="md:col-span-5 rise rise-3">
+            <div class="image-frame p-12 md:p-16 flex items-center justify-center" style="background: linear-gradient(135deg, var(--paper-warm), var(--paper-deep)); min-height: 360px;">
+              <img src="/img/traction-logo.png" alt="Traction app logo" width="1024" height="1024" class="w-48 h-48 md:w-64 md:h-64 object-contain" />
+              <div class="image-caption">
+                <span class="pill">FIG. 02</span>
+                <span>Traction · App Mark</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 mt-16">
-      <div class="glass rounded-2xl p-6">
-        <h2 class="text-2xl font-bold">Status</h2>
-        <p class="mt-2 text-[var(--muted)]">TestFlight build is in progress. We're polishing the core flows before opening the doors.</p>
-        <p class="mt-2 text-[var(--muted)]">Drop your details below to get early release notes and first access when we expand the tester pool.</p>
+    <!-- FEATURES — numbered list -->
+    <section class="border-y" style="border-color: var(--line-strong); background: var(--paper-warm);">
+      <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-20 md:py-28">
+        <header class="grid md:grid-cols-12 gap-8 mb-12 items-end">
+          <div class="md:col-span-3">
+            <p class="section-number">§ 01 / Features</p>
+          </div>
+          <div class="md:col-span-9">
+            <h2 class="section-title text-[clamp(2rem,5vw,3.75rem)]">
+              Five quiet ideas, working <em class="display-italic" style="color:var(--rust)">together.</em>
+            </h2>
+          </div>
+        </header>
+
+        <ol class="grid md:grid-cols-2 gap-6">
+          <li class="card">
+            <p class="card-num">№ 01</p>
+            <h3 class="card-title">Ultra-fast capture</h3>
+            <p class="card-body">Jot tasks instantly from anywhere in the app — no menus, no friction.</p>
+          </li>
+          <li class="card md:mt-10">
+            <p class="card-num">№ 02</p>
+            <h3 class="card-title">Smart recurrence</h3>
+            <p class="card-body">Rule-based scheduling with projections. No endless duplicate items pile-up.</p>
+          </li>
+          <li class="card">
+            <p class="card-num">№ 03</p>
+            <h3 class="card-title">Sticky reminders</h3>
+            <p class="card-body">Gentle, persistent nudges at intervals you choose — not a single push you'll miss.</p>
+          </li>
+          <li class="card md:mt-10">
+            <p class="card-num">№ 04</p>
+            <h3 class="card-title">ADHD-friendly UI</h3>
+            <p class="card-body">Big tap targets, minimal choices, soothing motion. Built so the path of least resistance is the right one.</p>
+          </li>
+          <li class="card md:col-span-2">
+            <p class="card-num">№ 05</p>
+            <h3 class="card-title">Apple-native, offline-first</h3>
+            <p class="card-body">iPhone, iPad, Mac. Local data first, with iCloud sync — your tasks are yours, and they're always there.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 mt-10">
-      <div class="glass rounded-2xl p-6">
-        <h2 class="text-2xl font-bold">Join the waitlist</h2>
-        <p class="mt-2 text-[var(--muted)]">Reach out if you want to follow progress or hop into the TestFlight as seats open. We’ll only use this info to coordinate Traction updates.</p>
-        <form id="traction-waitlist-form" class="mt-6 grid gap-5" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSehizycV5_S7Tc2r_vit0DNOrKUiARuHj8mORhG1kmayDm-Dw/formResponse">
-          <input type="hidden" name="entry.1457791917_sentinel" value="" />
-          <div class="grid gap-5 md:grid-cols-2">
-            <div class="grid gap-2">
-              <label class="text-sm font-semibold text-white/80" for="waitlist-name">Name</label>
-              <input class="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-white/40 focus:border-white/30 focus:outline-none" type="text" id="waitlist-name" name="entry.1875356616" placeholder="Taylor Morgan" />
+    <!-- WAITLIST -->
+    <section id="waitlist" class="max-w-[1400px] mx-auto px-5 sm:px-8 py-20 md:py-28">
+      <div class="grid md:grid-cols-12 gap-10">
+        <div class="md:col-span-5">
+          <p class="section-number">§ 02 / Waitlist</p>
+          <h2 class="section-title mt-3 text-[clamp(2rem,5vw,3.5rem)]">
+            Be early.<br />
+            <em class="display-italic" style="color:var(--rust)">Test-fly with us.</em>
+          </h2>
+          <p class="lead mt-6">
+            We're polishing the core flows before opening the doors. Leave your details and we'll
+            reach out as TestFlight seats expand — and send the occasional release note for the
+            curious.
+          </p>
+          <div class="mt-10">
+            <p class="mono text-[color:var(--ink-faint)]">Direct line</p>
+            <a class="serif-body text-lg mt-2 inline-block" href="mailto:developer@interactivemm.com" style="border-bottom: 1px solid var(--rust);">developer@interactivemm.com</a>
+          </div>
+        </div>
+
+        <div class="md:col-span-7">
+          <form id="traction-waitlist-form" class="card !p-8 md:!p-10" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSehizycV5_S7Tc2r_vit0DNOrKUiARuHj8mORhG1kmayDm-Dw/formResponse">
+            <input type="hidden" name="entry.1457791917_sentinel" value="" />
+
+            <div class="grid gap-6 md:grid-cols-2">
+              <div class="grid gap-2">
+                <label class="form-label" for="waitlist-name">Name</label>
+                <input class="form-input" type="text" id="waitlist-name" name="entry.1875356616" placeholder="Taylor Morgan" />
+              </div>
+              <div class="grid gap-2">
+                <label class="form-label" for="waitlist-email">Email</label>
+                <input class="form-input" type="email" id="waitlist-email" name="entry.1844818138" placeholder="you@example.com" required />
+              </div>
             </div>
-            <div class="grid gap-2">
-              <label class="text-sm font-semibold text-white/80" for="waitlist-email">Email</label>
-              <input class="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-white/40 focus:border-white/30 focus:outline-none" type="email" id="waitlist-email" name="entry.1844818138" placeholder="you@example.com" required />
+
+            <fieldset class="mt-8">
+              <legend class="form-label mb-3">Interested in</legend>
+              <div class="grid gap-3">
+                <label class="flex items-start gap-3 serif-body" style="font-variation-settings: 'opsz' 14; color: var(--ink-soft);">
+                  <input class="form-checkbox" type="checkbox" name="entry.1457791917" value="Product updates" />
+                  <span>
+                    <span style="color: var(--ink); font-weight: 500;">Product updates.</span>
+                    Occasional notes on major releases, features, and the roadmap.
+                  </span>
+                </label>
+                <label class="flex items-start gap-3 serif-body" style="font-variation-settings: 'opsz' 14; color: var(--ink-soft);">
+                  <input class="form-checkbox" type="checkbox" name="entry.1457791917" value="TestFlight access" />
+                  <span>
+                    <span style="color: var(--ink); font-weight: 500;">TestFlight access.</span>
+                    Early invite to the beta with setup steps when a new build is ready.
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="grid gap-2 mt-8">
+              <label class="form-label" for="waitlist-notes">Anything specific you're trying to solve?</label>
+              <textarea class="form-textarea" id="waitlist-notes" name="entry.11927372" rows="3" placeholder="Share needs, current tooling, or context for the beta team."></textarea>
             </div>
-          </div>
-          <div class="grid gap-3">
-            <p class="text-sm font-semibold text-white/80">I’m interested in:</p>
-            <label class="flex items-start gap-3 text-[var(--muted)]">
-              <input class="mt-1 h-4 w-4 rounded border-white/30 bg-transparent text-white focus:ring-white/40" type="checkbox" name="entry.1457791917" value="Product updates" />
-              <span>
-                <span class="font-medium text-white">Product updates</span>
-                <br />Occasional notes on major releases, features, and roadmap.
-              </span>
-            </label>
-            <label class="flex items-start gap-3 text-[var(--muted)]">
-              <input class="mt-1 h-4 w-4 rounded border-white/30 bg-transparent text-white focus:ring-white/40" type="checkbox" name="entry.1457791917" value="TestFlight access" />
-              <span>
-                <span class="font-medium text-white">TestFlight access</span>
-                <br />Early invite to the beta with setup steps when a new build is ready.
-              </span>
-            </label>
-          </div>
-          <div class="grid gap-2">
-            <label class="text-sm font-semibold text-white/80" for="waitlist-notes">Anything specific you’re trying to solve?</label>
-            <textarea class="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-white/40 focus:border-white/30 focus:outline-none" id="waitlist-notes" name="entry.11927372" rows="3" placeholder="Share needs, current tooling, or context for the beta team."></textarea>
-          </div>
-          <div class="flex flex-wrap items-center gap-4">
-            <button type="submit" class="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition hover:border-white/30 hover:bg-white/15">Request access</button>
-            <p class="text-xs text-[var(--muted)]">We’ll follow up directly with next steps.</p>
-          </div>
-          <p id="traction-waitlist-success" class="hidden rounded-xl border border-emerald-400/20 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-200" role="status" aria-live="polite">Thanks! We’ve got your request and will email you with the next TestFlight update.</p>
-          <p id="traction-waitlist-error" class="hidden rounded-xl border border-rose-400/20 bg-rose-500/10 px-4 py-3 text-sm text-rose-200" role="alert">Hmm, that didn’t send. Please try again or email <a class="underline decoration-dotted" href="mailto:developer@interactivemm.com">developer@interactivemm.com</a>.</p>
-        </form>
+
+            <div class="flex flex-wrap items-center gap-5 mt-8 pt-6 rule-soft" style="border-top-color: var(--line);">
+              <button type="submit" class="btn btn-primary">Request Access <span class="arrow">→</span></button>
+              <p class="mono text-[color:var(--ink-faint)]">We'll follow up directly with next steps.</p>
+            </div>
+
+            <p id="traction-waitlist-success" class="notice notice-success hidden mt-6" role="status" aria-live="polite">
+              Thanks — we've got your request and will email you with the next TestFlight update.
+            </p>
+            <p id="traction-waitlist-error" class="notice notice-error hidden mt-6" role="alert">
+              That didn't send. Please try again or email
+              <a class="underline" href="mailto:developer@interactivemm.com">developer@interactivemm.com</a>.
+            </p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-white/10 mt-16">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 text-xs text-[var(--muted)] flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-      <p>© <span id="year"></span> Interactive MM</p>
-      <span aria-hidden="true" id="build-tag" data-repo="developer-imm/imm-website">Build loading…</span>
+  <footer class="site-footer">
+    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 pt-16 pb-8">
+      <div class="footer-wordmark">Interactive MM<span class="amp">.</span></div>
+      <div class="mt-12 grid md:grid-cols-12 gap-10 pt-8 border-t" style="border-color: rgba(241, 236, 225, 0.18);">
+        <div class="md:col-span-5">
+          <p class="mono" style="color:#c9c1ad;">The Studio</p>
+          <p class="serif-body text-lg mt-3 max-w-md" style="color: var(--paper); font-variation-settings: 'opsz' 14;">
+            Interactive MM is an independent software studio in Cincinnati, Ohio. Every project is hand-built by a developer with conviction about the details — indie products and bespoke client work, made one at a time.
+          </p>
+        </div>
+        <div class="md:col-span-2">
+          <p class="mono" style="color:#c9c1ad;">Navigate</p>
+          <ul class="mt-3 space-y-2 serif-body">
+            <li><a href="/">Home</a></li>
+            <li><a href="/traction/">Traction</a></li>
+            <li><a href="/keyflow/">KeyFlow</a></li>
+            <li><a href="/insights/">Insights</a></li>
+            <li><a href="/contact-us/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-2">
+          <p class="mono" style="color:#c9c1ad;">Reach</p>
+          <ul class="mt-3 space-y-2 serif-body">
+            <li><a href="mailto:developer@interactivemm.com">developer@</a></li>
+            <li><a href="mailto:support@interactivemm.com">support@</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-3">
+          <p class="mono" style="color:#c9c1ad;">Located</p>
+          <p class="serif-body mt-3" style="color: var(--paper);">
+            Cincinnati, Ohio<br />
+            Available remote, US-wide.
+          </p>
+        </div>
+      </div>
+      <div class="mt-12 pt-6 border-t flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between text-xs" style="border-color: rgba(241, 236, 225, 0.18); color: #c9c1ad;">
+        <p class="mono">© <span id="year"></span> Interactive MM — All rights reserved</p>
+        <p class="mono" id="build-tag" data-repo="developer-imm/imm-website">Build loading…</p>
+      </div>
     </div>
   </footer>
 
-  <script>
-    const yearEl = document.getElementById('year');
-    if (yearEl) {
-      yearEl.textContent = new Date().getFullYear();
-    }
-
-    const buildTag = document.getElementById('build-tag');
-    if (buildTag) {
-      const applyBuildLabel = (value) => {
-        buildTag.textContent = `Build ${value}`;
-      };
-      const fallbackBuildLabel = () => {
-        applyBuildLabel('local');
-      };
-
-      fallbackBuildLabel();
-
-      const repo = buildTag.dataset.repo;
-      if (repo && window.fetch) {
-        const endpoint = `https://api.github.com/repos/${repo}/commits?per_page=1`;
-        fetch(endpoint, {
-          headers: {
-            Accept: 'application/vnd.github+json'
-          }
-        })
-          .then((response) => (response.ok ? response.json() : null))
-          .then((data) => {
-            const latest = Array.isArray(data) ? data[0] : null;
-            if (latest && latest.sha) {
-              applyBuildLabel(latest.sha.slice(0, 7));
-            }
-          })
-          .catch(() => {
-            // Ignore errors; fallback already applied.
-          });
-      }
-    }
-
-    const menuToggle = document.querySelector('[data-menu-toggle]');
-    const navId = menuToggle ? menuToggle.getAttribute('aria-controls') : null;
-    const nav = navId ? document.getElementById(navId) : null;
-
-    if (menuToggle && nav) {
-      let pendingCloseHandler = null;
-
-      const clearPendingCloseHandler = () => {
-        if (pendingCloseHandler) {
-          nav.removeEventListener('transitionend', pendingCloseHandler);
-          pendingCloseHandler = null;
-        }
-      };
-
-      const finishClose = () => {
-        if (window.innerWidth < 640) {
-          nav.classList.add('hidden');
-          nav.classList.remove('flex');
-        }
-      };
-
-      const openMenu = () => {
-        clearPendingCloseHandler();
-        nav.classList.remove('hidden');
-        nav.classList.add('flex');
-        menuToggle.setAttribute('aria-expanded', 'true');
-
-        if (!nav.classList.contains('mobile-menu--open')) {
-          requestAnimationFrame(() => {
-            nav.classList.add('mobile-menu--open');
-          });
-        }
-      };
-
-      const closeMenu = ({ immediate = false } = {}) => {
-        clearPendingCloseHandler();
-        menuToggle.setAttribute('aria-expanded', 'false');
-
-        if (immediate) {
-          nav.classList.remove('mobile-menu--open');
-          finishClose();
-          return;
-        }
-
-        if (!nav.classList.contains('mobile-menu--open')) {
-          finishClose();
-          return;
-        }
-
-        nav.classList.remove('mobile-menu--open');
-
-        pendingCloseHandler = (event) => {
-          if (event.target !== nav) {
-            return;
-          }
-          finishClose();
-          clearPendingCloseHandler();
-        };
-
-        nav.addEventListener('transitionend', pendingCloseHandler);
-      };
-
-      menuToggle.addEventListener('click', () => {
-        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-        if (expanded) {
-          closeMenu();
-        } else {
-          openMenu();
-        }
-      });
-
-      nav.addEventListener('click', (event) => {
-        if (event.target.closest('a') && window.innerWidth < 640) {
-          closeMenu();
-        }
-      });
-
-      window.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
-          closeMenu();
-          menuToggle.focus();
-        }
-      });
-
-      window.addEventListener('resize', () => {
-        if (window.innerWidth >= 640) {
-          clearPendingCloseHandler();
-          nav.classList.remove('hidden', 'mobile-menu--open');
-          nav.classList.add('flex');
-          menuToggle.setAttribute('aria-expanded', 'false');
-          return;
-        }
-
-        if (menuToggle.getAttribute('aria-expanded') === 'true') {
-          openMenu();
-        } else {
-          closeMenu({ immediate: true });
-        }
-      });
-    }
-
-    const waitlistForm = document.getElementById('traction-waitlist-form');
-    const waitlistSuccess = document.getElementById('traction-waitlist-success');
-    const waitlistError = document.getElementById('traction-waitlist-error');
-    if (waitlistForm && waitlistSuccess && waitlistError && window.fetch) {
-      waitlistForm.addEventListener('submit', async (event) => {
-        event.preventDefault();
-
-        waitlistSuccess.classList.add('hidden');
-        waitlistError.classList.add('hidden');
-
-        const formData = new FormData(waitlistForm);
-
-        try {
-          await fetch(waitlistForm.action, {
-            method: 'POST',
-            mode: 'no-cors',
-            body: formData,
-          });
-          waitlistForm.reset();
-          waitlistSuccess.classList.remove('hidden');
-        } catch (error) {
-          waitlistError.classList.remove('hidden');
-        }
-      });
-    }
-  </script>
+  <script src="/scripts.js" defer></script>
 </body>
 </html>

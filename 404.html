@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Page Not Found</title>
+  <title>Page Not Found — Interactive MM</title>
   <link rel="canonical" href="https://interactivemm.com/404.html" />
   <meta name="description" content="The page you were looking for on Interactive MM could not be found. Use the navigation to return to the homepage." />
   <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#1a1814" />
   <meta property="og:site_name" content="Interactive MM" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Interactive MM — Page Not Found" />
@@ -22,54 +23,58 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="/img/logo.png" type="image/png" />
 </head>
-<body class="bg-[#0b1020] text-white flex items-center justify-center h-screen">
-  <div class="text-center">
-    <h1 class="text-6xl font-bold">404</h1>
-    <p class="mt-4 text-lg">Sorry, the page you’re looking for doesn’t exist.</p>
-    <a href="/" class="mt-6 inline-block px-6 py-3 bg-blue-500 text-white rounded-lg">Go Home</a>
-    <p class="mt-6 text-xs text-white/60" aria-hidden="true" id="build-tag" data-repo="developer-imm/imm-website">Build loading…</p>
+<body>
+  <div class="meta-bar">
+    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-2 flex items-center justify-between gap-4">
+      <span class="hidden sm:inline">№ 404 · Page Not Found</span>
+      <span><a href="/">Return home →</a></span>
+    </div>
   </div>
-  <script>
-    (function () {
-      const buildTag = document.getElementById('build-tag');
-      if (!buildTag) return;
 
-      const applyBuildLabel = (value) => {
-        buildTag.textContent = `Build ${value}`;
-      };
+  <main class="max-w-[1400px] mx-auto px-5 sm:px-8 py-20 md:py-32 min-h-[70vh] flex items-center">
+    <div class="grid md:grid-cols-12 gap-10 items-center w-full">
+      <div class="md:col-span-7">
+        <p class="eyebrow rise rise-1">Error 404</p>
+        <h1 class="display rise rise-2 mt-6 text-[clamp(4rem,18vw,16rem)]">
+          <em class="display-italic" style="color:var(--rust)">Lost</em><br />
+          in the<br />stacks.
+        </h1>
+        <p class="lead rise rise-3 mt-8">
+          The page you were looking for isn't on this shelf. It may have moved, been retitled, or
+          simply never existed. Head back to the front desk and try again.
+        </p>
+        <div class="rise rise-4 mt-10 flex flex-wrap gap-3">
+          <a href="/" class="btn btn-primary">Return Home <span class="arrow">→</span></a>
+          <a href="/contact-us/" class="btn btn-ghost">Tell Us What You Wanted</a>
+        </div>
+      </div>
 
-      const fallbackBuildLabel = () => {
-        applyBuildLabel('local');
-      };
+      <aside class="md:col-span-5">
+        <div class="card !p-8">
+          <p class="card-num">Where to Next?</p>
+          <ul class="mt-5 divide-y" style="--tw-divide-opacity:1; border-color: var(--line);">
+            <li class="py-3 first:pt-0"><a href="/" class="serif-body text-lg flex items-center justify-between" style="color: var(--ink);">The Studio <span class="mono" style="color: var(--rust);">→</span></a></li>
+            <li class="py-3"><a href="/traction/" class="serif-body text-lg flex items-center justify-between" style="color: var(--ink);">Traction — Todo App <span class="mono" style="color: var(--rust);">→</span></a></li>
+            <li class="py-3"><a href="/keyflow/" class="serif-body text-lg flex items-center justify-between" style="color: var(--ink);">KeyFlow <span class="mono" style="color: var(--rust);">→</span></a></li>
+            <li class="py-3"><a href="/insights/" class="serif-body text-lg flex items-center justify-between" style="color: var(--ink);">Insights & Resources <span class="mono" style="color: var(--rust);">→</span></a></li>
+            <li class="py-3 last:pb-0"><a href="/contact-us/" class="serif-body text-lg flex items-center justify-between" style="color: var(--ink);">Contact the Studio <span class="mono" style="color: var(--rust);">→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
 
-      fallbackBuildLabel();
+  <footer class="border-t" style="border-color: var(--line-strong);">
+    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-8 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between text-xs">
+      <p class="mono" style="color: var(--ink-faint);">© <span id="year"></span> Interactive MM</p>
+      <p class="mono" id="build-tag" data-repo="developer-imm/imm-website" style="color: var(--ink-faint);">Build loading…</p>
+    </div>
+  </footer>
 
-      const repo = buildTag.dataset.repo;
-      if (!(repo && window.fetch)) {
-        return;
-      }
-
-      const endpoint = `https://api.github.com/repos/${repo}/commits?per_page=1`;
-      fetch(endpoint, {
-        headers: {
-          Accept: 'application/vnd.github+json'
-        }
-      })
-        .then((response) => (response.ok ? response.json() : null))
-        .then((data) => {
-          const latest = Array.isArray(data) ? data[0] : null;
-          if (latest && latest.sha) {
-            applyBuildLabel(latest.sha.slice(0, 7));
-          }
-        })
-        .catch(() => {
-          // Ignore errors; fallback already applied.
-        });
-    })();
-  </script>
+  <script src="/scripts.js" defer></script>
 </body>
 </html>

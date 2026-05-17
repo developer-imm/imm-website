@@ -9,6 +9,7 @@
   <meta name="keywords" content="Interactive MM contact, software studio Cincinnati, product support email, development inquiry, Interactive MM support, Interactive MM developer" />
   <meta name="author" content="Interactive MM" />
   <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#1a1814" />
   <meta property="og:site_name" content="Interactive MM" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Contact Interactive MM" />
@@ -21,12 +22,19 @@
   <meta name="twitter:description" content="Email Interactive MM for support or to start a custom software project. Quick responses and collaborative builds." />
   <meta name="twitter:image" content="https://interactivemm.com/img/coding_collaboration.png" />
   <meta name="twitter:image:alt" content="Team collaborating on product design at Interactive MM" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNZ7PH8VR9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DNZ7PH8VR9');
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preload" href="/img/coding_collaboration.png" as="image" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="/img/logo.png" type="image/png" />
   <script type="application/ld+json">
     {
@@ -37,73 +45,55 @@
           "name": "Contact Interactive MM",
           "description": "Reach the Interactive MM team for support requests and new software project inquiries.",
           "url": "https://interactivemm.com/contact-us/",
-          "publisher": {
-            "@type": "Organization",
-            "name": "Interactive MM",
-            "url": "https://interactivemm.com/"
-          },
+          "publisher": { "@type": "Organization", "name": "Interactive MM", "url": "https://interactivemm.com/" },
           "mainEntity": {
             "@type": "Organization",
             "name": "Interactive MM",
-            "email": [
-              "support@interactivemm.com",
-              "developer@interactivemm.com"
-            ],
+            "email": ["support@interactivemm.com", "developer@interactivemm.com"],
             "contactPoint": [
-              {
-                "@type": "ContactPoint",
-                "contactType": "customer support",
-                "email": "support@interactivemm.com",
-                "areaServed": "US"
-              },
-              {
-                "@type": "ContactPoint",
-                "contactType": "sales",
-                "email": "developer@interactivemm.com",
-                "areaServed": "US"
-              }
+              { "@type": "ContactPoint", "contactType": "customer support", "email": "support@interactivemm.com", "areaServed": "US" },
+              { "@type": "ContactPoint", "contactType": "sales", "email": "developer@interactivemm.com", "areaServed": "US" }
             ]
           }
         },
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://interactivemm.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Contact",
-              "item": "https://interactivemm.com/contact-us/"
-            }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://interactivemm.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://interactivemm.com/contact-us/" }
           ]
         }
       ]
     }
   </script>
 </head>
-<body class="contact bg-[var(--bg)] text-[var(--text)]">
-  <header class="sticky top-0 z-50 backdrop-blur border-b border-white/10 bg-[var(--bg)]/60">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4">
+<body class="contact">
+  <div class="meta-bar">
+    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-2 flex items-center justify-between gap-4">
+      <span class="hidden sm:inline">№ 004 · Reach the Studio</span>
+      <span class="hidden md:inline">Replies within one business day</span>
+      <span><a href="mailto:developer@interactivemm.com">developer@interactivemm.com →</a></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-5">
       <div class="relative flex items-center justify-between gap-4">
-        <a href="/" class="flex items-center gap-3">
-          <img src="/img/logo.png" alt="Interactive MM logo" class="h-10 w-auto drop-shadow-[0_3px_12px_rgba(0,0,0,0.25)]"/>
-          <span class="text-lg font-semibold tracking-tight">Interactive MM</span>
+        <a href="/" class="flex items-center gap-3" aria-label="Interactive MM — Home">
+          <img src="/img/logo.png" alt="" class="h-9 w-auto" />
+          <span class="wordmark">Interactive MM</span>
         </a>
-        <nav id="primary-navigation" class="mobile-menu hidden absolute right-4 top-full mt-3 flex-col gap-3 w-max max-w-[calc(100vw-2rem)] rounded-2xl p-4 text-sm text-[var(--muted)] sm:static sm:flex sm:flex-row sm:items-center sm:gap-6 sm:w-auto sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none">
-          <a class="hover:text-white" href="/">Home</a>
-          <a class="hover:text-white" href="/traction/">Traction</a>
-          <a class="hover:text-white" href="/insights/">Insights</a>
-          <a class="hover:text-white text-white" href="/contact-us/" aria-current="page">Contact Us</a>
+        <nav id="primary-navigation" class="mobile-menu hidden absolute right-5 top-full mt-3 flex-col gap-3 p-5 sm:static sm:flex sm:flex-row sm:items-center sm:gap-8 sm:p-0">
+          <a class="nav-link" href="/#studio">Studio</a>
+          <a class="nav-link" href="/traction/">Traction</a>
+          <a class="nav-link" href="/keyflow/">KeyFlow</a>
+          <a class="nav-link" href="/insights/">Insights</a>
+          <a class="nav-link" href="/contact-us/" aria-current="page">Contact</a>
         </nav>
-        <button type="button" class="sm:hidden inline-flex items-center justify-center rounded-full border border-white/20 p-2 text-white transition hover:border-white/40" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
+        <button type="button" class="menu-toggle sm:hidden" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
           <span class="sr-only">Toggle navigation</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4">
+            <path stroke-linecap="round" d="M4 7h16M4 17h16" />
           </svg>
         </button>
       </div>
@@ -111,193 +101,153 @@
   </header>
 
   <main>
-    <section class="relative overflow-hidden grid-fade">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Let’s build the next thing together.</h1>
-          <p class="mt-4 text-lg text-[var(--muted)]">Whether you need a quick support answer or a partner to design and ship new features, Interactive MM is ready to help.</p>
-          <div class="mt-8 glass rounded-2xl p-6 space-y-4 text-[var(--muted)]">
-            <div>
-              <p class="text-sm uppercase tracking-wide text-white/70">Support</p>
-              <a class="mt-1 inline-flex items-center gap-2 text-white font-semibold" href="mailto:support@interactivemm.com">
-                support@interactivemm.com
-              </a>
-              <p class="mt-1">Reach out for product help, billing questions, and account updates.</p>
-            </div>
-            <div class="border-t border-white/10 pt-4">
-              <p class="text-sm uppercase tracking-wide text-white/70">Development</p>
-              <a class="mt-1 inline-flex items-center gap-2 text-white font-semibold" href="mailto:developer@interactivemm.com">
-                developer@interactivemm.com
-              </a>
-              <p class="mt-1">Share your roadmap, request a quote, or explore a new build with our team.</p>
+    <!-- HERO -->
+    <section>
+      <div class="max-w-[1400px] mx-auto px-5 sm:px-8 pt-16 md:pt-24 pb-12">
+        <div class="grid md:grid-cols-12 gap-10 items-end">
+          <div class="md:col-span-7">
+            <p class="eyebrow rise rise-1">Get in Touch</p>
+            <h1 class="display rise rise-2 mt-6 text-[clamp(2.8rem,8vw,6rem)]">
+              Let's build<br />
+              the <em>next thing</em><br />
+              together.
+            </h1>
+            <p class="lead rise rise-3 mt-8">
+              Whether you need a quick support answer or a partner to design and ship new features,
+              Interactive MM is ready to help. We respond within one business day with next steps
+              or a quick check-in.
+            </p>
+            <div class="rise rise-4 mt-10 flex flex-wrap gap-3">
+              <a href="mailto:developer@interactivemm.com" class="btn btn-primary">Email the Studio <span class="arrow">→</span></a>
             </div>
           </div>
-        </div>
-        <div class="glass rounded-3xl p-2 h-72 md:h-96 overflow-hidden">
-          <img src="/img/coding_collaboration.png" alt="Team collaborating on product design" width="1920" height="1080" class="w-full h-full object-cover rounded-2xl"/>
+
+          <div class="md:col-span-5 rise rise-3">
+            <div class="image-offset">
+              <div class="image-frame h-[360px] md:h-[440px]">
+                <img src="/img/coding_collaboration.png" alt="Team collaborating on product design" width="1920" height="1080" />
+                <div class="image-caption">
+                  <span class="pill">FIG. 04</span>
+                  <span>Working sessions</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-20">
-      <div class="grid md:grid-cols-3 gap-6">
-        <article class="glass rounded-2xl p-6">
-          <h2 class="text-xl font-bold text-white">What to expect</h2>
-          <p class="mt-2 text-[var(--muted)]">We typically respond within one business day with next steps or a quick check-in.</p>
+    <!-- CONTACT POINTS -->
+    <section class="border-y" style="border-color: var(--line-strong); background: var(--paper-warm);">
+      <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-20 md:py-28">
+        <header class="grid md:grid-cols-12 gap-8 mb-12 items-end">
+          <div class="md:col-span-3">
+            <p class="section-number">§ 01 / Direct Lines</p>
+          </div>
+          <div class="md:col-span-9">
+            <h2 class="section-title text-[clamp(2rem,5vw,3.5rem)]">
+              Two doors,<br />
+              same <em class="display-italic" style="color:var(--rust)">good</em> people.
+            </h2>
+          </div>
+        </header>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <article class="card !p-8">
+            <p class="card-num">01 — Support</p>
+            <a href="mailto:support@interactivemm.com" class="card-title block mt-3" style="color: var(--ink);">
+              support@interactivemm.com
+            </a>
+            <p class="card-body">Product help, billing questions, and account updates. We answer thoughtfully and quickly.</p>
+          </article>
+
+          <article class="card !p-8 md:mt-10">
+            <p class="card-num">02 — Development</p>
+            <a href="mailto:developer@interactivemm.com" class="card-title block mt-3" style="color: var(--ink);">
+              developer@interactivemm.com
+            </a>
+            <p class="card-body">Share your roadmap, request a quote, or explore a new build with our team.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT TO EXPECT -->
+    <section class="max-w-[1400px] mx-auto px-5 sm:px-8 py-20 md:py-28">
+      <header class="grid md:grid-cols-12 gap-8 mb-12 items-end">
+        <div class="md:col-span-3">
+          <p class="section-number">§ 02 / What to Expect</p>
+        </div>
+        <div class="md:col-span-9">
+          <h2 class="section-title text-[clamp(2rem,5vw,3.5rem)]">
+            A small studio.<br />
+            <em class="display-italic" style="color:var(--rust)">A clear process.</em>
+          </h2>
+        </div>
+      </header>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <article class="card">
+          <p class="card-num">A. Response Time</p>
+          <h3 class="card-title">Within a day.</h3>
+          <p class="card-body">We typically reply within one business day with next steps or a quick check-in to learn more.</p>
         </article>
-        <article class="glass rounded-2xl p-6">
-          <h2 class="text-xl font-bold text-white">Working together</h2>
-          <p class="mt-2 text-[var(--muted)]">Product discovery, design sprints, and full-stack builds—tailored to your team. Check the latest <a href="/insights/" class="text-white hover:underline">Insights guides</a> for a preview of our approach.</p>
+        <article class="card md:mt-8">
+          <p class="card-num">B. Working Together</p>
+          <h3 class="card-title">Product, design, build.</h3>
+          <p class="card-body">Product discovery, design sprints, and full-stack builds — tailored to your team. See the latest <a href="/insights/">Insights guides</a> for a preview.</p>
         </article>
-        <article class="glass rounded-2xl p-6">
-          <h2 class="text-xl font-bold text-white">Based in Cincinnati</h2>
-          <p class="mt-2 text-[var(--muted)]">Available for remote engagements or on-site collaboration across the Midwest.</p>
+        <article class="card">
+          <p class="card-num">C. Where We Work</p>
+          <h3 class="card-title">From Cincinnati.</h3>
+          <p class="card-body">Available for remote engagements across the US, or on-site collaboration across the Midwest.</p>
         </article>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-white/10">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 text-xs text-[var(--muted)] flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-      <p>© <span id="year"></span> Interactive MM</p>
-      <span aria-hidden="true" id="build-tag" data-repo="developer-imm/imm-website">Build loading…</span>
+  <footer class="site-footer">
+    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 pt-16 pb-8">
+      <div class="footer-wordmark">Interactive MM<span class="amp">.</span></div>
+      <div class="mt-12 grid md:grid-cols-12 gap-10 pt-8 border-t" style="border-color: rgba(241, 236, 225, 0.18);">
+        <div class="md:col-span-5">
+          <p class="mono" style="color:#c9c1ad;">The Studio</p>
+          <p class="serif-body text-lg mt-3 max-w-md" style="color: var(--paper); font-variation-settings: 'opsz' 14;">
+            Interactive MM is an independent software studio in Cincinnati, Ohio. Every project is hand-built by a developer with conviction about the details — indie products and bespoke client work, made one at a time.
+          </p>
+        </div>
+        <div class="md:col-span-2">
+          <p class="mono" style="color:#c9c1ad;">Navigate</p>
+          <ul class="mt-3 space-y-2 serif-body">
+            <li><a href="/">Home</a></li>
+            <li><a href="/traction/">Traction</a></li>
+            <li><a href="/keyflow/">KeyFlow</a></li>
+            <li><a href="/insights/">Insights</a></li>
+            <li><a href="/contact-us/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-2">
+          <p class="mono" style="color:#c9c1ad;">Reach</p>
+          <ul class="mt-3 space-y-2 serif-body">
+            <li><a href="mailto:developer@interactivemm.com">developer@</a></li>
+            <li><a href="mailto:support@interactivemm.com">support@</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-3">
+          <p class="mono" style="color:#c9c1ad;">Located</p>
+          <p class="serif-body mt-3" style="color: var(--paper);">
+            Cincinnati, Ohio<br />
+            Available remote, US-wide.
+          </p>
+        </div>
+      </div>
+      <div class="mt-12 pt-6 border-t flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between text-xs" style="border-color: rgba(241, 236, 225, 0.18); color: #c9c1ad;">
+        <p class="mono">© <span id="year"></span> Interactive MM — All rights reserved</p>
+        <p class="mono" id="build-tag" data-repo="developer-imm/imm-website">Build loading…</p>
+      </div>
     </div>
   </footer>
 
-  <script>
-    const yearEl = document.getElementById('year');
-    if (yearEl) {
-      yearEl.textContent = new Date().getFullYear();
-    }
-
-    const buildTag = document.getElementById('build-tag');
-    if (buildTag) {
-      const applyBuildLabel = (value) => {
-        buildTag.textContent = `Build ${value}`;
-      };
-      const fallbackBuildLabel = () => {
-        applyBuildLabel('local');
-      };
-
-      fallbackBuildLabel();
-
-      const repo = buildTag.dataset.repo;
-      if (repo && window.fetch) {
-        const endpoint = `https://api.github.com/repos/${repo}/commits?per_page=1`;
-        fetch(endpoint, {
-          headers: {
-            Accept: 'application/vnd.github+json'
-          }
-        })
-          .then((response) => (response.ok ? response.json() : null))
-          .then((data) => {
-            const latest = Array.isArray(data) ? data[0] : null;
-            if (latest && latest.sha) {
-              applyBuildLabel(latest.sha.slice(0, 7));
-            }
-          })
-          .catch(() => {
-            // Ignore errors; fallback already applied.
-          });
-      }
-    }
-
-    const menuToggle = document.querySelector('[data-menu-toggle]');
-    const navId = menuToggle ? menuToggle.getAttribute('aria-controls') : null;
-    const nav = navId ? document.getElementById(navId) : null;
-
-    if (menuToggle && nav) {
-      let pendingCloseHandler = null;
-
-      const clearPendingCloseHandler = () => {
-        if (pendingCloseHandler) {
-          nav.removeEventListener('transitionend', pendingCloseHandler);
-          pendingCloseHandler = null;
-        }
-      };
-
-      const finishClose = () => {
-        if (window.innerWidth < 640) {
-          nav.classList.add('hidden');
-          nav.classList.remove('flex');
-        }
-      };
-
-      const openMenu = () => {
-        clearPendingCloseHandler();
-        nav.classList.remove('hidden');
-        nav.classList.add('flex');
-        menuToggle.setAttribute('aria-expanded', 'true');
-
-        if (!nav.classList.contains('mobile-menu--open')) {
-          requestAnimationFrame(() => {
-            nav.classList.add('mobile-menu--open');
-          });
-        }
-      };
-
-      const closeMenu = ({ immediate = false } = {}) => {
-        clearPendingCloseHandler();
-        menuToggle.setAttribute('aria-expanded', 'false');
-
-        if (immediate) {
-          nav.classList.remove('mobile-menu--open');
-          finishClose();
-          return;
-        }
-
-        if (!nav.classList.contains('mobile-menu--open')) {
-          finishClose();
-          return;
-        }
-
-        nav.classList.remove('mobile-menu--open');
-
-        pendingCloseHandler = (event) => {
-          if (event.target !== nav) {
-            return;
-          }
-          finishClose();
-          clearPendingCloseHandler();
-        };
-
-        nav.addEventListener('transitionend', pendingCloseHandler);
-      };
-
-      menuToggle.addEventListener('click', () => {
-        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-        if (expanded) {
-          closeMenu();
-        } else {
-          openMenu();
-        }
-      });
-
-      nav.addEventListener('click', (event) => {
-        if (event.target.closest('a') && window.innerWidth < 640) {
-          closeMenu();
-        }
-      });
-
-      window.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
-          closeMenu();
-          menuToggle.focus();
-        }
-      });
-
-      window.addEventListener('resize', () => {
-        if (window.innerWidth >= 640) {
-          nav.classList.add('flex');
-          nav.classList.remove('hidden', 'mobile-menu--open');
-          clearPendingCloseHandler();
-          menuToggle.setAttribute('aria-expanded', 'false');
-        } else if (!nav.classList.contains('mobile-menu--open')) {
-          nav.classList.add('hidden');
-          nav.classList.remove('flex');
-        }
-      });
-    }
-  </script>
+  <script src="/scripts.js" defer></script>
 </body>
 </html>
