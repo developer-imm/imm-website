@@ -1,10 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-title-es="Términos de uso de Traction | Interactive MM">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Traction Terms of Use | Interactive MM</title>
-  <meta name="description" content="The terms for using Traction and Traction Pro, including how auto-renewing subscriptions, cancellation, and refunds work." />
+  <script>
+    // Pick English or Spanish before the page draws: ?lang= first, then the reader's saved choice, then the browser's languages.
+    (function () {
+      var langs = ['en', 'es'], lang = new URLSearchParams(location.search).get('lang');
+      if (langs.indexOf(lang) < 0) { try { lang = localStorage.getItem('lang'); } catch (e) { lang = null; } }
+      if (langs.indexOf(lang) < 0) {
+        lang = 'en';
+        var prefs = navigator.languages || [navigator.language || ''];
+        for (var i = 0; i < prefs.length; i++) {
+          var p = String(prefs[i]).slice(0, 2).toLowerCase();
+          if (langs.indexOf(p) > -1) { lang = p; break; }
+        }
+      }
+      document.documentElement.lang = lang;
+    })();
+  </script>
+  <meta name="description" content="The terms for using Traction and Traction Pro, including how auto-renewing subscriptions, cancellation, and refunds work. Also available in Spanish." />
   <link rel="canonical" href="https://interactivemm.com/traction/terms/" />
   <meta name="theme-color" content="#ffffff" />
   <meta property="og:site_name" content="Interactive MM" />
@@ -25,20 +41,20 @@
   <link rel="icon" href="/img/traction-logo.png" type="image/png" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main"><span class="l10n" lang="en">Skip to content</span><span class="l10n" lang="es">Saltar al contenido</span></a>
 
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="/"><img src="/img/logo.png" alt="" width="30" height="30" />Interactive MM</a>
       <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-menu-toggle>
-        <span class="sr-only">Menu</span>
+        <span class="sr-only"><span class="l10n" lang="en">Menu</span><span class="l10n" lang="es">Menú</span></span>
         <svg class="icon" aria-hidden="true" focusable="false"><use href="/img/icons.svg#i-menu" /></svg>
       </button>
       <nav id="site-nav" class="nav" aria-label="Main">
         <a href="/traction/">Traction</a>
         <a href="/keyflow/">KeyFlow</a>
-        <a href="/insights/">Journal</a>
-        <a href="/contact-us/">Contact</a>
+        <a href="/insights/"><span class="l10n" lang="en">Journal</span><span class="l10n" lang="es">Diario</span></a>
+        <a href="/contact-us/"><span class="l10n" lang="en">Contact</span><span class="l10n" lang="es">Contacto</span></a>
       </nav>
     </div>
   </header>
@@ -52,11 +68,21 @@
           <div class="app-id-sub">Interactive MM LLC</div>
         </div>
       </a>
-      <h1 class="h2">Terms of Use</h1>
-      <div class="doc-meta"><span>Effective October 30, 2026</span><span>Last updated October 30, 2026</span></div>
+      <div class="l10n" lang="en">
+        <h1 class="h2">Terms of Use</h1>
+        <div class="doc-meta"><span>Effective October 30, 2026</span><span>Last updated October 30, 2026</span></div>
+      </div>
+      <div class="l10n" lang="es">
+        <h1 class="h2">Términos de uso</h1>
+        <div class="doc-meta"><span>En vigor desde el 30 de octubre de 2026</span><span>Última actualización: 30 de octubre de 2026</span></div>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Language · Idioma">
+        <button type="button" lang="en" data-set-lang="en" aria-pressed="true">English</button>
+        <button type="button" lang="es" data-set-lang="es" aria-pressed="false">Español</button>
+      </div>
     </div>
 
-    <div class="wrap doc-layout" style="padding-bottom:clamp(72px,10vw,128px)">
+    <div class="wrap doc-layout l10n" lang="en" style="padding-bottom:clamp(72px,10vw,128px)">
       <nav class="toc" aria-label="On this page">
         <p>On this page</p>
         <ol>
@@ -149,6 +175,100 @@
         </div>
       </article>
     </div>
+
+    <div class="wrap doc-layout l10n" lang="es" style="padding-bottom:clamp(72px,10vw,128px)">
+      <nav class="toc" aria-label="En esta página">
+        <p>En esta página</p>
+        <ol>
+          <li><a href="#es-agreement">El acuerdo</a></li>
+          <li><a href="#es-apple-eula">EULA estándar de Apple</a></li>
+          <li><a href="#es-subscriptions">Suscripciones a Traction Pro</a></li>
+          <li><a href="#es-your-content">Tu contenido</a></li>
+          <li><a href="#es-acceptable-use">Uso de Traction</a></li>
+          <li><a href="#es-not-medical">No es consejo médico</a></li>
+          <li><a href="#es-reminders">Recordatorios y sugerencias</a></li>
+          <li><a href="#es-ip">Nuestra propiedad intelectual</a></li>
+          <li><a href="#es-third-party">Apple y otros servicios</a></li>
+          <li><a href="#es-disclaimers">Exclusión de garantías</a></li>
+          <li><a href="#es-liability">Limitación de responsabilidad</a></li>
+          <li><a href="#es-ending">Fin de estos términos</a></li>
+          <li><a href="#es-law">Ley aplicable</a></li>
+          <li><a href="#es-changes">Cambios</a></li>
+          <li><a href="#es-contact">Contacto</a></li>
+        </ol>
+      </nav>
+
+      <article>
+        <div class="summary-box">
+          <h2>En resumen</h2>
+          <ul>
+            <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><span>Traction se descarga gratis. Traction Pro es una suscripción opcional que factura Apple.</span></li>
+            <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><span>Las suscripciones se renuevan automáticamente hasta que las canceles, al menos 24 horas antes de que termine el periodo.</span></li>
+            <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><span>Cancela cuando quieras en los ajustes de tu Cuenta de Apple. Los reembolsos se gestionan a través de Apple.</span></li>
+            <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><span>Tus tareas son tuyas. Traction te ayuda a no perder el rumbo, pero no es atención médica.</span></li>
+          </ul>
+        </div>
+
+        <div class="prose">
+          <h2 id="es-agreement">El acuerdo</h2>
+          <p>Estos Términos de uso son un acuerdo entre tú e Interactive MM LLC (“Interactive MM”, “nosotros”), el desarrollador de la app Traction para iPhone, iPad y Mac. Al descargar o usar Traction, o al suscribirte a Traction Pro, aceptas estos términos y nuestra <a href="/traction/privacy/">Política de privacidad</a>. Si no estás de acuerdo, no uses Traction.</p>
+
+          <h2 id="es-apple-eula">EULA estándar de Apple</h2>
+          <p>Tu licencia para usar Traction se concede según el <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Contrato de licencia de usuario final de aplicaciones con licencia</a> de Apple (el “EULA estándar”). Estos términos complementan el EULA estándar. Si ambos entran en conflicto, prevalece el EULA estándar en la medida de dicho conflicto.</p>
+
+          <h2 id="es-subscriptions">Suscripciones a Traction Pro</h2>
+          <p>Traction se descarga gratis y sus funciones principales son gratuitas. Traction Pro es una suscripción opcional de renovación automática que desbloquea funciones adicionales, con un plan mensual o anual (en Mac, solo el plan anual). Los precios actuales se muestran en la app y en el App Store antes de comprar, y pueden variar según el país.</p>
+          <ul>
+            <li><strong>Pago.</strong> El pago se carga a tu Cuenta de Apple cuando confirmas la compra.</li>
+            <li><strong>Renovación automática.</strong> Tu suscripción se renueva automáticamente por el mismo periodo y precio, a menos que la canceles al menos 24 horas antes de que termine el periodo actual. La renovación se cobra a tu cuenta dentro de las 24 horas anteriores al final del periodo actual.</li>
+            <li><strong>Gestión y cancelación.</strong> Después de la compra, puedes gestionar o cancelar tu suscripción en los ajustes de tu Cuenta de Apple. En el iPhone o el iPad, abre Ajustes, toca tu nombre y luego Suscripciones. En un Mac, abre el App Store, haz clic en tu nombre y luego en Ajustes de la cuenta. Si cancelas, Pro sigue activo hasta el final del periodo que hayas pagado.</li>
+            <li><strong>Pruebas gratuitas.</strong> Si se ofrece una prueba gratuita y la inicias, se convierte en una suscripción de pago al final de la prueba, a menos que la canceles al menos 24 horas antes de que termine. Cualquier parte no usada de una prueba gratuita se pierde al comprar una suscripción.</li>
+            <li><strong>Cambios de precio.</strong> Si el precio de Traction Pro cambia, Apple te avisará con antelación y, cuando sea necesario, te pedirá tu consentimiento antes de aplicar el nuevo precio.</li>
+            <li><strong>Reembolsos.</strong> Apple procesa todas las compras, así que es Apple quien gestiona las solicitudes de reembolso, según sus políticas, en <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. No podemos emitir reembolsos directamente.</li>
+            <li><strong>Restaurar.</strong> Para usar Pro en otro dispositivo con la misma Cuenta de Apple, toca Restaurar compra en la app.</li>
+          </ul>
+          <p>Con el tiempo, podemos añadir, cambiar o retirar funciones de Traction o de Traction Pro. Si retiramos una función Pro importante, te lo diremos en la app.</p>
+
+          <h2 id="es-your-content">Tu contenido</h2>
+          <p>Las tareas, listas y notas que creas en Traction te pertenecen. Se guardan en tus dispositivos y, si lo activas, en tu propia cuenta de iCloud; nosotros no tenemos acceso a ellas. Como no guardamos ninguna copia, no podemos recuperar los datos que borres o pierdas. La sincronización con iCloud la proporciona Apple, y te recomendamos mantener copias de seguridad de tus dispositivos.</p>
+
+          <h2 id="es-acceptable-use">Uso de Traction</h2>
+          <p>No hagas un mal uso de Traction. Es decir, aceptas no copiar, modificar, aplicar ingeniería inversa ni redistribuir la app salvo en la medida en que la ley lo permita, no eludir sus funciones de suscripción o de seguridad, y no usarla para infringir ninguna ley.</p>
+
+          <h2 id="es-not-medical">No es consejo médico</h2>
+          <p>Traction está diseñada pensando en el TDAH, pero es una herramienta de productividad, no un dispositivo médico. No diagnostica ni trata el TDAH ni ninguna otra afección, ni sustituye su atención médica. Consulta a un profesional cualificado sobre tu salud.</p>
+
+          <h2 id="es-reminders">Recordatorios y sugerencias</h2>
+          <p>Los recordatorios dependen de tu dispositivo, de sus ajustes de notificaciones y de Concentración, y del sistema operativo, así que no podemos garantizar que todos lleguen a tiempo. No dependas de Traction como único recordatorio para nada crítico, como tomar un medicamento o cumplir un plazo legal.</p>
+          <p>Las sugerencias, como los primeros pasos y las subtareas, las genera automáticamente Apple Intelligence y a veces pueden ser inexactas o poco adecuadas. Usa tu propio criterio.</p>
+
+          <h2 id="es-ip">Nuestra propiedad intelectual</h2>
+          <p>Traction, su diseño, su código, sus iconos y los nombres y logotipos de Traction e Interactive MM pertenecen a Interactive MM LLC y están protegidos por la ley. Estos términos no te dan ningún derecho a usarlos más allá de usar la app de la forma prevista.</p>
+
+          <h2 id="es-third-party">Apple y otros servicios</h2>
+          <p>Traction depende de servicios proporcionados por Apple, como el App Store, iCloud, Siri y Apple Intelligence, que se rigen por los propios términos de Apple. Apple no es responsable de Traction ni de su contenido, y no tiene ninguna obligación de ofrecer mantenimiento ni soporte para la app. Apple y sus filiales son terceros beneficiarios de estos términos y pueden exigirte su cumplimiento.</p>
+
+          <h2 id="es-disclaimers">Exclusión de garantías</h2>
+          <p class="caps">En la máxima medida permitida por la ley, Traction se ofrece “tal cual” y “según disponibilidad”, sin garantías de ningún tipo, ya sean expresas o implícitas, incluidas las garantías de comerciabilidad, idoneidad para un fin determinado y no infracción. No garantizamos que Traction funcione sin interrupciones ni errores, ni que nunca se pierdan datos.</p>
+          <p>Algunos lugares no permiten estas exclusiones, así que es posible que algunas no se apliquen en tu caso. Nada de lo dispuesto en estos términos limita los derechos irrenunciables que te otorga la legislación de protección del consumidor.</p>
+
+          <h2 id="es-liability">Limitación de responsabilidad</h2>
+          <p class="caps">En la máxima medida permitida por la ley, Interactive MM LLC no será responsable de ningún daño indirecto, incidental, especial, consecuente o punitivo, ni de ninguna pérdida de datos, beneficios u oportunidades, que se derive del uso o de la imposibilidad de usar Traction. Nuestra responsabilidad total por cualquier reclamación relacionada con Traction se limita al importe que hayas pagado por Traction Pro en los 12 meses anteriores al hecho que dio lugar a la reclamación.</p>
+
+          <h2 id="es-ending">Fin de estos términos</h2>
+          <p>Puedes dejar de usar Traction en cualquier momento eliminándola y cancelando cualquier suscripción. Podemos suspender o cancelar tu acceso si incumples estos términos de forma grave o reiterada. Las secciones sobre tu contenido, la propiedad intelectual, la exclusión de garantías, la limitación de responsabilidad y la ley aplicable siguen vigentes después de que terminen estos términos.</p>
+
+          <h2 id="es-law">Ley aplicable</h2>
+          <p>Estos términos se rigen por las leyes del estado de Ohio (EE. UU.), sin tener en cuenta sus normas sobre conflictos de leyes. Cualquier disputa se resolverá en los tribunales estatales o federales del condado de Hamilton, Ohio, salvo que la ley del lugar donde vives te dé derecho a presentar una reclamación ante los tribunales de tu localidad.</p>
+
+          <h2 id="es-changes">Cambios</h2>
+          <p>Podemos actualizar estos términos de vez en cuando. Cuando lo hagamos, cambiaremos la fecha que aparece al principio de esta página y, si los cambios son importantes, te avisaremos en la app. Si sigues usando Traction después de que un cambio entre en vigor, aceptas los términos actualizados.</p>
+
+          <h2 id="es-contact">Contacto</h2>
+          <p><strong>Interactive MM LLC</strong><br />Cincinnati, Ohio, EE. UU.<br /><a href="mailto:support@interactivemm.com">support@interactivemm.com</a></p>
+        </div>
+      </article>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -156,7 +276,8 @@
       <div class="footer-grid">
         <div class="footer-about">
           <a class="brand" href="/"><img src="/img/logo.png" alt="" width="30" height="30" />Interactive MM</a>
-          <p>An independent software studio in Cincinnati, Ohio, making apps for iPhone, iPad, and Mac.</p>
+          <p class="l10n" lang="en">An independent software studio in Cincinnati, Ohio, making apps for iPhone, iPad, and Mac.</p>
+          <p class="l10n" lang="es">Un estudio de software independiente en Cincinnati, Ohio, que crea apps para iPhone, iPad y Mac.</p>
         </div>
         <div class="footer-col">
           <h2>Apps</h2>
@@ -168,23 +289,23 @@
         <div class="footer-col">
           <h2>Traction</h2>
           <ul>
-            <li><a href="/traction/#support">Support</a></li>
-            <li><a href="/traction/privacy/">Privacy Policy</a></li>
-            <li><a href="/traction/terms/" aria-current="page">Terms of Use</a></li>
+            <li><a href="/traction/#support"><span class="l10n" lang="en">Support</span><span class="l10n" lang="es">Soporte</span></a></li>
+            <li><a href="/traction/privacy/"><span class="l10n" lang="en">Privacy Policy</span><span class="l10n" lang="es">Política de privacidad</span></a></li>
+            <li><a href="/traction/terms/" aria-current="page"><span class="l10n" lang="en">Terms of Use</span><span class="l10n" lang="es">Términos de uso</span></a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h2>Studio</h2>
+          <h2><span class="l10n" lang="en">Studio</span><span class="l10n" lang="es">Estudio</span></h2>
           <ul>
-            <li><a href="/insights/">Journal</a></li>
-            <li><a href="/contact-us/">Contact</a></li>
+            <li><a href="/insights/"><span class="l10n" lang="en">Journal</span><span class="l10n" lang="es">Diario</span></a></li>
+            <li><a href="/contact-us/"><span class="l10n" lang="en">Contact</span><span class="l10n" lang="es">Contacto</span></a></li>
             <li><a href="mailto:support@interactivemm.com">support@interactivemm.com</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-base">
         <p>© <span id="year">2026</span> Interactive MM LLC</p>
-        <p>Made in Cincinnati, Ohio</p>
+        <p><span class="l10n" lang="en">Made in Cincinnati, Ohio</span><span class="l10n" lang="es">Hecho en Cincinnati, Ohio</span></p>
       </div>
     </div>
   </footer>

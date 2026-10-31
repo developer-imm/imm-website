@@ -1,10 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-title-es="Política de privacidad de Traction | Interactive MM">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Traction Privacy Policy | Interactive MM</title>
-  <meta name="description" content="How Traction handles your information: your tasks stay on your devices and in your own iCloud, smart features run on your device, and usage analytics are anonymous and optional." />
+  <script>
+    // Pick English or Spanish before the page draws: ?lang= first, then the reader's saved choice, then the browser's languages.
+    (function () {
+      var langs = ['en', 'es'], lang = new URLSearchParams(location.search).get('lang');
+      if (langs.indexOf(lang) < 0) { try { lang = localStorage.getItem('lang'); } catch (e) { lang = null; } }
+      if (langs.indexOf(lang) < 0) {
+        lang = 'en';
+        var prefs = navigator.languages || [navigator.language || ''];
+        for (var i = 0; i < prefs.length; i++) {
+          var p = String(prefs[i]).slice(0, 2).toLowerCase();
+          if (langs.indexOf(p) > -1) { lang = p; break; }
+        }
+      }
+      document.documentElement.lang = lang;
+    })();
+  </script>
+  <meta name="description" content="How Traction handles your information: your tasks stay on your devices and in your own iCloud, smart features run on your device, and usage analytics are anonymous and optional. Also available in Spanish." />
   <link rel="canonical" href="https://interactivemm.com/traction/privacy/" />
   <meta name="theme-color" content="#ffffff" />
   <meta property="og:site_name" content="Interactive MM" />
@@ -25,20 +41,20 @@
   <link rel="icon" href="/img/traction-logo.png" type="image/png" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main"><span class="l10n" lang="en">Skip to content</span><span class="l10n" lang="es">Saltar al contenido</span></a>
 
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="/"><img src="/img/logo.png" alt="" width="30" height="30" />Interactive MM</a>
       <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-menu-toggle>
-        <span class="sr-only">Menu</span>
+        <span class="sr-only"><span class="l10n" lang="en">Menu</span><span class="l10n" lang="es">Menú</span></span>
         <svg class="icon" aria-hidden="true" focusable="false"><use href="/img/icons.svg#i-menu" /></svg>
       </button>
       <nav id="site-nav" class="nav" aria-label="Main">
         <a href="/traction/">Traction</a>
         <a href="/keyflow/">KeyFlow</a>
-        <a href="/insights/">Journal</a>
-        <a href="/contact-us/">Contact</a>
+        <a href="/insights/"><span class="l10n" lang="en">Journal</span><span class="l10n" lang="es">Diario</span></a>
+        <a href="/contact-us/"><span class="l10n" lang="en">Contact</span><span class="l10n" lang="es">Contacto</span></a>
       </nav>
     </div>
   </header>
@@ -52,11 +68,21 @@
           <div class="app-id-sub">Interactive MM LLC</div>
         </div>
       </a>
-      <h1 class="h2">Privacy Policy</h1>
-      <div class="doc-meta"><span>Effective October 30, 2026</span><span>Last updated October 30, 2026</span></div>
+      <div class="l10n" lang="en">
+        <h1 class="h2">Privacy Policy</h1>
+        <div class="doc-meta"><span>Effective October 30, 2026</span><span>Last updated October 31, 2026</span></div>
+      </div>
+      <div class="l10n" lang="es">
+        <h1 class="h2">Política de privacidad</h1>
+        <div class="doc-meta"><span>En vigor desde el 30 de octubre de 2026</span><span>Última actualización: 31 de octubre de 2026</span></div>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Language · Idioma">
+        <button type="button" lang="en" data-set-lang="en" aria-pressed="true">English</button>
+        <button type="button" lang="es" data-set-lang="es" aria-pressed="false">Español</button>
+      </div>
     </div>
 
-    <div class="wrap doc-layout" style="padding-bottom:clamp(72px,10vw,128px)">
+    <div class="wrap doc-layout l10n" lang="en" style="padding-bottom:clamp(72px,10vw,128px)">
       <nav class="toc" aria-label="On this page">
         <p>On this page</p>
         <ol>
@@ -135,6 +161,7 @@
 
           <h2 id="contacting-us">When you contact us</h2>
           <p>If you email us, we receive your email address and whatever you choose to include. We use it only to reply and to help you, and we don’t add you to any mailing list.</p>
+          <p><strong>Feedback emails.</strong> When you use Report a Bug or Suggest a Feature, Traction opens an email to <a href="mailto:support@interactivemm.com">support@interactivemm.com</a> in your own mail app. Below the space for your message, it adds details that help us fix problems: the app and iOS versions, the device model, language and region, whether you have Traction Pro, iCloud sync status, whether notifications and calendar access are on, free storage, battery level, Low Power Mode, and the device’s temperature state. A bug report also sums up recent problems and attaches the app’s sync log and crash and hang reports, which hold technical details only. It never includes your tasks, notes, or lists. You can read or delete any of it first, and nothing is sent unless you tap Send. We use these emails only to answer you and improve Traction.</p>
 
           <h2 id="website">This website</h2>
           <p>interactivemm.com uses Google Analytics to count visits and see which pages are read. Google Analytics uses cookies and collects information such as the pages you visit, your approximate location based on your IP address, and your browser and device type. Google processes this under its <a href="https://policies.google.com/privacy">privacy policy</a>. You can opt out with <a href="https://tools.google.com/dlpage/gaoptout">Google’s opt-out browser add-on</a> or by blocking cookies in your browser. The Traction app does not use Google Analytics.</p>
@@ -166,6 +193,118 @@
         </div>
       </article>
     </div>
+
+    <div class="wrap doc-layout l10n" lang="es" style="padding-bottom:clamp(72px,10vw,128px)">
+      <nav class="toc" aria-label="En esta página">
+        <p>En esta página</p>
+        <ol>
+          <li><a href="#es-who-we-are">Quiénes somos</a></li>
+          <li><a href="#es-tasks">Tus tareas y listas</a></li>
+          <li><a href="#es-on-device">Funciones que se ejecutan en tu dispositivo</a></li>
+          <li><a href="#es-permissions">Permisos que pide Traction</a></li>
+          <li><a href="#es-analytics">Análisis de uso anónimos</a></li>
+          <li><a href="#es-purchases">Compras</a></li>
+          <li><a href="#es-contacting-us">Cuando nos contactas</a></li>
+          <li><a href="#es-website">Este sitio web</a></li>
+          <li><a href="#es-sharing">Compartir y vender</a></li>
+          <li><a href="#es-deletion">Conservación y eliminación de datos</a></li>
+          <li><a href="#es-rights">Tus derechos</a></li>
+          <li><a href="#es-children">Menores</a></li>
+          <li><a href="#es-changes">Cambios en esta política</a></li>
+          <li><a href="#es-contact">Contacto</a></li>
+        </ol>
+      </nav>
+
+      <article>
+        <div class="summary-box">
+          <h2>En resumen</h2>
+          <ul>
+            <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><span>No tienes que crear ninguna cuenta. Nunca vemos tus tareas.</span></li>
+            <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><span>Tus tareas se guardan en tus dispositivos y se sincronizan a través de tu propia cuenta de iCloud.</span></li>
+            <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><span>El reconocimiento de voz y las sugerencias de Apple Intelligence se ejecutan en tu dispositivo.</span></li>
+            <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><span>Traction envía datos de uso anónimos, como qué funciones se usan, nunca tus tareas. Puedes desactivarlo.</span></li>
+            <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><span>Sin anuncios, sin rastreo en otras apps y nunca vendemos tu información.</span></li>
+          </ul>
+        </div>
+
+        <div class="prose">
+          <h2 id="es-who-we-are">Quiénes somos</h2>
+          <p>Traction es una app de Interactive MM LLC (“Interactive MM”, “nosotros”), un estudio de software independiente en Cincinnati, Ohio (EE. UU.). Esta política explica qué información maneja la app Traction para iPhone, iPad y Mac, y qué ocurre con ella. También se aplica a este sitio web, interactivemm.com.</p>
+
+          <h2 id="es-tasks">Tus tareas y listas</h2>
+          <p>Todo lo que pones en Traction (tareas, listas, subtareas, notas, fechas límite, repeticiones, recordatorios, tu racha, tus puntos y tus estadísticas) se guarda en tu dispositivo.</p>
+          <p>Si iCloud está activado para Traction, estos datos también se sincronizan a través de iCloud de Apple con tus otros dispositivos que usan la misma Cuenta de Apple. Se guardan en tu base de datos privada de iCloud, a la que Interactive MM no puede acceder. Apple gestiona iCloud según su propia <a href="https://www.apple.com/legal/privacy/">política de privacidad</a>.</p>
+          <p>No tenemos servidores que guarden tus tareas ni te pedimos que crees una cuenta con nosotros.</p>
+
+          <h2 id="es-on-device">Funciones que se ejecutan en tu dispositivo</h2>
+          <h3>Dictar tus tareas</h3>
+          <p>Cuando dictas una tarea, Traction usa el reconocimiento de voz de Apple en tu dispositivo para convertir tu voz en texto. El audio no se graba, no se guarda ni se nos envía.</p>
+          <h3>Sugerencias de Apple Intelligence</h3>
+          <p>Algunas funciones, como las sugerencias de subtareas, los primeros pasos en ¿Y ahora qué? y la interpretación de una tarea que escribes o dictas, usan el modelo de Apple Intelligence que funciona en el propio dispositivo, en los dispositivos compatibles. El texto de la tarea se procesa en tu dispositivo y no se nos envía.</p>
+          <h3>Siri, Atajos, Spotlight y widgets</h3>
+          <p>Para que puedas encontrar tus tareas y actuar sobre ellas con Siri, Atajos, Spotlight y los widgets, Traction proporciona al sistema de tu dispositivo los títulos de tus tareas y listas abiertas. Esta información se queda en las funciones de Apple que se ejecutan en el dispositivo y no se nos envía.</p>
+          <h3>Notificaciones</h3>
+          <p>Los recordatorios, incluidos los recordatorios persistentes, se programan en tu dispositivo como notificaciones locales. No pasan por nuestros servidores.</p>
+          <h3>Informes de fallos y bloqueos</h3>
+          <p>Traction conserva los informes de fallos y bloqueos que iOS recopila en tu dispositivo. Puedes encontrarlos en Ajustes › Solución de problemas › Informes de problemas, y solo se envían si decides compartirlos con nosotros. Contienen datos técnicos como las pilas de llamadas, el modelo del dispositivo y las versiones de iOS y de la app, nunca tus tareas.</p>
+
+          <h2 id="es-permissions">Permisos que pide Traction</h2>
+          <p>Traction solo pide un permiso cuando usas la función que lo necesita, y funciona sin ninguno de ellos.</p>
+          <div class="table-scroll">
+            <table class="data-table">
+              <thead><tr><th scope="col">Permiso</th><th scope="col">Para qué</th><th scope="col">Adónde van los datos</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Micrófono y reconocimiento de voz</th><td>Para convertir lo que dictas en tareas.</td><td>Se procesan en tu dispositivo. No se guardan ni se nos envían.</td></tr>
+                <tr><th scope="row">Calendarios</th><td>Para mostrar los eventos de tu calendario junto a tus tareas, y para añadir o editar un evento cuando se lo pides.</td><td>Se leen y se escriben en tu dispositivo. No se nos envían.</td></tr>
+                <tr><th scope="row">Notificaciones</th><td>Para recordarte tus tareas.</td><td>Se programan en tu dispositivo.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Puedes cambiar cualquiera de estos permisos en cualquier momento en los Ajustes de tu dispositivo.</p>
+
+          <h2 id="es-analytics">Análisis de uso anónimos</h2>
+          <p>Para saber qué funciones ayudan y cuáles hay que mejorar, Traction envía señales de uso anónimas a través de <a href="https://telemetrydeck.com/privacy/">TelemetryDeck</a>, un servicio de análisis centrado en la privacidad gestionado por TelemetryDeck GmbH en Alemania. Una señal dice algo como “se usó Captura rápida” o “se añadió un widget”, junto con datos técnicos básicos como la versión de la app, la versión del sistema operativo, el tipo de dispositivo y los ajustes de idioma y región.</p>
+          <p>Las señales nunca incluyen tus tareas, listas, notas ni estadísticas, y no llevan ningún nombre, dirección de correo ni identificador publicitario. Antes de guardarlo, TelemetryDeck sustituye cualquier identificador del dispositivo por un valor anónimo cifrado con hash, así que los datos no se pueden vincular contigo.</p>
+          <p><strong>Puedes desactivarlo en cualquier momento</strong> en Traction, en Ajustes › Ayuda y consejos › Compartir uso anónimo.</p>
+          <p>Traction no contiene publicidad, rastreadores publicitarios ni SDK de terceros que te rastreen en las apps o los sitios web de otras empresas.</p>
+
+          <h2 id="es-purchases">Compras</h2>
+          <p>Traction Pro se vende a través del App Store. Apple procesa tu pago, y nunca recibimos tu nombre, tu tarjeta de pago ni tus datos de facturación. La app recibe de Apple un registro que confirma si tu suscripción está activa, para poder activar las funciones Pro. El tratamiento de las compras por parte de Apple se rige por su <a href="https://www.apple.com/legal/privacy/">política de privacidad</a>.</p>
+
+          <h2 id="es-contacting-us">Cuando nos contactas</h2>
+          <p>Si nos escribes un correo, recibimos tu dirección de correo y todo lo que decidas incluir. Solo lo usamos para responderte y ayudarte, y no te añadimos a ninguna lista de correo.</p>
+          <p><strong>Correos de comentarios.</strong> Cuando usas Informar de un error o Sugerir una función, Traction abre un correo a <a href="mailto:support@interactivemm.com">support@interactivemm.com</a> en tu propia app de correo. Debajo del espacio para tu mensaje, añade datos que nos ayudan a resolver problemas: las versiones de la app y de iOS, el modelo del dispositivo, el idioma y la región, si tienes Traction Pro, el estado de la sincronización con iCloud, si las notificaciones y el acceso al calendario están activados, el espacio libre, el nivel de batería, el modo de bajo consumo y el estado de temperatura del dispositivo. Un informe de error también resume los problemas recientes y adjunta el registro de sincronización y los informes de fallos y bloqueos de la app, que solo contienen datos técnicos. Nunca incluye tus tareas, notas ni listas. Puedes leer o borrar cualquier parte antes, y no se envía nada hasta que tocas Enviar. Solo usamos estos correos para responderte y mejorar Traction.</p>
+
+          <h2 id="es-website">Este sitio web</h2>
+          <p>interactivemm.com usa Google Analytics para contar las visitas y ver qué páginas se leen. Google Analytics usa cookies y recopila información como las páginas que visitas, tu ubicación aproximada según tu dirección IP y el tipo de navegador y de dispositivo. Google trata estos datos según su <a href="https://policies.google.com/privacy?hl=es">política de privacidad</a>. Puedes excluirte con el <a href="https://tools.google.com/dlpage/gaoptout?hl=es">complemento de inhabilitación para navegadores de Google</a> o bloqueando las cookies en tu navegador. La app Traction no usa Google Analytics.</p>
+
+          <h2 id="es-sharing">Compartir y vender</h2>
+          <p>No vendemos tu información personal ni la compartimos con fines publicitarios. Los únicos servicios externos que intervienen son los descritos arriba: Apple (iCloud, las funciones que se ejecutan en el dispositivo y el App Store), TelemetryDeck (análisis anónimos de la app) y Google (análisis del sitio web). Podemos revelar información si la ley lo exige, pero como no guardamos tus tareas, tenemos muy poco que revelar.</p>
+
+          <h2 id="es-deletion">Conservación y eliminación de datos</h2>
+          <ul>
+            <li><strong>Tus tareas:</strong> bórralas en la app cuando quieras. Las tareas completadas se conservan 30 días y las tareas eliminadas se borran definitivamente a los 30 días. Para borrar los datos de Traction de iCloud, abre los ajustes de almacenamiento de iCloud en tu dispositivo, elige Traction y elimina sus datos. Al eliminar la app, se borran sus datos de ese dispositivo.</li>
+            <li><strong>Análisis anónimos:</strong> TelemetryDeck los conserva de forma agregada. Como no se pueden vincular contigo, no podemos identificar ni eliminar las señales de una persona concreta.</li>
+            <li><strong>Correos que nos envías:</strong> solo los conservamos el tiempo necesario para ayudarte. Pídenoslo en <a href="mailto:support@interactivemm.com">support@interactivemm.com</a> y eliminaremos tus mensajes.</li>
+          </ul>
+
+          <h2 id="es-rights">Tus derechos</h2>
+          <p>Según dónde vivas, por ejemplo en la Unión Europea, el Reino Unido o California, puedes tener derecho a acceder a la información personal sobre ti, a corregirla o eliminarla, a oponerte a su uso o limitarlo, y a presentar una reclamación ante tu autoridad local de protección de datos. Como tus tareas se quedan contigo y con Apple, ya controlas directamente la mayor parte de tus datos. Para cualquier dato que tengamos nosotros, como los correos que nos hayas enviado, escribe a <a href="mailto:support@interactivemm.com">support@interactivemm.com</a> y te responderemos en un plazo de 30 días. No te trataremos de forma diferente por ejercer estos derechos.</p>
+          <p>Cuando se aplica el RGPD, nos basamos en nuestro interés legítimo en mejorar Traction para los análisis anónimos (que puedes desactivar), y en tu solicitud cuando respondemos a tus correos.</p>
+
+          <h2 id="es-children">Menores</h2>
+          <p>Traction no está dirigida a menores de 13 años y no recopilamos a sabiendas información personal de ellos. Si crees que un menor nos ha enviado información personal, contáctanos y la eliminaremos.</p>
+
+          <h2 id="es-changes">Cambios en esta política</h2>
+          <p>Si cambiamos la forma en que Traction trata la información, actualizaremos esta página y la fecha que aparece arriba. Si un cambio es importante, como empezar a recopilar un nuevo tipo de datos, también te avisaremos en la app antes de que entre en vigor.</p>
+
+          <h2 id="es-contact">Contacto</h2>
+          <p>Preguntas, solicitudes o inquietudes sobre privacidad:</p>
+          <p><strong>Interactive MM LLC</strong><br />Cincinnati, Ohio, EE. UU.<br /><a href="mailto:support@interactivemm.com">support@interactivemm.com</a></p>
+          <p>Consulta también los <a href="/traction/terms/">Términos de uso de Traction</a>.</p>
+        </div>
+      </article>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -173,7 +312,8 @@
       <div class="footer-grid">
         <div class="footer-about">
           <a class="brand" href="/"><img src="/img/logo.png" alt="" width="30" height="30" />Interactive MM</a>
-          <p>An independent software studio in Cincinnati, Ohio, making apps for iPhone, iPad, and Mac.</p>
+          <p class="l10n" lang="en">An independent software studio in Cincinnati, Ohio, making apps for iPhone, iPad, and Mac.</p>
+          <p class="l10n" lang="es">Un estudio de software independiente en Cincinnati, Ohio, que crea apps para iPhone, iPad y Mac.</p>
         </div>
         <div class="footer-col">
           <h2>Apps</h2>
@@ -185,23 +325,23 @@
         <div class="footer-col">
           <h2>Traction</h2>
           <ul>
-            <li><a href="/traction/#support">Support</a></li>
-            <li><a href="/traction/privacy/" aria-current="page">Privacy Policy</a></li>
-            <li><a href="/traction/terms/">Terms of Use</a></li>
+            <li><a href="/traction/#support"><span class="l10n" lang="en">Support</span><span class="l10n" lang="es">Soporte</span></a></li>
+            <li><a href="/traction/privacy/" aria-current="page"><span class="l10n" lang="en">Privacy Policy</span><span class="l10n" lang="es">Política de privacidad</span></a></li>
+            <li><a href="/traction/terms/"><span class="l10n" lang="en">Terms of Use</span><span class="l10n" lang="es">Términos de uso</span></a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h2>Studio</h2>
+          <h2><span class="l10n" lang="en">Studio</span><span class="l10n" lang="es">Estudio</span></h2>
           <ul>
-            <li><a href="/insights/">Journal</a></li>
-            <li><a href="/contact-us/">Contact</a></li>
+            <li><a href="/insights/"><span class="l10n" lang="en">Journal</span><span class="l10n" lang="es">Diario</span></a></li>
+            <li><a href="/contact-us/"><span class="l10n" lang="en">Contact</span><span class="l10n" lang="es">Contacto</span></a></li>
             <li><a href="mailto:support@interactivemm.com">support@interactivemm.com</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-base">
         <p>© <span id="year">2026</span> Interactive MM LLC</p>
-        <p>Made in Cincinnati, Ohio</p>
+        <p><span class="l10n" lang="en">Made in Cincinnati, Ohio</span><span class="l10n" lang="es">Hecho en Cincinnati, Ohio</span></p>
       </div>
     </div>
   </footer>
