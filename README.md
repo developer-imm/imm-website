@@ -40,8 +40,10 @@ The **Traction** sub-site documents the studio's flagship internal product—an 
 | `/contact-us/index.html` | Support and new-project email addresses. |
 | `/404.html` | Not-found page (GitHub Pages serves it automatically). |
 | `/styles.css` | All styles. Plain CSS with custom properties; no framework or build step. |
-| `/scripts.js` | Mobile menu, header hairline on scroll, footer year. |
+| `/scripts.js` | Mobile menu, header hairline on scroll, footer year, language switch on the legal pages. |
 | `/img/icons.svg` | SVG icon sprite, used as `<svg><use href="/img/icons.svg#i-name"/></svg>`. |
+
+Both legal pages carry the full text in English and Spanish. The page follows the browser's languages, a reader's choice from the English / Español switch is remembered, and `?lang=es` or `?lang=en` in the URL forces a language (useful for in-app links). Spanish section anchors are the English ones prefixed with `es-`.
 
 Every page repeats the same header and footer markup; when you change navigation, update it on every page.
 

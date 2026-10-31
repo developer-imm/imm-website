@@ -901,6 +901,29 @@ a.app-id:hover .app-id-name { color: var(--coral-ink); }
 
 .doc-meta { display: flex; flex-wrap: wrap; gap: 6px 20px; margin-top: 18px; color: var(--ink-3); font-size: 15px; }
 
+/* Pages published in English and Spanish: <html lang> picks which copy shows */
+html:not([lang="es"]) .l10n[lang="es"],
+html[lang="es"] .l10n[lang="en"] { display: none !important; }
+
+.lang-switch { display: inline-flex; gap: 2px; margin-top: 22px; padding: 3px; border-radius: 999px; background: var(--bg-soft); }
+.lang-switch button {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 16px;
+  background: transparent;
+  color: var(--ink-3);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s var(--ease-out), color 0.2s var(--ease-out);
+}
+.lang-switch button:hover { color: var(--ink); }
+.lang-switch button[aria-pressed="true"] { background: var(--bg); color: var(--ink); box-shadow: 0 1px 2px rgba(16, 16, 24, 0.08), 0 2px 8px -2px rgba(16, 16, 24, 0.12); }
+.lang-switch button:focus-visible { border-radius: 999px; }
+html:not(.js) .lang-switch { display: none; }
+
 .summary-box {
   max-width: 42rem;
   padding: 26px 28px;
