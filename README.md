@@ -7,7 +7,7 @@ Marketing site for **Interactive MM**, a Cincinnati-based product studio focused
 ## Table of Contents
 - [About Interactive MM](#about-interactive-mm)
 - [Website Structure](#website-structure)
-- [Key Features](#key-features)
+- [App Store Connect](#app-store-connect)
 - [Search Optimization](#search-optimization)
 - [Local Development](#local-development)
 - [Deployment](#deployment)
@@ -29,27 +29,31 @@ The **Traction** sub-site documents the studio's flagship internal product—an 
 
 ## Website Structure
 
-| Path | Purpose | Highlights |
-| --- | --- | --- |
-| `/index.html` | Landing page | Company positioning, service pillars, navigation to key pages. |
-| `/traction/index.html` | Product deep dive | Early access info, feature list, waitlist form, TestFlight status. |
-| `/contact-us/index.html` | Lead capture | Direct support & development contact addresses, expectations for response. |
-| `/404.html` | Custom not-found | Tailored fallback experience for broken links. |
-| `/img/` | Brand imagery | Logos, hero shots, product art used across the site. |
-| `/styles.css` | Shared styling | CSS variables, layout utilities, custom animation and theming. |
-| `/robots.txt` | Crawl directives | Allows major crawlers and publishes the sitemap location. |
-| `/sitemap.xml` | Sitemap | Enumerates primary site URLs for search engines. |
+| Path | Purpose |
+| --- | --- |
+| `/index.html` | Home: the studio's apps first (Traction, KeyFlow), then client work and the journal. |
+| `/traction/index.html` | Traction product page: features, Free vs Pro, privacy summary, support FAQ (`#support`), App Store link. |
+| `/traction/privacy/index.html` | **Traction Privacy Policy** — the URL for App Store Connect and the in-app paywall. |
+| `/traction/terms/index.html` | **Traction Terms of Use** — incorporates Apple's Standard EULA and adds the subscription terms. |
+| `/keyflow/index.html` | Points to KeyFlow's own site, keyflow.homes. |
+| `/insights/index.html` | Journal (two essays). |
+| `/contact-us/index.html` | Support and new-project email addresses. |
+| `/404.html` | Not-found page (GitHub Pages serves it automatically). |
+| `/styles.css` | All styles. Plain CSS with custom properties; no framework or build step. |
+| `/scripts.js` | Mobile menu, header hairline on scroll, footer year. |
+| `/img/icons.svg` | SVG icon sprite, used as `<svg><use href="/img/icons.svg#i-name"/></svg>`. |
 
-All pages share a layout with a responsive navigation menu, Tailwind CSS via CDN, and progressive enhancement for small device menus and build tagging.
+Every page repeats the same header and footer markup; when you change navigation, update it on every page.
 
 ---
 
-## Key Features
-- **Modern visual design:** Gradient glassmorphism, motion presets, and typography (Inter family) aligned with the Interactive MM brand.
-- **Responsive menu:** Accessible mobile navigation managed with progressively enhanced JavaScript.
-- **Live build badge:** Includes a script that, on production, fetches the latest Git commit SHA and displays a build tag.
-- **Waitlist integration:** Traction page links to a Google Form endpoint, enabling quick collection of testers.
-- **Accessibility-minded:** Uses semantic HTML elements, descriptive `alt` attributes on all imagery, and focusable controls.
+## App Store Connect
+
+- **Privacy Policy URL:** `https://interactivemm.com/traction/privacy/`
+- **Terms of Use:** `https://interactivemm.com/traction/terms/` — keep Apple's standard EULA in App Store Connect and add a line to the App Description: `Terms of Use: https://interactivemm.com/traction/terms/`
+- **Support URL:** `https://interactivemm.com/traction/#support`
+- **App Store link:** `https://apps.apple.com/app/id6753903631` (App ID 6753903631), used by every `data-app-store-link` and the `apple-itunes-app` meta tag on `/traction/`.
+- **App Store badge:** the badge is an HTML stand-in. Swap in Apple's official artwork from https://tools.applemarketingtools.com when convenient.
 
 ---
 
@@ -85,8 +89,8 @@ serve .
 Then visit `http://localhost:3000` (or the port reported by your static server). Alternatively, open the HTML files directly in a browser for spot checks.
 
 **Developer tips**
-- Tailwind is loaded from the CDN, so no build step is required.
-- Use `styles.css` to define custom CSS variables (`--bg`, `--text`, `--accent`) and reusable components.
+- No build step: plain HTML and CSS.
+- Colours and type live as custom properties at the top of `styles.css` (`--coral`, the `--band-*` day colours, `--font`).
 - When adjusting navigation, update the shared markup in each page to keep the experience consistent.
 
 ---
@@ -106,9 +110,9 @@ The site deploys via GitHub Pages:
 ---
 
 ## Brand & Assets
-- Primary logo: `img/logo.png`
-- Traction product logo: `img/traction-logo.png`
-- Hero imagery: `img/coding.png`, `img/coding_collaboration.png`
+- Studio logo: `img/logo.png`
+- Traction app icon: `img/traction-logo.png`
+- `img/coding.png` and `img/coding_collaboration.png` are no longer used by any page.
 
 When adding new imagery, keep dimensions optimized (prefer WebP/AVIF for large assets) and provide descriptive alt text that mirrors the brand voice.
 

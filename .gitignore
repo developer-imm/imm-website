@@ -15,3 +15,7 @@
 # Env
 .env
 .env.local
+
+# Impeccable review captures
+.impeccable/review/
+.impeccable/hook.cache.json

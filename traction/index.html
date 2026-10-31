@@ -3,39 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Traction — An ADHD‑friendly Todo App by Interactive MM</title>
-  <meta name="description" content="Traction is an ADHD‑friendly todo app with smart recurrence, sticky reminders, and a calm UI for iPhone, iPad, and Mac." />
+  <title>Traction — The to-do app for ADHD brains | Interactive MM</title>
+  <meta name="description" content="Traction is a calm to-do app for ADHD brains on iPhone, iPad, and Mac. Sticky reminders that come back until the task is done, What Now? to pick your next step, and repeats that fit real life." />
   <link rel="canonical" href="https://interactivemm.com/traction/" />
-  <meta name="keywords" content="Traction app, ADHD-friendly todo app, Interactive MM, productivity app, smart recurrence, sticky reminders, TestFlight, Apple task manager" />
-  <meta name="author" content="Interactive MM" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#1a1814" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="apple-itunes-app" content="app-id=6753903631" />
   <meta property="og:site_name" content="Interactive MM" />
-  <meta property="og:type" content="product" />
-  <meta property="og:title" content="Traction — An ADHD-friendly Todo App by Interactive MM" />
-  <meta property="og:description" content="Capture tasks instantly, apply smart recurrence, and keep calm focus with Traction—an ADHD-friendly todo app for Apple devices." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Traction — The to-do app for ADHD brains" />
+  <meta property="og:description" content="For the days it's hard to start. Sticky reminders, What Now?, and repeats that fit real life. iPhone, iPad, and Mac." />
   <meta property="og:url" content="https://interactivemm.com/traction/" />
   <meta property="og:image" content="https://interactivemm.com/img/traction-logo.png" />
-  <meta property="og:image:alt" content="Traction productivity app logo" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Traction — An ADHD-friendly Todo App" />
-  <meta name="twitter:description" content="Stay on track with Traction's smart recurrence, sticky reminders, and calm interface across iPhone, iPad, and Mac." />
+  <meta property="og:image:alt" content="The Traction app icon" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Traction — The to-do app for ADHD brains" />
+  <meta name="twitter:description" content="For the days it's hard to start. iPhone, iPad, and Mac." />
   <meta name="twitter:image" content="https://interactivemm.com/img/traction-logo.png" />
-  <meta name="twitter:image:alt" content="Traction productivity app logo" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNZ7PH8VR9"></script>
   <script>
+    document.documentElement.classList.add('js');
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-DNZ7PH8VR9');
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preload" href="/img/traction-logo.png" as="image" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="icon" href="/img/logo.png" type="image/png" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" href="/img/traction-logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/img/traction-logo.png" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -45,11 +39,11 @@
           "name": "Traction",
           "applicationCategory": "ProductivityApplication",
           "operatingSystem": "iOS, iPadOS, macOS",
+          "description": "A calm to-do app for ADHD brains, with sticky reminders, What Now?, and flexible repeating tasks.",
+          "image": "https://interactivemm.com/img/traction-logo.png",
           "url": "https://interactivemm.com/traction/",
-          "description": "Traction is an ADHD-friendly todo app with smart recurrence, sticky reminders, and a calm UI for Apple platforms.",
-          "softwareVersion": "TestFlight Preview",
-          "author": { "@type": "Organization", "name": "Interactive MM", "url": "https://interactivemm.com/" },
-          "publisher": { "@type": "Organization", "name": "Interactive MM", "url": "https://interactivemm.com/" }
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "publisher": { "@type": "Organization", "name": "Interactive MM LLC", "url": "https://interactivemm.com/" }
         },
         {
           "@type": "BreadcrumbList",
@@ -62,235 +56,331 @@
     }
   </script>
 </head>
-<body class="traction">
-  <div class="meta-bar">
-    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-2 flex items-center justify-between gap-4">
-      <span class="hidden sm:inline">№ 002 · Featured Product</span>
-      <span class="hidden md:inline">TestFlight · Preview Build</span>
-      <span><a href="/contact-us/">developer@interactivemm.com →</a></span>
-    </div>
-  </div>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-5">
-      <div class="relative flex items-center justify-between gap-4">
-        <a href="/" class="flex items-center gap-3" aria-label="Interactive MM — Home">
-          <img src="/img/logo.png" alt="" class="h-9 w-auto" />
-          <span class="wordmark">Interactive MM</span>
-        </a>
-        <nav id="primary-navigation" class="mobile-menu hidden absolute right-5 top-full mt-3 flex-col gap-3 p-5 sm:static sm:flex sm:flex-row sm:items-center sm:gap-8 sm:p-0">
-          <a class="nav-link" href="/#studio">Studio</a>
-          <a class="nav-link" href="/traction/" aria-current="page">Traction</a>
-          <a class="nav-link" href="/keyflow/">KeyFlow</a>
-          <a class="nav-link" href="/insights/">Insights</a>
-          <a class="nav-link" href="/contact-us/">Contact</a>
-        </nav>
-        <button type="button" class="menu-toggle sm:hidden" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
-          <span class="sr-only">Toggle navigation</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4">
-            <path stroke-linecap="round" d="M4 7h16M4 17h16" />
-          </svg>
-        </button>
-      </div>
+    <div class="wrap header-inner">
+      <a class="brand" href="/"><img src="/img/logo.png" alt="" width="30" height="30" />Interactive MM</a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-menu-toggle>
+        <span class="sr-only">Menu</span>
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="/img/icons.svg#i-menu" /></svg>
+      </button>
+      <nav id="site-nav" class="nav" aria-label="Main">
+        <a href="/traction/" aria-current="page">Traction</a>
+        <a href="/keyflow/">KeyFlow</a>
+        <a href="/insights/">Journal</a>
+        <a href="/contact-us/">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section>
-      <div class="max-w-[1400px] mx-auto px-5 sm:px-8 pt-16 md:pt-24 pb-12">
-        <div class="grid md:grid-cols-12 gap-10 items-end">
-          <div class="md:col-span-7">
-            <p class="eyebrow rise rise-1">Product № 01 — Traction</p>
-            <h1 class="display rise rise-2 mt-6 text-[clamp(3rem,9vw,7rem)]">
-              <em class="display-italic" style="color:var(--rust)">Traction</em><br />
-              the todo app<br />
-              for ADHD brains.
-            </h1>
-            <p class="lead rise rise-3 mt-8">
-              Focus, not friction. Smart recurrence without clutter, sticky reminders that gently
-              persist, and an interface designed for calm momentum. iPhone, iPad, Mac — offline-first,
-              with iCloud sync.
-            </p>
-            <div class="rise rise-4 mt-10 flex flex-wrap gap-3 items-center">
-              <a href="#waitlist" class="btn btn-primary">Join the Waitlist <span class="arrow">→</span></a>
-              <span class="status-pill"><span class="status-dot"></span> TestFlight in Progress</span>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="app-id">
+            <img src="/img/traction-logo.png" alt="" width="64" height="64" />
+            <div>
+              <div class="app-id-name">Traction</div>
+              <div class="app-id-sub">To-do list for ADHD brains</div>
             </div>
           </div>
-
-          <div class="md:col-span-5 rise rise-3">
-            <div class="image-frame p-12 md:p-16 flex items-center justify-center" style="background: linear-gradient(135deg, var(--paper-warm), var(--paper-deep)); min-height: 360px;">
-              <img src="/img/traction-logo.png" alt="Traction app logo" width="1024" height="1024" class="w-48 h-48 md:w-64 md:h-64 object-contain" />
-              <div class="image-caption">
-                <span class="pill">FIG. 02</span>
-                <span>Traction · App Mark</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES — numbered list -->
-    <section class="border-y" style="border-color: var(--line-strong); background: var(--paper-warm);">
-      <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-20 md:py-28">
-        <header class="grid md:grid-cols-12 gap-8 mb-12 items-end">
-          <div class="md:col-span-3">
-            <p class="section-number">§ 01 / Features</p>
-          </div>
-          <div class="md:col-span-9">
-            <h2 class="section-title text-[clamp(2rem,5vw,3.75rem)]">
-              Five quiet ideas, working <em class="display-italic" style="color:var(--rust)">together.</em>
-            </h2>
-          </div>
-        </header>
-
-        <ol class="grid md:grid-cols-2 gap-6">
-          <li class="card">
-            <p class="card-num">№ 01</p>
-            <h3 class="card-title">Ultra-fast capture</h3>
-            <p class="card-body">Jot tasks instantly from anywhere in the app — no menus, no friction.</p>
-          </li>
-          <li class="card md:mt-10">
-            <p class="card-num">№ 02</p>
-            <h3 class="card-title">Smart recurrence</h3>
-            <p class="card-body">Rule-based scheduling with projections. No endless duplicate items pile-up.</p>
-          </li>
-          <li class="card">
-            <p class="card-num">№ 03</p>
-            <h3 class="card-title">Sticky reminders</h3>
-            <p class="card-body">Gentle, persistent nudges at intervals you choose — not a single push you'll miss.</p>
-          </li>
-          <li class="card md:mt-10">
-            <p class="card-num">№ 04</p>
-            <h3 class="card-title">ADHD-friendly UI</h3>
-            <p class="card-body">Big tap targets, minimal choices, soothing motion. Built so the path of least resistance is the right one.</p>
-          </li>
-          <li class="card md:col-span-2">
-            <p class="card-num">№ 05</p>
-            <h3 class="card-title">Apple-native, offline-first</h3>
-            <p class="card-body">iPhone, iPad, Mac. Local data first, with iCloud sync — your tasks are yours, and they're always there.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- WAITLIST -->
-    <section id="waitlist" class="max-w-[1400px] mx-auto px-5 sm:px-8 py-20 md:py-28">
-      <div class="grid md:grid-cols-12 gap-10">
-        <div class="md:col-span-5">
-          <p class="section-number">§ 02 / Waitlist</p>
-          <h2 class="section-title mt-3 text-[clamp(2rem,5vw,3.5rem)]">
-            Be early.<br />
-            <em class="display-italic" style="color:var(--rust)">Test-fly with us.</em>
-          </h2>
-          <p class="lead mt-6">
-            We're polishing the core flows before opening the doors. Leave your details and we'll
-            reach out as TestFlight seats expand — and send the occasional release note for the
-            curious.
+          <h1 class="display">For the days it’s hard to start.</h1>
+          <p class="lead">
+            Traction is a calm to-do app built for ADHD brains. Reminders come back until the
+            task is done, What Now? picks your next step, and your week sits in soft colours
+            instead of one endless list.
           </p>
-          <div class="mt-10">
-            <p class="mono text-[color:var(--ink-faint)]">Direct line</p>
-            <a class="serif-body text-lg mt-2 inline-block" href="mailto:developer@interactivemm.com" style="border-bottom: 1px solid var(--rust);">developer@interactivemm.com</a>
+          <div class="actions">
+            <a class="app-store" data-app-store-link href="https://apps.apple.com/app/id6753903631">
+              <svg aria-hidden="true" focusable="false"><use href="/img/icons.svg#i-apple" /></svg>
+              <span><small>Download on the</small><strong>App Store</strong></span>
+            </a>
+          </div>
+          <p class="platforms">Free to download for iPhone, iPad, and Mac</p>
+        </div>
+
+        <div class="hero-stage">
+          <div class="phone" role="img" aria-label="Traction on iPhone: the All Tasks screen, with tasks grouped into coloured bands for Today, Tomorrow, Later This Week, and Next Week.">
+            <div class="phone-screen" aria-hidden="true">
+              <div class="phone-island"></div>
+              <div class="phone-status"><span>9:41</span><span class="phone-status-icons"><b></b><i></i></span></div>
+              <div class="phone-titlebar">
+                <div class="phone-title">All Tasks <svg><use href="/img/icons.svg#i-chevron" /></svg></div>
+                <span class="phone-roundbtn"><svg><use href="/img/icons.svg#i-search" /></svg></span>
+              </div>
+              <div class="phone-band b-today">Today</div>
+              <div class="phone-row r-today"><div class="phone-row-title">Call the dentist</div><div class="phone-row-meta"><svg class="sticky"><use href="/img/icons.svg#i-sticky" /></svg>Today · 10:00 AM</div></div>
+              <div class="phone-row r-today"><div class="phone-row-title">Pick up dry cleaning</div><div class="phone-row-meta">Today · 12:40 PM · Errands</div></div>
+              <div class="phone-band b-tomorrow">Tomorrow</div>
+              <div class="phone-row r-tomorrow"><div class="phone-row-title">Buy milk</div><div class="phone-row-meta"><svg><use href="/img/icons.svg#i-repeat" /></svg>Tomorrow · 5:00 PM</div></div>
+              <div class="phone-band b-week">Later This Week</div>
+              <div class="phone-row r-week"><div class="phone-row-title">Submit expense report</div><div class="phone-row-meta">Fri · 3:00 PM</div></div>
+              <div class="phone-row r-week"><div class="phone-row-title">Book flights for June</div><div class="phone-row-meta">Sat · Home</div></div>
+              <div class="phone-band b-next">Next Week</div>
+              <div class="phone-row r-next"><div class="phone-row-title">Return library books</div><div class="phone-row-meta">Mon · Errands</div></div>
+              <div class="phone-row r-next"><div class="phone-row-title">Renew passport</div><div class="phone-row-meta">Tue · Home</div></div>
+              <div class="phone-fab"></div>
+              <div class="phone-tabbar">
+                <span class="phone-tab is-on"><svg><use href="/img/icons.svg#i-clipboard" /></svg>Tasks</span>
+                <span class="phone-tab"><svg><use href="/img/icons.svg#i-calendar" /></svg>Calendar</span>
+                <span class="phone-tab"><svg><use href="/img/icons.svg#i-gear" /></svg>Settings</span>
+              </div>
+            </div>
+          </div>
+          <div class="notif" aria-hidden="true">
+            <img src="/img/traction-logo.png" alt="" width="38" height="38" />
+            <div class="notif-body">
+              <div class="notif-top"><span class="notif-title">Call the dentist</span><span class="notif-time">now</span></div>
+              <div class="notif-text">Due now</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section section-soft" aria-labelledby="features-title">
+      <div class="wrap">
+        <h2 id="features-title" class="sr-only">What Traction does</h2>
+
+        <div class="feature">
+          <div class="feature-copy">
+            <h3 class="h2">Reminders that don’t give up on you.<span class="pro-tag">PRO</span></h3>
+            <p class="lead">One notification is easy to swipe away. A sticky reminder comes back, gently, until the task is done, so “later” doesn’t quietly turn into “forgot.”</p>
+            <p class="small muted">Without Pro you still get a reminder at the due time.</p>
+          </div>
+          <div class="feature-art art-peach" aria-hidden="true">
+            <div class="reminder-stack">
+              <div class="notif"><img src="/img/traction-logo.png" alt="" width="38" height="38" /><div class="notif-body"><div class="notif-top"><span class="notif-title">Call the dentist</span><span class="notif-time">10:00</span></div><div class="notif-text">Due now</div></div></div>
+              <div class="notif"><img src="/img/traction-logo.png" alt="" width="38" height="38" /><div class="notif-body"><div class="notif-top"><span class="notif-title">Call the dentist</span><span class="notif-time">10:15</span></div><div class="notif-text">Due at 10:00 AM</div></div></div>
+              <div class="notif"><img src="/img/traction-logo.png" alt="" width="38" height="38" /><div class="notif-body"><div class="notif-top"><span class="notif-title">Call the dentist</span><span class="notif-time">10:30</span></div><div class="notif-text">Due at 10:00 AM</div></div></div>
+              <div class="reminder-done"><svg class="icon-sm"><use href="/img/icons.svg#i-check" /></svg>Mark it done and they stop.</div>
+            </div>
           </div>
         </div>
 
-        <div class="md:col-span-7">
-          <form id="traction-waitlist-form" class="card !p-8 md:!p-10" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSehizycV5_S7Tc2r_vit0DNOrKUiARuHj8mORhG1kmayDm-Dw/formResponse">
-            <input type="hidden" name="entry.1457791917_sentinel" value="" />
+        <div class="feature feature-flip">
+          <div class="feature-copy">
+            <h3 class="h2">Not sure where to begin? Ask What Now?</h3>
+            <p class="lead">Tell it roughly how much time and energy you’ve got. What Now? offers one task to start on, and you can begin with just five minutes. Anything counts.</p>
+            <p class="small muted">With Pro, What Now? also suggests a small first step, or breaks a big task into steps, using Apple Intelligence on your device.</p>
+          </div>
+          <div class="feature-art art-mint" aria-hidden="true">
+            <div class="whatnow">
+              <div class="whatnow-label"><svg class="icon-sm"><use href="/img/icons.svg#i-steps" /></svg>What Now?</div>
+              <div class="whatnow-task"><span class="muted" style="display:block;font-size:15px;font-weight:600;letter-spacing:0">How about this one?</span>Submit expense report</div>
+              <div class="whatnow-step"><span class="whatnow-ring"></span><div><b>First step</b><span>Find this week’s receipts</span></div></div>
+              <div class="whatnow-actions"><span>Start for 5 Minutes</span><span>Not This One</span></div>
+            </div>
+          </div>
+        </div>
 
-            <div class="grid gap-6 md:grid-cols-2">
-              <div class="grid gap-2">
-                <label class="form-label" for="waitlist-name">Name</label>
-                <input class="form-input" type="text" id="waitlist-name" name="entry.1875356616" placeholder="Taylor Morgan" />
-              </div>
-              <div class="grid gap-2">
-                <label class="form-label" for="waitlist-email">Email</label>
-                <input class="form-input" type="email" id="waitlist-email" name="entry.1844818138" placeholder="you@example.com" required />
+        <div class="feature">
+          <div class="feature-copy">
+            <h3 class="h2">Say it, and it’s on the list.</h3>
+            <p class="lead">Tap the mic and talk the way you think. Traction turns what you say into tasks, with the day and time already filled in.</p>
+            <p class="small muted">Speech is turned into text on your device. Free for everyone.</p>
+          </div>
+          <div class="feature-art art-butter" aria-hidden="true">
+            <div class="dictation">
+              <div class="bubble"><div class="bubble-mic"><svg class="icon-sm"><use href="/img/icons.svg#i-mic" /></svg>Listening…</div>“Call the dentist tomorrow at ten, and pick up dry cleaning after work.”</div>
+              <div class="parsed">
+                <div class="parsed-row"><span class="dot"></span>Call the dentist<small>Tomorrow · 10:00 AM</small></div>
+                <div class="parsed-row"><span class="dot"></span>Pick up dry cleaning<small>Today · 5:30 PM</small></div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <fieldset class="mt-8">
-              <legend class="form-label mb-3">Interested in</legend>
-              <div class="grid gap-3">
-                <label class="flex items-start gap-3 serif-body" style="font-variation-settings: 'opsz' 14; color: var(--ink-soft);">
-                  <input class="form-checkbox" type="checkbox" name="entry.1457791917" value="Product updates" />
-                  <span>
-                    <span style="color: var(--ink); font-weight: 500;">Product updates.</span>
-                    Occasional notes on major releases, features, and the roadmap.
-                  </span>
-                </label>
-                <label class="flex items-start gap-3 serif-body" style="font-variation-settings: 'opsz' 14; color: var(--ink-soft);">
-                  <input class="form-checkbox" type="checkbox" name="entry.1457791917" value="TestFlight access" />
-                  <span>
-                    <span style="color: var(--ink); font-weight: 500;">TestFlight access.</span>
-                    Early invite to the beta with setup steps when a new build is ready.
-                  </span>
-                </label>
+        <div class="feature feature-flip">
+          <div class="feature-copy">
+            <h3 class="h2">Repeats that fit real life.</h3>
+            <p class="lead">Every weekday, specific days, or the 1st of each month. Traction shows the next one when it’s due, instead of piling up a stack of copies.</p>
+          </div>
+          <div class="feature-art art-sky" aria-hidden="true">
+            <div class="week">
+              <div class="week-head"><strong>Water the plants</strong><span><svg class="icon-sm"><use href="/img/icons.svg#i-repeat" /></svg>Repeats</span></div>
+              <div class="week-days">
+                <span class="on">M<i>3</i></span><span>T<i>4</i></span><span class="on">W<i>5</i></span><span>T<i>6</i></span><span class="on">F<i>7</i></span><span>S<i>8</i></span><span>S<i>9</i></span>
               </div>
-            </fieldset>
-
-            <div class="grid gap-2 mt-8">
-              <label class="form-label" for="waitlist-notes">Anything specific you're trying to solve?</label>
-              <textarea class="form-textarea" id="waitlist-notes" name="entry.11927372" rows="3" placeholder="Share needs, current tooling, or context for the beta team."></textarea>
+              <p class="week-rule">Every Monday, Wednesday, and Friday at 8:00 AM</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="flex flex-wrap items-center gap-5 mt-8 pt-6 rule-soft" style="border-top-color: var(--line);">
-              <button type="submit" class="btn btn-primary">Request Access <span class="arrow">→</span></button>
-              <p class="mono text-[color:var(--ink-faint)]">We'll follow up directly with next steps.</p>
-            </div>
+    <!-- Everything else -->
+    <section class="section" aria-labelledby="more-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="more-title" class="h2">And the rest of your day, too.</h2>
+        </div>
+        <ul class="more">
+          <li><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-calendar" /></svg><div><strong>Calendar <span class="pro-tag" style="vertical-align:0.15em">PRO</span></strong><span>Your tasks and your calendar events, together, day by day.</span></div></li>
+          <li><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-sparkle" /></svg><div><strong>Subtask suggestions <span class="pro-tag" style="vertical-align:0.15em">PRO</span></strong><span>Break a big task into small first steps, written for you by Apple Intelligence.</span></div></li>
+          <li><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-widget" /></svg><div><strong>Widgets</strong><span>See what’s next on your Home Screen without opening the app.</span></div></li>
+          <li><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-shortcut" /></svg><div><strong>Siri and Shortcuts</strong><span>Add and finish tasks with your voice, or build them into your own shortcuts.</span></div></li>
+          <li><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-flame" /></svg><div><strong>Streak, points, and the shop</strong><span>Small rewards for showing up. With Pro, rest days keep a missed day from breaking your streak.</span></div></li>
+          <li><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-devices" /></svg><div><strong>iPhone, iPad, and Mac</strong><span>Your list stays in sync across your devices through your own iCloud.</span></div></li>
+        </ul>
+      </div>
+    </section>
 
-            <p id="traction-waitlist-success" class="notice notice-success hidden mt-6" role="status" aria-live="polite">
-              Thanks — we've got your request and will email you with the next TestFlight update.
+    <!-- Free vs Pro -->
+    <section class="section section-soft" id="pro" aria-labelledby="plans-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="plans-title" class="h2">Free to use. Pro when you want extra help.</h2>
+          <p class="lead">The everyday essentials are free for good. Traction Pro adds extra help for the days it’s hard to start, or hard to keep going.</p>
+        </div>
+        <div class="plans">
+          <div class="plan">
+            <div class="plan-name">Traction</div>
+            <p class="plan-sub">Always free</p>
+            <ul>
+              <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><div>Tasks, lists, and reminders</div></li>
+              <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><div>Speaking your tasks</div></li>
+              <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><div>What Now? and five-minute starts</div></li>
+              <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><div>Siri, Shortcuts, and widgets</div></li>
+              <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><div>Your streak, points, and the shop</div></li>
+            </ul>
+          </div>
+          <div class="plan">
+            <div class="plan-name">Traction <span class="pro-tag">PRO</span></div>
+            <p class="plan-sub">Monthly or yearly subscription (yearly only on Mac)</p>
+            <ul>
+              <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><div>Sticky reminders<span>Gentle reminders that come back until the task is done.</span></div></li>
+              <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><div>Calendar<span>Your tasks and calendar events, together, day by day.</span></div></li>
+              <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><div>Subtask suggestions<span>Small first steps, written by Apple Intelligence.</span></div></li>
+              <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><div>A first step in What Now?</div></li>
+              <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><div>Streak rest days<span>Miss a day without losing your streak.</span></div></li>
+              <li><svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-check" /></svg><div>Two Pro app icons</div></li>
+            </ul>
+            <p class="plan-foot">
+              Subscriptions are billed through your Apple Account and renew automatically unless
+              cancelled at least 24 hours before the end of the period. Prices are shown in the
+              App Store. See the <a href="/traction/terms/">Terms of Use</a> and
+              <a href="/traction/privacy/">Privacy Policy</a>.
             </p>
-            <p id="traction-waitlist-error" class="notice notice-error hidden mt-6" role="alert">
-              That didn't send. Please try again or email
-              <a class="underline" href="mailto:developer@interactivemm.com">developer@interactivemm.com</a>.
-            </p>
-          </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy -->
+    <section class="section" aria-labelledby="privacy-title">
+      <div class="wrap privacy-panel">
+        <div>
+          <h2 id="privacy-title" class="h2">Your tasks stay yours.</h2>
+          <p class="lead" style="margin-top:18px">No account to create, no ads, and nothing sold. Your list lives on your devices and in your own iCloud, not on our servers.</p>
+          <div class="actions">
+            <a class="link-arrow" href="/traction/privacy/">Read the privacy policy <svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-arrow" /></svg></a>
+          </div>
+        </div>
+        <ul class="facts" style="background:var(--line)">
+          <li><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-cloud" /></svg><div><strong>Synced through your iCloud</strong><span>Tasks sync with Apple’s iCloud on your account. We don’t run a server that holds them.</span></div></li>
+          <li><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-lock" /></svg><div><strong>Smart features stay on your device</strong><span>Speech recognition and Apple Intelligence suggestions run on your iPhone, iPad, or Mac.</span></div></li>
+          <li><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-chart" /></svg><div><strong>Anonymous usage, your choice</strong><span>Which features get used, never your tasks. Turn it off in Settings › Help &amp; Tips.</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Support -->
+    <section class="section section-soft" id="support" aria-labelledby="support-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="support-title" class="h2">Help and support</h2>
+          <p class="lead">Can’t find your answer? Email <a href="mailto:support@interactivemm.com">support@interactivemm.com</a>. We usually reply within one business day.</p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>How do I cancel Traction Pro?<svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-chevron" /></svg></summary>
+            <div class="answer">
+              <p>On iPhone or iPad, open the Settings app, tap your name, then Subscriptions, then Traction, and tap Cancel Subscription. On a Mac, open the App Store, click your name, then Account Settings, and manage Subscriptions.</p>
+              <p>Cancel at least 24 hours before your renewal date to avoid being charged for the next period. You keep Pro until the end of the period you’ve paid for.</p>
+            </div>
+          </details>
+          <details>
+            <summary>I got a new device. How do I get Pro back?<svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-chevron" /></svg></summary>
+            <div class="answer"><p>Sign in with the same Apple Account you subscribed with, open Traction Pro in the app, and tap Restore Purchase.</p></div>
+          </details>
+          <details>
+            <summary>Do my tasks sync between my devices?<svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-chevron" /></svg></summary>
+            <div class="answer"><p>Yes. When you’re signed in to the same Apple Account with iCloud turned on, Traction keeps your tasks in sync across your iPhone, iPad, and Mac.</p></div>
+          </details>
+          <details>
+            <summary>How do I get a refund?<svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-chevron" /></svg></summary>
+            <div class="answer"><p>Apple handles all payments, so refunds are requested from Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. We can’t issue them ourselves.</p></div>
+          </details>
+          <details>
+            <summary>How do I delete my data?<svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-chevron" /></svg></summary>
+            <div class="answer">
+              <p>Delete tasks in the app at any time. Deleted tasks are removed for good after 30 days. To remove Traction’s copy in iCloud, open your iCloud storage settings, choose Traction, and delete its data. Deleting the app removes the copy on that device.</p>
+              <p>We don’t keep your tasks on our servers, so there’s nothing for us to delete. If you’ve emailed us and want those messages deleted, just ask.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Is Traction a treatment for ADHD?<svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-chevron" /></svg></summary>
+            <div class="answer"><p>No. Traction is a productivity app designed with ADHD in mind. It isn’t a medical device and doesn’t diagnose or treat any condition.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closer -->
+    <section class="section closer" aria-labelledby="closer-title">
+      <div class="wrap">
+        <img src="/img/traction-logo.png" alt="" width="96" height="96" />
+        <h2 id="closer-title" class="h2">Start with one small thing.</h2>
+        <p class="lead">Traction is free to download for iPhone, iPad, and Mac.</p>
+        <div class="actions">
+          <a class="app-store" data-app-store-link href="https://apps.apple.com/app/id6753903631">
+            <svg aria-hidden="true" focusable="false"><use href="/img/icons.svg#i-apple" /></svg>
+            <span><small>Download on the</small><strong>App Store</strong></span>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 pt-16 pb-8">
-      <div class="footer-wordmark">Interactive MM<span class="amp">.</span></div>
-      <div class="mt-12 grid md:grid-cols-12 gap-10 pt-8 border-t" style="border-color: rgba(241, 236, 225, 0.18);">
-        <div class="md:col-span-5">
-          <p class="mono" style="color:#c9c1ad;">The Studio</p>
-          <p class="serif-body text-lg mt-3 max-w-md" style="color: var(--paper); font-variation-settings: 'opsz' 14;">
-            Interactive MM is an independent software studio in Cincinnati, Ohio. Every project is hand-built by a developer with conviction about the details — indie products and bespoke client work, made one at a time.
-          </p>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="/"><img src="/img/logo.png" alt="" width="30" height="30" />Interactive MM</a>
+          <p>An independent software studio in Cincinnati, Ohio, making apps for iPhone, iPad, and Mac.</p>
         </div>
-        <div class="md:col-span-2">
-          <p class="mono" style="color:#c9c1ad;">Navigate</p>
-          <ul class="mt-3 space-y-2 serif-body">
-            <li><a href="/">Home</a></li>
+        <div class="footer-col">
+          <h2>Apps</h2>
+          <ul>
             <li><a href="/traction/">Traction</a></li>
-            <li><a href="/keyflow/">KeyFlow</a></li>
-            <li><a href="/insights/">Insights</a></li>
+            <li><a href="https://keyflow.homes" rel="noopener">KeyFlow</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Traction</h2>
+          <ul>
+            <li><a href="/traction/#support">Support</a></li>
+            <li><a href="/traction/privacy/">Privacy Policy</a></li>
+            <li><a href="/traction/terms/">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Studio</h2>
+          <ul>
+            <li><a href="/insights/">Journal</a></li>
             <li><a href="/contact-us/">Contact</a></li>
+            <li><a href="mailto:support@interactivemm.com">support@interactivemm.com</a></li>
           </ul>
-        </div>
-        <div class="md:col-span-2">
-          <p class="mono" style="color:#c9c1ad;">Reach</p>
-          <ul class="mt-3 space-y-2 serif-body">
-            <li><a href="mailto:developer@interactivemm.com">developer@</a></li>
-            <li><a href="mailto:support@interactivemm.com">support@</a></li>
-          </ul>
-        </div>
-        <div class="md:col-span-3">
-          <p class="mono" style="color:#c9c1ad;">Located</p>
-          <p class="serif-body mt-3" style="color: var(--paper);">
-            Cincinnati, Ohio<br />
-            Available remote, US-wide.
-          </p>
         </div>
       </div>
-      <div class="mt-12 pt-6 border-t flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between text-xs" style="border-color: rgba(241, 236, 225, 0.18); color: #c9c1ad;">
-        <p class="mono">© <span id="year"></span> Interactive MM — All rights reserved</p>
-        <p class="mono" id="build-tag" data-repo="developer-imm/imm-website">Build loading…</p>
+      <div class="footer-base">
+        <p>© <span id="year">2026</span> Interactive MM LLC</p>
+        <p>Made in Cincinnati, Ohio</p>
       </div>
     </div>
   </footer>

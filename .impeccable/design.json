@@ -1,0 +1,614 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-31T01:19:15.755Z",
+  "title": "Design System: Interactive MM",
+  "extensions": {
+    "colorMeta": {
+      "coral": {
+        "role": "primary",
+        "displayName": "Traction Coral",
+        "canonical": "#e5603c",
+        "oklch": "oklch(65.2% 0.174 36.0)",
+        "cssVar": "--coral",
+        "tonalRamp": [
+          "oklch(15% 0.174 36.0)",
+          "oklch(26% 0.174 36.0)",
+          "oklch(38% 0.174 36.0)",
+          "oklch(50% 0.174 36.0)",
+          "oklch(62% 0.174 36.0)",
+          "oklch(74% 0.174 36.0)",
+          "oklch(85% 0.174 36.0)",
+          "oklch(95% 0.040 36.0)"
+        ]
+      },
+      "coral-ink": {
+        "role": "primary",
+        "displayName": "Coral Ink",
+        "canonical": "#b8431f",
+        "oklch": "oklch(54.0% 0.159 36.9)",
+        "cssVar": "--coral-ink",
+        "tonalRamp": [
+          "oklch(15% 0.159 36.9)",
+          "oklch(26% 0.159 36.9)",
+          "oklch(38% 0.159 36.9)",
+          "oklch(50% 0.159 36.9)",
+          "oklch(62% 0.159 36.9)",
+          "oklch(74% 0.159 36.9)",
+          "oklch(85% 0.159 36.9)",
+          "oklch(95% 0.040 36.9)"
+        ]
+      },
+      "coral-deep": {
+        "role": "primary",
+        "displayName": "Coral Deep",
+        "canonical": "#a63c1b",
+        "oklch": "oklch(50.1% 0.147 37.0)",
+        "cssVar": "--coral-deep",
+        "tonalRamp": [
+          "oklch(15% 0.147 37.0)",
+          "oklch(26% 0.147 37.0)",
+          "oklch(38% 0.147 37.0)",
+          "oklch(50% 0.147 37.0)",
+          "oklch(62% 0.147 37.0)",
+          "oklch(74% 0.147 37.0)",
+          "oklch(85% 0.147 37.0)",
+          "oklch(95% 0.040 37.0)"
+        ]
+      },
+      "coral-wash": {
+        "role": "primary",
+        "displayName": "Coral Wash",
+        "canonical": "#fdeee7",
+        "oklch": "oklch(95.9% 0.019 46.8)",
+        "cssVar": "--coral-wash",
+        "tonalRamp": [
+          "oklch(15% 0.019 46.8)",
+          "oklch(26% 0.019 46.8)",
+          "oklch(38% 0.019 46.8)",
+          "oklch(50% 0.019 46.8)",
+          "oklch(62% 0.019 46.8)",
+          "oklch(74% 0.019 46.8)",
+          "oklch(85% 0.019 46.8)",
+          "oklch(95% 0.019 46.8)"
+        ]
+      },
+      "band-today": {
+        "role": "secondary",
+        "displayName": "Today Peach",
+        "canonical": "#fbe2d2",
+        "oklch": "oklch(92.9% 0.035 54.8)",
+        "cssVar": "--band-today",
+        "tonalRamp": [
+          "oklch(15% 0.035 54.8)",
+          "oklch(26% 0.035 54.8)",
+          "oklch(38% 0.035 54.8)",
+          "oklch(50% 0.035 54.8)",
+          "oklch(62% 0.035 54.8)",
+          "oklch(74% 0.035 54.8)",
+          "oklch(85% 0.035 54.8)",
+          "oklch(95% 0.035 54.8)"
+        ]
+      },
+      "band-today-row": {
+        "role": "secondary",
+        "displayName": "Today Peach Row",
+        "canonical": "#fef3ec",
+        "oklch": "oklch(97.1% 0.015 54.9)",
+        "cssVar": "--band-today-row",
+        "tonalRamp": [
+          "oklch(15% 0.015 54.9)",
+          "oklch(26% 0.015 54.9)",
+          "oklch(38% 0.015 54.9)",
+          "oklch(50% 0.015 54.9)",
+          "oklch(62% 0.015 54.9)",
+          "oklch(74% 0.015 54.9)",
+          "oklch(85% 0.015 54.9)",
+          "oklch(95% 0.015 54.9)"
+        ]
+      },
+      "band-tomorrow": {
+        "role": "secondary",
+        "displayName": "Tomorrow Butter",
+        "canonical": "#fbefc2",
+        "oklch": "oklch(95.0% 0.060 94.9)",
+        "cssVar": "--band-tomorrow",
+        "tonalRamp": [
+          "oklch(15% 0.060 94.9)",
+          "oklch(26% 0.060 94.9)",
+          "oklch(38% 0.060 94.9)",
+          "oklch(50% 0.060 94.9)",
+          "oklch(62% 0.060 94.9)",
+          "oklch(74% 0.060 94.9)",
+          "oklch(85% 0.060 94.9)",
+          "oklch(95% 0.040 94.9)"
+        ]
+      },
+      "band-tomorrow-row": {
+        "role": "secondary",
+        "displayName": "Tomorrow Butter Row",
+        "canonical": "#fffaea",
+        "oklch": "oklch(98.5% 0.022 92.5)",
+        "cssVar": "--band-tomorrow-row",
+        "tonalRamp": [
+          "oklch(15% 0.022 92.5)",
+          "oklch(26% 0.022 92.5)",
+          "oklch(38% 0.022 92.5)",
+          "oklch(50% 0.022 92.5)",
+          "oklch(62% 0.022 92.5)",
+          "oklch(74% 0.022 92.5)",
+          "oklch(85% 0.022 92.5)",
+          "oklch(95% 0.022 92.5)"
+        ]
+      },
+      "band-week": {
+        "role": "secondary",
+        "displayName": "This Week Mint",
+        "canonical": "#d9f0dc",
+        "oklch": "oklch(93.3% 0.036 149.1)",
+        "cssVar": "--band-week",
+        "tonalRamp": [
+          "oklch(15% 0.036 149.1)",
+          "oklch(26% 0.036 149.1)",
+          "oklch(38% 0.036 149.1)",
+          "oklch(50% 0.036 149.1)",
+          "oklch(62% 0.036 149.1)",
+          "oklch(74% 0.036 149.1)",
+          "oklch(85% 0.036 149.1)",
+          "oklch(95% 0.036 149.1)"
+        ]
+      },
+      "band-week-row": {
+        "role": "secondary",
+        "displayName": "This Week Mint Row",
+        "canonical": "#f1faf2",
+        "oklch": "oklch(97.6% 0.014 148.8)",
+        "cssVar": "--band-week-row",
+        "tonalRamp": [
+          "oklch(15% 0.014 148.8)",
+          "oklch(26% 0.014 148.8)",
+          "oklch(38% 0.014 148.8)",
+          "oklch(50% 0.014 148.8)",
+          "oklch(62% 0.014 148.8)",
+          "oklch(74% 0.014 148.8)",
+          "oklch(85% 0.014 148.8)",
+          "oklch(95% 0.014 148.8)"
+        ]
+      },
+      "band-next": {
+        "role": "secondary",
+        "displayName": "Next Week Sky",
+        "canonical": "#d8e8f9",
+        "oklch": "oklch(92.4% 0.029 249.8)",
+        "cssVar": "--band-next",
+        "tonalRamp": [
+          "oklch(15% 0.029 249.8)",
+          "oklch(26% 0.029 249.8)",
+          "oklch(38% 0.029 249.8)",
+          "oklch(50% 0.029 249.8)",
+          "oklch(62% 0.029 249.8)",
+          "oklch(74% 0.029 249.8)",
+          "oklch(85% 0.029 249.8)",
+          "oklch(95% 0.029 249.8)"
+        ]
+      },
+      "band-next-row": {
+        "role": "secondary",
+        "displayName": "Next Week Sky Row",
+        "canonical": "#f0f6fd",
+        "oklch": "oklch(97.1% 0.011 252.1)",
+        "cssVar": "--band-next-row",
+        "tonalRamp": [
+          "oklch(15% 0.011 252.1)",
+          "oklch(26% 0.011 252.1)",
+          "oklch(38% 0.011 252.1)",
+          "oklch(50% 0.011 252.1)",
+          "oklch(62% 0.011 252.1)",
+          "oklch(74% 0.011 252.1)",
+          "oklch(85% 0.011 252.1)",
+          "oklch(95% 0.011 252.1)"
+        ]
+      },
+      "bg": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "cssVar": "--bg",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(26% 0.000 89.9)",
+          "oklch(38% 0.000 89.9)",
+          "oklch(50% 0.000 89.9)",
+          "oklch(62% 0.000 89.9)",
+          "oklch(74% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "bg-soft": {
+        "role": "neutral",
+        "displayName": "Soft Grey",
+        "canonical": "#f5f5f7",
+        "oklch": "oklch(97.1% 0.003 286.4)",
+        "cssVar": "--bg-soft",
+        "tonalRamp": [
+          "oklch(15% 0.003 286.4)",
+          "oklch(26% 0.003 286.4)",
+          "oklch(38% 0.003 286.4)",
+          "oklch(50% 0.003 286.4)",
+          "oklch(62% 0.003 286.4)",
+          "oklch(74% 0.003 286.4)",
+          "oklch(85% 0.003 286.4)",
+          "oklch(95% 0.003 286.4)"
+        ]
+      },
+      "bg-sunk": {
+        "role": "neutral",
+        "displayName": "Sunk Grey",
+        "canonical": "#ececf0",
+        "oklch": "oklch(94.4% 0.005 286.3)",
+        "cssVar": "--bg-sunk",
+        "tonalRamp": [
+          "oklch(15% 0.005 286.3)",
+          "oklch(26% 0.005 286.3)",
+          "oklch(38% 0.005 286.3)",
+          "oklch(50% 0.005 286.3)",
+          "oklch(62% 0.005 286.3)",
+          "oklch(74% 0.005 286.3)",
+          "oklch(85% 0.005 286.3)",
+          "oklch(95% 0.005 286.3)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#1d1d1f",
+        "oklch": "oklch(23.2% 0.004 286.1)",
+        "cssVar": "--ink",
+        "tonalRamp": [
+          "oklch(15% 0.004 286.1)",
+          "oklch(26% 0.004 286.1)",
+          "oklch(38% 0.004 286.1)",
+          "oklch(50% 0.004 286.1)",
+          "oklch(62% 0.004 286.1)",
+          "oklch(74% 0.004 286.1)",
+          "oklch(85% 0.004 286.1)",
+          "oklch(95% 0.004 286.1)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "#48484d",
+        "oklch": "oklch(40.3% 0.008 286.0)",
+        "cssVar": "--ink-2",
+        "tonalRamp": [
+          "oklch(15% 0.008 286.0)",
+          "oklch(26% 0.008 286.0)",
+          "oklch(38% 0.008 286.0)",
+          "oklch(50% 0.008 286.0)",
+          "oklch(62% 0.008 286.0)",
+          "oklch(74% 0.008 286.0)",
+          "oklch(85% 0.008 286.0)",
+          "oklch(95% 0.008 286.0)"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "#6b6b70",
+        "oklch": "oklch(52.9% 0.008 286.1)",
+        "cssVar": "--ink-3",
+        "tonalRamp": [
+          "oklch(15% 0.008 286.1)",
+          "oklch(26% 0.008 286.1)",
+          "oklch(38% 0.008 286.1)",
+          "oklch(50% 0.008 286.1)",
+          "oklch(62% 0.008 286.1)",
+          "oklch(74% 0.008 286.1)",
+          "oklch(85% 0.008 286.1)",
+          "oklch(95% 0.008 286.1)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#e3e3e8",
+        "oklch": "oklch(91.7% 0.007 286.3)",
+        "cssVar": "--line",
+        "tonalRamp": [
+          "oklch(15% 0.007 286.3)",
+          "oklch(26% 0.007 286.3)",
+          "oklch(38% 0.007 286.3)",
+          "oklch(50% 0.007 286.3)",
+          "oklch(62% 0.007 286.3)",
+          "oklch(74% 0.007 286.3)",
+          "oklch(85% 0.007 286.3)",
+          "oklch(95% 0.007 286.3)"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Strong Hairline",
+        "canonical": "#d2d2d7",
+        "oklch": "oklch(86.5% 0.007 286.3)",
+        "cssVar": "--line-strong",
+        "tonalRamp": [
+          "oklch(15% 0.007 286.3)",
+          "oklch(26% 0.007 286.3)",
+          "oklch(38% 0.007 286.3)",
+          "oklch(50% 0.007 286.3)",
+          "oklch(62% 0.007 286.3)",
+          "oklch(74% 0.007 286.3)",
+          "oklch(85% 0.007 286.3)",
+          "oklch(95% 0.007 286.3)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The single page H1 (hero, 404)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section and feature headings; app-tile names at a smaller clamp."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Door headings, journal post titles."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "One Ink 2 paragraph under a headline, max 34em."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default text."
+      },
+      "prose": {
+        "displayName": "Prose",
+        "purpose": "Legal and journal long-form at 42rem measure, Ink 2."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Nav links, meta, platforms line, tables."
+      }
+    },
+    "shadows": [
+      {
+        "name": "device",
+        "value": "0 2px 4px rgba(16,16,24,0.06), 0 24px 48px -12px rgba(16,16,24,0.22), 0 48px 96px -24px rgba(16,16,24,0.18)",
+        "purpose": "The iPhone frame only.",
+        "cssVar": "--shadow-device"
+      },
+      {
+        "name": "float",
+        "value": "0 1px 2px rgba(16,16,24,0.08), 0 12px 32px -8px rgba(16,16,24,0.24)",
+        "purpose": "In-app cards, notifications, and bubbles on feature art.",
+        "cssVar": "--shadow-float"
+      },
+      {
+        "name": "app-icon",
+        "value": "0 1px 2px rgba(0,0,0,0.08), 0 8px 20px -8px rgba(0,0,0,0.3)",
+        "purpose": "App icons 64-96px; spread scales with size."
+      },
+      {
+        "name": "nav-sheet",
+        "value": "0 24px 32px -24px rgba(16,16,24,0.18)",
+        "purpose": "Mobile nav dropdown sheet edge."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Expressive ease for transforms: button press, arrow slide, chevron, nav sheet, load sequence.",
+        "cssVar": "--ease-out"
+      },
+      {
+        "name": "state",
+        "value": "0.18s ease",
+        "purpose": "Button colour and press transitions."
+      },
+      {
+        "name": "arrow-slide",
+        "value": "transform 0.25s ease-out, translateX(3px)",
+        "purpose": "Trailing arrow nudge on hover."
+      },
+      {
+        "name": "load-phone",
+        "value": "phone-in 1.1s ease-out: translateY(28px) scale(0.98) to rest",
+        "purpose": "Hero phone settle; motion-allowed only."
+      },
+      {
+        "name": "load-notif",
+        "value": "notif-in 0.9s ease-out, 0.85s delay: drop 18px, scale 0.94, blur 4px to rest",
+        "purpose": "Reminder arrival over the phone."
+      },
+      {
+        "name": "load-copy",
+        "value": "copy-in 0.8s ease-out, 60ms stagger: translateY(12px) to rest",
+        "purpose": "Hero copy stagger."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all durations 0.01ms",
+        "purpose": "prefers-reduced-motion: reduce disables every animation and transition."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "nav-collapse",
+        "value": "720px"
+      },
+      {
+        "name": "plans-stack",
+        "value": "760px"
+      },
+      {
+        "name": "footer-2col",
+        "value": "820px"
+      },
+      {
+        "name": "split-stack",
+        "value": "880px"
+      },
+      {
+        "name": "doc-stack",
+        "value": "900px"
+      },
+      {
+        "name": "tile-strip",
+        "value": "560px"
+      },
+      {
+        "name": "list-stack",
+        "value": "640px"
+      }
+    ],
+    "focus": {
+      "value": "outline: 2.5px solid #e5603c; outline-offset: 3px; border-radius: 6px",
+      "purpose": "Every focusable element via :focus-visible."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one action per block: Meet Traction, Start a project.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Meet Traction <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 22px; border: 0; border-radius: 999px; font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", system-ui, Roboto, \"Helvetica Neue\", Arial, sans-serif; font-size: 16px; font-weight: 600; letter-spacing: -0.005em; cursor: pointer; text-decoration: none; transition: background-color 0.18s ease, color 0.18s ease, transform 0.18s cubic-bezier(0.16, 1, 0.3, 1); background: var(--coral-ink, #b8431f); color: #fff; } .ds-btn-primary svg { transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-primary:hover { background: var(--coral-deep, #a63c1b); } .ds-btn-primary:hover svg { transform: translateX(3px); } .ds-btn-primary:active { transform: scale(0.98); } .ds-btn-primary:focus-visible { outline: 2.5px solid var(--coral, #e5603c); outline-offset: 3px; }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Secondary action beside a primary, on white or soft grey.",
+      "html": "<a class=\"ds-btn-quiet\" href=\"#\">Read the privacy policy</a>",
+      "css": ".ds-btn-quiet { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 22px; border: 0; border-radius: 999px; font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", system-ui, Roboto, \"Helvetica Neue\", Arial, sans-serif; font-size: 16px; font-weight: 600; letter-spacing: -0.005em; cursor: pointer; text-decoration: none; transition: background-color 0.18s ease, color 0.18s ease, transform 0.18s cubic-bezier(0.16, 1, 0.3, 1); background: var(--bg-soft, #f5f5f7); color: var(--ink, #1d1d1f); } .ds-btn-quiet:hover { background: var(--bg-sunk, #ececf0); } .ds-btn-quiet:active { transform: scale(0.98); } .ds-btn-quiet:focus-visible { outline: 2.5px solid var(--coral, #e5603c); outline-offset: 3px; }"
+    },
+    {
+      "name": "Link Arrow",
+      "kind": "custom",
+      "refersTo": "button-primary",
+      "description": "Inline text action in Coral Ink with a sliding arrow.",
+      "html": "<a class=\"ds-link-arrow\" href=\"#\">Explore Traction <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-link-arrow { display: inline-flex; align-items: center; gap: 6px; font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", system-ui, Roboto, \"Helvetica Neue\", Arial, sans-serif; font-size: 17px; font-weight: 600; color: var(--coral-ink, #b8431f); text-decoration: none; } .ds-link-arrow svg { transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1); } .ds-link-arrow:hover { color: var(--coral-deep, #a63c1b); } .ds-link-arrow:hover svg { transform: translateX(3px); } .ds-link-arrow:focus-visible { outline: 2.5px solid var(--coral, #e5603c); outline-offset: 3px; border-radius: 6px; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky frosted header with pill nav links; current page filled soft grey.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-brand\" href=\"#\"><span class=\"ds-brand-mark\"></span>Interactive MM</a><nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Traction</a><a href=\"#\">KeyFlow</a><a href=\"#\">Journal</a><a href=\"#\">Contact</a></nav></header>",
+      "css": ".ds-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 64px; padding: 0 24px; background: rgba(255,255,255,0.8); backdrop-filter: saturate(180%) blur(18px); -webkit-backdrop-filter: saturate(180%) blur(18px); border-bottom: 1px solid var(--line, #e3e3e8); font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", system-ui, Roboto, \"Helvetica Neue\", Arial, sans-serif; } .ds-brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink, #1d1d1f); font-weight: 650; font-size: 17px; letter-spacing: -0.01em; text-decoration: none; } .ds-brand-mark { width: 30px; height: 30px; border-radius: 8px; background: var(--ink, #1d1d1f); } .ds-nav { display: flex; gap: 4px; } .ds-nav a { padding: 8px 12px; border-radius: 999px; color: var(--ink-2, #48484d); font-size: 15px; font-weight: 500; text-decoration: none; } .ds-nav a:hover, .ds-nav a[aria-current=\"page\"] { color: var(--ink, #1d1d1f); background: var(--bg-soft, #f5f5f7); } .ds-nav a:focus-visible { outline: 2.5px solid var(--coral, #e5603c); outline-offset: 3px; }"
+    },
+    {
+      "name": "Pro Tag",
+      "kind": "chip",
+      "refersTo": "pro-tag",
+      "description": "The only filled tag: marks Traction Pro features after a heading.",
+      "html": "<h3 class=\"ds-pro-heading\">Sticky reminders <span class=\"ds-pro-tag\">PRO</span></h3>",
+      "css": ".ds-pro-heading { margin: 0; display: flex; align-items: center; gap: 10px; font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", system-ui, Roboto, \"Helvetica Neue\", Arial, sans-serif; font-size: 1.3rem; font-weight: 650; letter-spacing: -0.015em; color: var(--ink, #1d1d1f); } .ds-pro-tag { display: inline-block; padding: 2px 8px 3px; border-radius: 999px; background: var(--ink, #1d1d1f); color: #fff; font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", system-ui, Roboto, \"Helvetica Neue\", Arial, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; }"
+    },
+    {
+      "name": "Ruled List",
+      "kind": "custom",
+      "description": "Features and services as hairline-divided rows: coral line icon, 650 title, Ink 3 line.",
+      "html": "<ul class=\"ds-ruled\"><li><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 16.5V11a6 6 0 0 1 9.2-5.07\"/><path d=\"M18 11v5.5l1.5 1.5h-15L6 16.5\"/><path d=\"M10 21h4\"/><path d=\"M16.5 2.75 19 5.25l-2.5 2.5\"/><path d=\"M19 5.25h-3.25a2 2 0 0 0-1.75 1\"/></svg><div><strong>Sticky reminders</strong><span>Come back until the task is done.</span></div></li><li><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2.5\"/><path d=\"m3.5 6.5 8.5 6.5 8.5-6.5\"/></svg><div><strong>Based in Cincinnati</strong><span>Remote across the US, or on-site across the Midwest.</span></div></li></ul>",
+      "css": ".ds-ruled { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line-strong, #d2d2d7); font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", system-ui, Roboto, \"Helvetica Neue\", Arial, sans-serif; max-width: 520px; } .ds-ruled li { display: grid; grid-template-columns: 24px 1fr; gap: 16px; padding: 22px 0; border-bottom: 1px solid var(--line, #e3e3e8); } .ds-ruled svg { color: var(--coral, #e5603c); margin-top: 2px; } .ds-ruled strong { display: block; font-size: 17px; font-weight: 650; color: var(--ink, #1d1d1f); } .ds-ruled span { font-size: 16px; color: var(--ink-3, #6b6b70); }"
+    },
+    {
+      "name": "Feature Art Panel",
+      "kind": "card",
+      "refersTo": "notification",
+      "description": "Band-gradient panel holding one floating app object (here a notification).",
+      "html": "<div class=\"ds-art\"><div class=\"ds-notif\"><span class=\"ds-notif-icon\"></span><div class=\"ds-notif-body\"><div class=\"ds-notif-top\"><span class=\"ds-notif-title\">Call the dentist</span><span class=\"ds-notif-time\">now</span></div><div class=\"ds-notif-text\">Due at 10:00 AM</div></div></div></div>",
+      "css": ".ds-art { display: flex; align-items: center; justify-content: center; min-height: 260px; padding: 40px; border-radius: 32px; background: linear-gradient(160deg, var(--band-today-row, #fef3ec), var(--band-today, #fbe2d2)); font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", system-ui, Roboto, \"Helvetica Neue\", Arial, sans-serif; } .ds-notif { display: flex; align-items: center; gap: 12px; width: min(330px, 100%); padding: 12px 14px; border-radius: 22px; background: #fff; box-shadow: 0 1px 2px rgba(16,16,24,0.08), 0 12px 32px -8px rgba(16,16,24,0.24), 0 0 0 1px rgba(0,0,0,0.04); font-size: 15px; line-height: 1.3; } .ds-notif-icon { width: 38px; height: 38px; border-radius: 9px; flex: none; background: var(--coral, #e5603c); } .ds-notif-body { flex: 1; min-width: 0; } .ds-notif-top { display: flex; justify-content: space-between; gap: 8px; } .ds-notif-title { font-weight: 650; color: var(--ink, #1d1d1f); } .ds-notif-time { font-size: 13px; color: var(--ink-3, #6b6b70); } .ds-notif-text { color: var(--ink-2, #48484d); }"
+    },
+    {
+      "name": "Day Bands",
+      "kind": "custom",
+      "description": "Signature: Traction's day-band header and row tints, as in the phone rendition.",
+      "html": "<div class=\"ds-bands\"><div class=\"ds-band\" style=\"background:var(--band-today,#fbe2d2)\">Today</div><div class=\"ds-row\" style=\"background:var(--band-today-row,#fef3ec)\"><b>Call the dentist</b><span>Today · 10:00 AM</span></div><div class=\"ds-band\" style=\"background:var(--band-tomorrow,#fbefc2)\">Tomorrow</div><div class=\"ds-row\" style=\"background:var(--band-tomorrow-row,#fffaea)\"><b>Buy milk</b><span>Tomorrow · 5:00 PM</span></div><div class=\"ds-band\" style=\"background:var(--band-week,#d9f0dc)\">Later This Week</div><div class=\"ds-row\" style=\"background:var(--band-week-row,#f1faf2)\"><b>Submit expense report</b><span>Fri · 5:00 PM</span></div><div class=\"ds-band\" style=\"background:var(--band-next,#d8e8f9)\">Next Week</div><div class=\"ds-row\" style=\"background:var(--band-next-row,#f0f6fd)\"><b>Return library books</b><span>Mon · Errands</span></div></div>",
+      "css": ".ds-bands { width: 300px; border-radius: 22px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", system-ui, Roboto, \"Helvetica Neue\", Arial, sans-serif; font-size: 14px; color: #111; box-shadow: 0 0 0 1px var(--line, #e3e3e8); } .ds-band { padding: 6px 18px; font-size: 13px; font-weight: 650; } .ds-row { padding: 9px 18px; border-bottom: 1px solid rgba(0,0,0,0.05); } .ds-row b { display: block; font-weight: 600; } .ds-row span { font-size: 11px; color: #6c6c70; }"
+    },
+    {
+      "name": "Plan Column",
+      "kind": "card",
+      "description": "Free/Pro comparison column inside one hairline-ringed 32px container.",
+      "html": "<div class=\"ds-plans\"><div class=\"ds-plan\"><div class=\"ds-plan-name\">Traction</div><div class=\"ds-plan-sub\">Always free</div><ul><li><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 12.5 4.5 4.5L19 7.5\"/></svg>Tasks, lists, and reminders</li><li><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 12.5 4.5 4.5L19 7.5\"/></svg>Speaking your tasks</li></ul></div><div class=\"ds-plan ds-plan-pro\"><div class=\"ds-plan-name\">Traction <span class=\"ds-pro\">PRO</span></div><div class=\"ds-plan-sub\">Monthly or yearly subscription</div><ul><li><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 12.5 4.5 4.5L19 7.5\"/></svg>Sticky reminders</li><li><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 12.5 4.5 4.5L19 7.5\"/></svg>Calendar</li></ul></div></div>",
+      "css": ".ds-plans { display: grid; grid-template-columns: 1fr 1fr; border-radius: 32px; overflow: hidden; background: #fff; box-shadow: 0 0 0 1px var(--line, #e3e3e8); font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", system-ui, Roboto, \"Helvetica Neue\", Arial, sans-serif; font-size: 17px; color: var(--ink, #1d1d1f); } .ds-plan { padding: 36px; } .ds-plan-pro { border-left: 1px solid var(--line, #e3e3e8); background: #fffaf7; } .ds-plan-name { display: flex; align-items: center; gap: 10px; font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Segoe UI\", system-ui, Roboto, \"Helvetica Neue\", Arial, sans-serif; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; } .ds-plan-sub { margin-top: 6px; color: var(--ink-3, #6b6b70); } .ds-plan ul { margin: 24px 0 0; padding: 0; list-style: none; display: grid; gap: 14px; } .ds-plan li { display: flex; gap: 12px; align-items: flex-start; } .ds-plan li svg { flex: none; margin-top: 2px; color: #2f8a45; } .ds-plan-pro li svg { color: var(--coral, #e5603c); } .ds-pro { padding: 2px 8px 3px; border-radius: 999px; background: var(--ink, #1d1d1f); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; }"
+    },
+    {
+      "name": "FAQ Row",
+      "kind": "custom",
+      "description": "Native disclosure row with rotating chevron, divided by hairlines.",
+      "html": "<div class=\"ds-faq\"><details open><summary>How do I cancel Traction Pro? <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m6 9 6 6 6-6\"/></svg></summary><p>Open Settings, tap your name, then Subscriptions.</p></details><details><summary>Do my tasks sync between my devices? <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m6 9 6 6 6-6\"/></svg></summary><p>Yes, through your own iCloud.</p></details></div>",
+      "css": ".ds-faq { max-width: 560px; border-top: 1px solid var(--line-strong, #d2d2d7); font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", system-ui, Roboto, \"Helvetica Neue\", Arial, sans-serif; } .ds-faq details { border-bottom: 1px solid var(--line, #e3e3e8); } .ds-faq summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; font-size: 1.1rem; font-weight: 600; color: var(--ink, #1d1d1f); cursor: pointer; list-style: none; } .ds-faq summary::-webkit-details-marker { display: none; } .ds-faq summary svg { flex: none; color: var(--ink-3, #6b6b70); transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-faq details[open] summary svg { transform: rotate(180deg); } .ds-faq summary:hover { color: var(--coral-ink, #b8431f); } .ds-faq summary:focus-visible { outline: 2.5px solid var(--coral, #e5603c); outline-offset: 3px; border-radius: 6px; } .ds-faq p { margin: 0; padding: 0 0 24px; color: var(--ink-2, #48484d); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The App, Shown Straight",
+    "overview": "The site is an Apple-native product page played at the category standard: white ground, cool neutral greys, one coral action colour, and Traction's own day-band tints carried out of the app and onto the page. Nothing is staged as a metaphor. The hero is an HTML-built iPhone showing the real All Tasks screen; feature sections hold faithful renditions of the app's own objects (notifications, the What Now? card, a dictation bubble, a recurrence week) sitting on band-tinted panels. The page's job is to let the product be seen plainly and calmly.\n\nDensity is low and the hierarchy is single-voiced: one large bold headline, one grey lead, one action per block. Sections alternate white and soft grey; lists are hairline-ruled rather than boxed; page-level containers are flat and only the app's own objects lift. Motion is one authored moment on load (the phone settles, then the reminder arrives) and short state transitions; nothing loops. The incumbent editorial look (cream ground, serif display) and the generic three-card SaaS row were rejected for this world.",
+    "keyCharacteristics": [
+      "White and cool-grey ground with a single coral action colour.",
+      "Traction's four day-band tints (peach, butter, mint, sky) as the only secondary colours.",
+      "Large continuous rounded corners; pill-shaped controls.",
+      "Shadows only on rendered app objects; the page itself stays flat.",
+      "Hairline-ruled lists instead of card grids.",
+      "One-colour line icons from a single 24px sprite."
+    ],
+    "rules": [
+      {
+        "name": "The Two Corals Rule",
+        "body": "Coral (#e5603c) fills and draws; Coral Ink carries text and the primary button. A coral surface that holds white text uses Coral Ink, never the lighter coral.",
+        "section": "colors"
+      },
+      {
+        "name": "The Bands Are the App's Rule",
+        "body": "The day-band tints appear only in the app's order and meaning (Today, Tomorrow, This Week, Next Week) or as the panel behind a rendition of the app. They are not general-purpose pastel accents.",
+        "section": "colors"
+      },
+      {
+        "name": "The Weight-Not-Case Rule",
+        "body": "Hierarchy is built from size, weight (650 to 700), and negative tracking. Headings and labels stay in sentence case; the only all-caps text is the short PRO product badge.",
+        "section": "typography"
+      },
+      {
+        "name": "The 650 Rule",
+        "body": "Semibold-plus titles sit at 650, between the 600 of controls and the 700 of headlines.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ruled-List Rule",
+        "body": "Groups of features, services, posts, and FAQs are rows divided by hairlines (icon column, then a 650 title over an Ink 3 line), never a grid of boxed cards.",
+        "section": "layout"
+      },
+      {
+        "name": "The App-Objects-Only Rule",
+        "body": "If the element is something Traction draws on a phone, it may float. If it is part of the website, it stays flat.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use Coral Ink for any coral that carries or sits behind text, and plain Coral only for icons, fills, and the 2.5px focus ring (3px offset).",
+      "Do take secondary colour only from the four day bands, in the app's order and meaning.",
+      "Do keep page containers flat and give soft, cool, multi-layer shadows only to app renditions and app icons.",
+      "Do round controls as full pills and containers at 32px; keep app icons at the iOS squircle ratio.",
+      "Do group features, services, posts, and questions as hairline-ruled rows with a line icon, a 650 title, and an Ink 3 line.",
+      "Do keep one primary action per block, and limit motion to the single load sequence and sub-300ms state transitions, all disabled under reduced motion.",
+      "Do draw icons from the shared 24px line sprite in currentColor."
+    ],
+    "donts": [
+      "Don't return to the cream ground and serif display of the previous editorial site.",
+      "Don't lay out features as a row of three boxed cards.",
+      "Don't put shadows on sections, tiles, plans, or doors.",
+      "Don't use the day-band tints as decorative pastels detached from the app's days.",
+      "Don't set body-size text in Traction Coral on white; it fails AA.",
+      "Don't add a second accent hue or a filled tag style beyond the Pro tag."
+    ]
+  }
+}

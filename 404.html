@@ -3,75 +3,94 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Page Not Found — Interactive MM</title>
-  <link rel="canonical" href="https://interactivemm.com/404.html" />
-  <meta name="description" content="The page you were looking for on Interactive MM could not be found. Use the navigation to return to the homepage." />
-  <meta name="robots" content="noindex, follow" />
-  <meta name="theme-color" content="#1a1814" />
-  <meta property="og:site_name" content="Interactive MM" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Interactive MM — Page Not Found" />
-  <meta property="og:description" content="The page you requested on Interactive MM is missing. Return to the homepage to explore our software studio and products." />
-  <meta property="og:url" content="https://interactivemm.com/404.html" />
-  <meta property="og:image" content="https://interactivemm.com/img/logo.png" />
-  <meta property="og:image:alt" content="Interactive MM logo" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Interactive MM — Page Not Found" />
-  <meta name="twitter:description" content="Return to Interactive MM to learn about our software services and Traction product updates." />
-  <meta name="twitter:image" content="https://interactivemm.com/img/logo.png" />
-  <meta name="twitter:image:alt" content="Interactive MM logo" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
+  <title>Page not found | Interactive MM</title>
+  <meta name="description" content="The page you were looking for isn't here." />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#ffffff" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNZ7PH8VR9"></script>
+  <script>
+    document.documentElement.classList.add('js');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DNZ7PH8VR9');
+  </script>
+  <link rel="stylesheet" href="/styles.css" />
   <link rel="icon" href="/img/logo.png" type="image/png" />
 </head>
 <body>
-  <div class="meta-bar">
-    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-2 flex items-center justify-between gap-4">
-      <span class="hidden sm:inline">№ 404 · Page Not Found</span>
-      <span><a href="/">Return home →</a></span>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/"><img src="/img/logo.png" alt="" width="30" height="30" />Interactive MM</a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-menu-toggle>
+        <span class="sr-only">Menu</span>
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="/img/icons.svg#i-menu" /></svg>
+      </button>
+      <nav id="site-nav" class="nav" aria-label="Main">
+        <a href="/traction/">Traction</a>
+        <a href="/keyflow/">KeyFlow</a>
+        <a href="/insights/">Journal</a>
+        <a href="/contact-us/">Contact</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <main class="max-w-[1400px] mx-auto px-5 sm:px-8 py-20 md:py-32 min-h-[70vh] flex items-center">
-    <div class="grid md:grid-cols-12 gap-10 items-center w-full">
-      <div class="md:col-span-7">
-        <p class="eyebrow rise rise-1">Error 404</p>
-        <h1 class="display rise rise-2 mt-6 text-[clamp(4rem,18vw,16rem)]">
-          <em class="display-italic" style="color:var(--rust)">Lost</em><br />
-          in the<br />stacks.
-        </h1>
-        <p class="lead rise rise-3 mt-8">
-          The page you were looking for isn't on this shelf. It may have moved, been retitled, or
-          simply never existed. Head back to the front desk and try again.
-        </p>
-        <div class="rise rise-4 mt-10 flex flex-wrap gap-3">
-          <a href="/" class="btn btn-primary">Return Home <span class="arrow">→</span></a>
-          <a href="/contact-us/" class="btn btn-ghost">Tell Us What You Wanted</a>
-        </div>
+  <main id="main">
+    <div class="wrap lost">
+      <div class="lost-code" aria-hidden="true">404</div>
+      <h1 class="h2">This page isn’t on the list.</h1>
+      <p class="lead">It may have moved, been renamed, or never existed. Here are some places to go instead.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/">Back to home <svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-arrow" /></svg></a>
+        <a class="btn btn-quiet" href="mailto:support@interactivemm.com">Tell us what you were looking for</a>
       </div>
-
-      <aside class="md:col-span-5">
-        <div class="card !p-8">
-          <p class="card-num">Where to Next?</p>
-          <ul class="mt-5 divide-y" style="--tw-divide-opacity:1; border-color: var(--line);">
-            <li class="py-3 first:pt-0"><a href="/" class="serif-body text-lg flex items-center justify-between" style="color: var(--ink);">The Studio <span class="mono" style="color: var(--rust);">→</span></a></li>
-            <li class="py-3"><a href="/traction/" class="serif-body text-lg flex items-center justify-between" style="color: var(--ink);">Traction — Todo App <span class="mono" style="color: var(--rust);">→</span></a></li>
-            <li class="py-3"><a href="/keyflow/" class="serif-body text-lg flex items-center justify-between" style="color: var(--ink);">KeyFlow <span class="mono" style="color: var(--rust);">→</span></a></li>
-            <li class="py-3"><a href="/insights/" class="serif-body text-lg flex items-center justify-between" style="color: var(--ink);">Insights & Resources <span class="mono" style="color: var(--rust);">→</span></a></li>
-            <li class="py-3 last:pb-0"><a href="/contact-us/" class="serif-body text-lg flex items-center justify-between" style="color: var(--ink);">Contact the Studio <span class="mono" style="color: var(--rust);">→</span></a></li>
-          </ul>
-        </div>
-      </aside>
+      <ul class="lost-links">
+        <li><a href="/traction/">Traction <svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-arrow" /></svg></a></li>
+        <li><a href="/traction/#support">Traction support <svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-arrow" /></svg></a></li>
+        <li><a href="/keyflow/">KeyFlow <svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-arrow" /></svg></a></li>
+        <li><a href="/insights/">Journal <svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-arrow" /></svg></a></li>
+        <li><a href="/contact-us/">Contact <svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-arrow" /></svg></a></li>
+      </ul>
     </div>
   </main>
 
-  <footer class="border-t" style="border-color: var(--line-strong);">
-    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-8 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between text-xs">
-      <p class="mono" style="color: var(--ink-faint);">© <span id="year"></span> Interactive MM</p>
-      <p class="mono" id="build-tag" data-repo="developer-imm/imm-website" style="color: var(--ink-faint);">Build loading…</p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="/"><img src="/img/logo.png" alt="" width="30" height="30" />Interactive MM</a>
+          <p>An independent software studio in Cincinnati, Ohio, making apps for iPhone, iPad, and Mac.</p>
+        </div>
+        <div class="footer-col">
+          <h2>Apps</h2>
+          <ul>
+            <li><a href="/traction/">Traction</a></li>
+            <li><a href="https://keyflow.homes" rel="noopener">KeyFlow</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Traction</h2>
+          <ul>
+            <li><a href="/traction/#support">Support</a></li>
+            <li><a href="/traction/privacy/">Privacy Policy</a></li>
+            <li><a href="/traction/terms/">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Studio</h2>
+          <ul>
+            <li><a href="/insights/">Journal</a></li>
+            <li><a href="/contact-us/">Contact</a></li>
+            <li><a href="mailto:support@interactivemm.com">support@interactivemm.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>© <span id="year">2026</span> Interactive MM LLC</p>
+        <p>Made in Cincinnati, Ohio</p>
+      </div>
     </div>
   </footer>
 

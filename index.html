@@ -3,362 +3,230 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Interactive MM — A Cincinnati Software Studio</title>
-  <meta name="description" content="Interactive MM is a Cincinnati-based indie software studio building considered, hand-crafted applications — from indie products to bespoke client work." />
+  <title>Interactive MM — Independent apps for iPhone, iPad, and Mac</title>
+  <meta name="description" content="Interactive MM is an independent software studio in Cincinnati, Ohio. We make Traction, a calm to-do app for ADHD brains, and also build software for clients." />
   <link rel="canonical" href="https://interactivemm.com/" />
-  <meta name="keywords" content="Interactive MM, software studio, product strategy, Cincinnati software company, custom app development, UX design, Traction app" />
-  <meta name="author" content="Interactive MM" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#1a1814" />
+  <meta name="theme-color" content="#ffffff" />
   <meta property="og:site_name" content="Interactive MM" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Interactive MM — A Cincinnati Software Studio" />
-  <meta property="og:description" content="A Cincinnati-based indie software studio, building considered software with care and conviction." />
+  <meta property="og:title" content="Interactive MM — Independent apps for iPhone, iPad, and Mac" />
+  <meta property="og:description" content="An independent software studio in Cincinnati, Ohio, and the maker of Traction." />
   <meta property="og:url" content="https://interactivemm.com/" />
-  <meta property="og:image" content="https://interactivemm.com/img/coding.png" />
-  <meta property="og:image:alt" content="Developers collaborating on code for Interactive MM" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Interactive MM — A Cincinnati Software Studio" />
-  <meta name="twitter:description" content="Interactive MM builds custom software that blends innovation with clarity for founders, nonprofits, and growing teams." />
-  <meta name="twitter:image" content="https://interactivemm.com/img/coding.png" />
-  <meta name="twitter:image:alt" content="Developers collaborating on code for Interactive MM" />
-  <!-- Google tag (gtag.js) -->
+  <meta property="og:image" content="https://interactivemm.com/img/logo.png" />
+  <meta property="og:image:alt" content="The Interactive MM logo" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Interactive MM — Independent apps for iPhone, iPad, and Mac" />
+  <meta name="twitter:description" content="An independent software studio in Cincinnati, Ohio, and the maker of Traction." />
+  <meta name="twitter:image" content="https://interactivemm.com/img/logo.png" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNZ7PH8VR9"></script>
   <script>
+    document.documentElement.classList.add('js');
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-DNZ7PH8VR9');
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preload" href="/img/coding.png" as="image" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/styles.css" />
   <link rel="icon" href="/img/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/img/logo.png" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "name": "Interactive MM",
-          "url": "https://interactivemm.com/",
-          "description": "Interactive MM is a Cincinnati-based software company dedicated to building applications that merge innovation with simplicity.",
-          "logo": "https://interactivemm.com/img/logo.png",
-          "email": "developer@interactivemm.com",
-          "contactPoint": [
-            { "@type": "ContactPoint", "contactType": "customer support", "email": "support@interactivemm.com", "areaServed": "US" },
-            { "@type": "ContactPoint", "contactType": "sales", "email": "developer@interactivemm.com", "areaServed": "US" }
-          ],
-          "address": { "@type": "PostalAddress", "addressLocality": "Cincinnati", "addressRegion": "OH", "addressCountry": "US" }
-        },
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://interactivemm.com/" }
-          ]
-        }
-      ]
+      "@type": "Organization",
+      "name": "Interactive MM LLC",
+      "alternateName": "Interactive MM",
+      "url": "https://interactivemm.com/",
+      "logo": "https://interactivemm.com/img/logo.png",
+      "email": "developer@interactivemm.com",
+      "contactPoint": [
+        { "@type": "ContactPoint", "contactType": "customer support", "email": "support@interactivemm.com", "areaServed": "US" },
+        { "@type": "ContactPoint", "contactType": "sales", "email": "developer@interactivemm.com", "areaServed": "US" }
+      ],
+      "address": { "@type": "PostalAddress", "addressLocality": "Cincinnati", "addressRegion": "OH", "addressCountry": "US" }
     }
   </script>
 </head>
-<body class="home">
-  <!-- Meta strip -->
-  <div class="meta-bar">
-    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-2 flex items-center justify-between gap-4">
-      <span class="hidden sm:inline">№ 001 · Studio Journal</span>
-      <span class="hidden md:inline">Cincinnati, Ohio · 39.1°N 84.5°W</span>
-      <span><a href="/contact-us/">developer@interactivemm.com →</a></span>
-    </div>
-  </div>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header -->
   <header class="site-header">
-    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-5">
-      <div class="relative flex items-center justify-between gap-4">
-        <a href="/" class="flex items-center gap-3" aria-label="Interactive MM — Home">
-          <img src="/img/logo.png" alt="" class="h-9 w-auto" />
-          <span class="wordmark">Interactive MM</span>
-        </a>
-        <nav id="primary-navigation" class="mobile-menu hidden absolute right-5 top-full mt-3 flex-col gap-3 p-5 sm:static sm:flex sm:flex-row sm:items-center sm:gap-8 sm:p-0">
-          <a class="nav-link" href="#studio">Studio</a>
-          <a class="nav-link" href="/traction/">Traction</a>
-          <a class="nav-link" href="/keyflow/">KeyFlow</a>
-          <a class="nav-link" href="/insights/">Insights</a>
-          <a class="nav-link" href="/contact-us/">Contact</a>
-        </nav>
-        <button type="button" class="menu-toggle sm:hidden" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
-          <span class="sr-only">Toggle navigation</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4">
-            <path stroke-linecap="round" d="M4 7h16M4 17h16" />
-          </svg>
-        </button>
-      </div>
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-current="page"><img src="/img/logo.png" alt="" width="30" height="30" />Interactive MM</a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-menu-toggle>
+        <span class="sr-only">Menu</span>
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="/img/icons.svg#i-menu" /></svg>
+      </button>
+      <nav id="site-nav" class="nav" aria-label="Main">
+        <a href="/traction/">Traction</a>
+        <a href="/keyflow/">KeyFlow</a>
+        <a href="/insights/">Journal</a>
+        <a href="/contact-us/">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="relative">
-      <div class="max-w-[1400px] mx-auto px-5 sm:px-8 pt-16 md:pt-24 pb-12">
-        <div class="grid md:grid-cols-12 gap-8 md:gap-12 items-end">
-
-          <div class="md:col-span-7 lg:col-span-7">
-            <div class="flex items-center gap-3 rise rise-1">
-              <span class="status-pill"><span class="status-dot"></span> Now Booking · Q3 2026</span>
-              <span class="eyebrow hidden sm:inline">Est. 2024</span>
-            </div>
-
-            <h1 class="display rise rise-2 mt-8 text-[clamp(2.6rem,7.5vw,5.8rem)]">
-              <em>Independent</em><br />
-              software,<br />
-              built with<br />
-              <em>conviction.</em>
-            </h1>
-
-            <p class="lead rise rise-3 mt-8">
-              Interactive MM is an indie software studio in Cincinnati designing and shipping
-              applications one project at a time — from passion-built indie products to bespoke
-              client work, each one made by hand with care for the details.
-            </p>
-
-            <div class="flex flex-wrap gap-3 mt-10 rise rise-4">
-              <a href="/contact-us/" class="btn btn-primary">
-                Start a Project <span class="arrow">→</span>
-              </a>
-              <a href="/traction/" class="btn btn-ghost">
-                Meet Traction
-              </a>
-            </div>
-          </div>
-
-          <!-- Hero photo, asymmetric -->
-          <div class="md:col-span-5 lg:col-span-5 md:mt-0 mt-12 rise rise-3">
-            <div class="image-offset">
-              <div class="image-frame h-[360px] md:h-[480px]">
-                <img src="/img/coding.png" alt="Hands at a keyboard, mid-build, in the Interactive MM studio" width="900" height="601" />
-                <div class="image-caption">
-                  <span class="pill">FIG. 01</span>
-                  <span>In the studio</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Decorative row -->
-        <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-8 rule pt-6">
-          <div>
-            <p class="mono text-[color:var(--ink-faint)]">Discipline 01</p>
-            <p class="serif-body mt-1 text-lg">Product Strategy</p>
-          </div>
-          <div>
-            <p class="mono text-[color:var(--ink-faint)]">Discipline 02</p>
-            <p class="serif-body mt-1 text-lg">Interface Design</p>
-          </div>
-          <div>
-            <p class="mono text-[color:var(--ink-faint)]">Discipline 03</p>
-            <p class="serif-body mt-1 text-lg">Engineering</p>
-          </div>
-          <div>
-            <p class="mono text-[color:var(--ink-faint)]">Discipline 04</p>
-            <p class="serif-body mt-1 text-lg">Care &amp; Iteration</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MARQUEE -->
-    <section class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Indie software<span class="dot"></span> Crafted interfaces<span class="dot"></span> Reliable engineering<span class="dot"></span> Built by hand<span class="dot"></span> Made in Cincinnati<span class="dot"></span></span>
-        <span>Indie software<span class="dot"></span> Crafted interfaces<span class="dot"></span> Reliable engineering<span class="dot"></span> Built by hand<span class="dot"></span> Made in Cincinnati<span class="dot"></span></span>
-      </div>
-    </section>
-
-    <!-- STUDIO / PILLARS -->
-    <section id="studio" class="max-w-[1400px] mx-auto px-5 sm:px-8 py-20 md:py-28">
-      <header class="grid md:grid-cols-12 gap-8 mb-14 items-end">
-        <div class="md:col-span-3">
-          <p class="section-number">§ 01 / The Studio</p>
-        </div>
-        <div class="md:col-span-9">
-          <h2 class="section-title text-[clamp(2rem,5vw,3.75rem)]">
-            An independent studio, working <em class="display-italic" style="color:var(--rust)">with</em> care,
-            not <em class="display-italic" style="color:var(--rust)">at scale</em>.
-          </h2>
-        </div>
-      </header>
-
-      <div class="grid md:grid-cols-3 gap-5">
-        <article class="card">
-          <p class="card-num">01 — Strategy</p>
-          <h3 class="card-title">Strategy meets execution.</h3>
-          <p class="card-body">From discovery to launch, we connect product strategy to tangible outcomes. <a href="/contact-us/">Tell us about your project</a> and we'll shape an engagement to fit.</p>
-        </article>
-
-        <article class="card">
-          <p class="card-num">02 — Design</p>
-          <h3 class="card-title">Interfaces with character.</h3>
-          <p class="card-body">Thoughtful, fast, and accessible — designed with a point of view, not a template. Read the principles in <a href="/insights/">our journal</a>.</p>
-        </article>
-
-        <article class="card">
-          <p class="card-num">03 — Engineering</p>
-          <h3 class="card-title">Reliable engineering.</h3>
-          <p class="card-body">Modern stacks, testing where it matters, performance by default. Traction's infrastructure is the proof — <a href="/traction/">see the waitlist</a>.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- FEATURED PROJECT — TRACTION -->
-    <section class="border-y" style="border-color: var(--line-strong); background: var(--paper-warm);">
-      <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-20 md:py-28">
-        <div class="grid md:grid-cols-12 gap-10 items-center">
-          <div class="md:col-span-5 relative">
-            <div class="big-num absolute -top-12 -left-2 select-none">02</div>
-            <p class="section-number relative">§ 02 / Featured Product</p>
-            <h2 class="section-title mt-4 text-[clamp(2rem,4.5vw,3.5rem)] relative">
-              <em class="display-italic" style="color:var(--rust)">Traction</em><br />
-              — an ADHD-<br />friendly todo app.
-            </h2>
-            <p class="lead mt-6">
-              Smart recurrence without clutter, sticky reminders that gently persist, and an
-              interface designed for momentum, not friction. Currently in TestFlight preview.
-            </p>
-            <div class="mt-8 flex flex-wrap gap-3">
-              <a href="/traction/" class="btn btn-primary">Join the Waitlist <span class="arrow">→</span></a>
-              <a href="/insights/#adhd-friendly-routines" class="btn btn-ghost">Read the Story</a>
-            </div>
-          </div>
-
-          <div class="md:col-span-7">
-            <div class="grid grid-cols-2 gap-4">
-              <div class="card !p-5">
-                <p class="card-num">A.</p>
-                <p class="serif-body text-lg mt-2 leading-snug">Ultra-fast capture from anywhere in the app.</p>
-              </div>
-              <div class="card !p-5 mt-8">
-                <p class="card-num">B.</p>
-                <p class="serif-body text-lg mt-2 leading-snug">Rule-based recurrence with projections.</p>
-              </div>
-              <div class="card !p-5">
-                <p class="card-num">C.</p>
-                <p class="serif-body text-lg mt-2 leading-snug">Sticky reminders that nudge gently.</p>
-              </div>
-              <div class="card !p-5 mt-8">
-                <p class="card-num">D.</p>
-                <p class="serif-body text-lg mt-2 leading-snug">iPhone, iPad, Mac — offline-first.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED PROJECT — KEYFLOW -->
-    <section class="max-w-[1400px] mx-auto px-5 sm:px-8 py-20 md:py-28">
-      <div class="grid md:grid-cols-12 gap-10 items-center">
-        <div class="md:col-span-7 order-2 md:order-1">
-          <div class="image-frame p-10 md:p-14 flex flex-col items-center justify-center text-center" style="background: linear-gradient(135deg, var(--paper-warm), var(--paper-deep)); min-height: 320px;">
-            <div class="ornament" style="font-size: 3.5rem;">✦</div>
-            <p class="wordmark mt-4" style="font-size: 2rem;">KeyFlow</p>
-            <p class="mono mt-2" style="color: var(--ink-faint);">keyflow.homes</p>
-            <p class="serif-body mt-5 max-w-xs" style="color: var(--ink-soft); font-style: italic;">
-              "Run your real estate business like a business."
-            </p>
-            <div class="image-caption">
-              <span class="pill">FIG. 02</span>
-              <span>KeyFlow · Private Beta</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="md:col-span-5 order-1 md:order-2 relative">
-          <div class="big-num absolute -top-12 -right-2 select-none">03</div>
-          <p class="section-number relative">§ 03 / Also from the Studio</p>
-          <h2 class="section-title mt-4 text-[clamp(2rem,4.5vw,3.5rem)] relative">
-            <em class="display-italic" style="color:var(--rust)">KeyFlow</em><br />
-            — for working<br />real estate agents.
-          </h2>
-          <p class="lead mt-6">
-            Our second studio product. KeyFlow has its own site, identity, and waitlist over at
-            keyflow.homes — head there for the full tour.
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 class="display">Calm, careful apps for iPhone, iPad, and Mac.</h1>
+          <p class="lead">
+            Interactive MM is an independent software studio in Cincinnati. Our newest app,
+            Traction, is a to-do list for the days it’s hard to start.
           </p>
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a href="https://keyflow.homes" target="_blank" rel="noopener" class="btn btn-primary">Visit keyflow.homes <span class="arrow">↗</span></a>
+          <a class="app-id app-id-inline" href="/traction/">
+            <img src="/img/traction-logo.png" alt="" width="48" height="48" />
+            <div>
+              <div class="app-id-name">Traction</div>
+              <div class="app-id-sub">To-do list for ADHD brains</div>
+            </div>
+          </a>
+          <div class="actions" style="margin-top:24px">
+            <a class="btn btn-primary" href="/traction/">Meet Traction <svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-arrow" /></svg></a>
+            <a class="app-store" data-app-store-link href="https://apps.apple.com/app/id6753903631" aria-label="Download Traction on the App Store">
+              <svg aria-hidden="true" focusable="false"><use href="/img/icons.svg#i-apple" /></svg>
+              <span><small>Download on the</small><strong>App Store</strong></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-stage">
+          <div class="phone" role="img" aria-label="Traction on iPhone: the All Tasks screen, with tasks grouped into coloured bands for Today, Tomorrow, Later This Week, and Next Week.">
+            <div class="phone-screen" aria-hidden="true">
+              <div class="phone-island"></div>
+              <div class="phone-status"><span>9:41</span><span class="phone-status-icons"><b></b><i></i></span></div>
+              <div class="phone-titlebar">
+                <div class="phone-title">All Tasks <svg><use href="/img/icons.svg#i-chevron" /></svg></div>
+                <span class="phone-roundbtn"><svg><use href="/img/icons.svg#i-search" /></svg></span>
+              </div>
+              <div class="phone-band b-today">Today</div>
+              <div class="phone-row r-today"><div class="phone-row-title">Call the dentist</div><div class="phone-row-meta"><svg class="sticky"><use href="/img/icons.svg#i-sticky" /></svg>Today · 10:00 AM</div></div>
+              <div class="phone-row r-today"><div class="phone-row-title">Pick up dry cleaning</div><div class="phone-row-meta">Today · 12:40 PM · Errands</div></div>
+              <div class="phone-band b-tomorrow">Tomorrow</div>
+              <div class="phone-row r-tomorrow"><div class="phone-row-title">Buy milk</div><div class="phone-row-meta"><svg><use href="/img/icons.svg#i-repeat" /></svg>Tomorrow · 5:00 PM</div></div>
+              <div class="phone-band b-week">Later This Week</div>
+              <div class="phone-row r-week"><div class="phone-row-title">Submit expense report</div><div class="phone-row-meta">Fri · 3:00 PM</div></div>
+              <div class="phone-row r-week"><div class="phone-row-title">Book flights for June</div><div class="phone-row-meta">Sat · Home</div></div>
+              <div class="phone-band b-next">Next Week</div>
+              <div class="phone-row r-next"><div class="phone-row-title">Return library books</div><div class="phone-row-meta">Mon · Errands</div></div>
+              <div class="phone-row r-next"><div class="phone-row-title">Renew passport</div><div class="phone-row-meta">Tue · Home</div></div>
+              <div class="phone-fab"></div>
+              <div class="phone-tabbar">
+                <span class="phone-tab is-on"><svg><use href="/img/icons.svg#i-clipboard" /></svg>Tasks</span>
+                <span class="phone-tab"><svg><use href="/img/icons.svg#i-calendar" /></svg>Calendar</span>
+                <span class="phone-tab"><svg><use href="/img/icons.svg#i-gear" /></svg>Settings</span>
+              </div>
+            </div>
+          </div>
+          <div class="notif" aria-hidden="true">
+            <img src="/img/traction-logo.png" alt="" width="38" height="38" />
+            <div class="notif-body">
+              <div class="notif-top"><span class="notif-title">Call the dentist</span><span class="notif-time">now</span></div>
+              <div class="notif-text">Due now</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- INVITATION -->
-    <section class="max-w-[1400px] mx-auto px-5 sm:px-8 py-24 md:py-32 border-t" style="border-color: var(--line-strong);">
-      <div class="grid md:grid-cols-12 gap-10">
-        <div class="md:col-span-4">
-          <p class="section-number">§ 04 / Begin</p>
+    <!-- Apps -->
+    <section class="section section-tight" aria-labelledby="apps-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="apps-title" class="h2">What we’re making</h2>
         </div>
-        <div class="md:col-span-8">
-          <p class="display text-[clamp(2rem,5vw,4rem)]">
-            If you have a thing<br />
-            worth building, we'd<br />
-            love to <em>hear about it.</em>
-          </p>
-          <div class="mt-10 flex flex-wrap gap-6 items-center">
-            <a href="/contact-us/" class="btn btn-primary">Get in Touch <span class="arrow">→</span></a>
-            <a href="mailto:developer@interactivemm.com" class="serif-body text-lg" style="color:var(--ink); border-bottom: 1px solid var(--rust);">developer@interactivemm.com</a>
+        <div class="apps">
+          <a class="app-tile app-tile-traction" href="/traction/">
+            <img class="app-tile-icon" src="/img/traction-logo.png" alt="" width="72" height="72" />
+            <h3 class="h2">Traction</h3>
+            <p>A to-do app for ADHD brains. Sticky reminders that come back until the task is done, What Now? to pick your next step, and a week you can see at a glance.</p>
+            <span class="link-arrow">Explore Traction <svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-arrow" /></svg></span>
+            <ul class="band-labels" aria-hidden="true">
+              <li>Today</li><li>Tomorrow</li><li>This week</li><li>Next week</li>
+            </ul>
+          </a>
+          <a class="app-tile app-tile-keyflow" href="https://keyflow.homes" rel="noopener">
+            <div>
+              <h3 class="h2">KeyFlow</h3>
+              <p>An operating system for working real estate agents. In private beta, with its own home at keyflow.homes.</p>
+            </div>
+            <span class="link-arrow">Visit keyflow.homes <svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-external" /></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio -->
+    <section class="section section-soft" id="studio" aria-labelledby="studio-title">
+      <div class="wrap studio">
+        <div>
+          <h2 id="studio-title" class="h2">A small studio that builds for others, too.</h2>
+          <p class="lead" style="margin-top:20px">Every project is built by hand, with care for the details, from our own apps to bespoke work for clients, one at a time.</p>
+          <p class="muted" style="margin-top:16px">If you have something worth building, we’d love to hear about it.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="/contact-us/">Start a project <svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-arrow" /></svg></a>
+            <a href="mailto:developer@interactivemm.com">developer@interactivemm.com</a>
           </div>
         </div>
+        <ul class="studio-points">
+          <li><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-steps" /></svg><div><strong>Product strategy</strong><span>From discovery to launch, connecting strategy to real outcomes.</span></div></li>
+          <li><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-widget" /></svg><div><strong>Interface design</strong><span>Thoughtful, fast, and accessible, with a point of view instead of a template.</span></div></li>
+          <li><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-devices" /></svg><div><strong>Engineering</strong><span>Modern stacks, testing where it matters, and performance by default.</span></div></li>
+          <li><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-mail" /></svg><div><strong>Based in Cincinnati</strong><span>Remote across the US, or on-site across the Midwest.</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Journal -->
+    <section class="section" aria-labelledby="journal-title">
+      <div class="wrap">
+        <div class="section-head" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px 24px;max-width:none">
+          <h2 id="journal-title" class="h2">From the journal</h2>
+          <a class="link-arrow" href="/insights/">All posts <svg class="icon-sm" aria-hidden="true"><use href="/img/icons.svg#i-arrow" /></svg></a>
+        </div>
+        <ul class="posts">
+          <li><a href="/insights/#adhd-friendly-routines"><span class="post-date">24 Oct 2025</span><span class="post-title">Building ADHD-friendly routines with Traction</span><span class="post-tag">Productivity</span></a></li>
+          <li><a href="/insights/#calm-product-discovery"><span class="post-date">24 Oct 2025</span><span class="post-title">Calm product discovery for busy teams</span><span class="post-tag">Product strategy</span></a></li>
+        </ul>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
-    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 pt-16 pb-8">
-      <div class="footer-wordmark">Interactive MM<span class="amp">.</span></div>
-
-      <div class="mt-12 grid md:grid-cols-12 gap-10 pt-8 border-t" style="border-color: rgba(241, 236, 225, 0.18);">
-        <div class="md:col-span-5">
-          <p class="mono" style="color:#c9c1ad;">The Studio</p>
-          <p class="serif-body text-lg mt-3 max-w-md" style="color: var(--paper); font-variation-settings: 'opsz' 14;">
-            Interactive MM is an independent software studio in Cincinnati, Ohio. Every project is hand-built by a developer with conviction about the details — indie products and bespoke client work, made one at a time.
-          </p>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="/"><img src="/img/logo.png" alt="" width="30" height="30" />Interactive MM</a>
+          <p>An independent software studio in Cincinnati, Ohio, making apps for iPhone, iPad, and Mac.</p>
         </div>
-
-        <div class="md:col-span-2">
-          <p class="mono" style="color:#c9c1ad;">Navigate</p>
-          <ul class="mt-3 space-y-2 serif-body">
-            <li><a href="/">Home</a></li>
+        <div class="footer-col">
+          <h2>Apps</h2>
+          <ul>
             <li><a href="/traction/">Traction</a></li>
-            <li><a href="/keyflow/">KeyFlow</a></li>
-            <li><a href="/insights/">Insights</a></li>
+            <li><a href="https://keyflow.homes" rel="noopener">KeyFlow</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Traction</h2>
+          <ul>
+            <li><a href="/traction/#support">Support</a></li>
+            <li><a href="/traction/privacy/">Privacy Policy</a></li>
+            <li><a href="/traction/terms/">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Studio</h2>
+          <ul>
+            <li><a href="/insights/">Journal</a></li>
             <li><a href="/contact-us/">Contact</a></li>
+            <li><a href="mailto:support@interactivemm.com">support@interactivemm.com</a></li>
           </ul>
-        </div>
-
-        <div class="md:col-span-2">
-          <p class="mono" style="color:#c9c1ad;">Reach</p>
-          <ul class="mt-3 space-y-2 serif-body">
-            <li><a href="mailto:developer@interactivemm.com">developer@</a></li>
-            <li><a href="mailto:support@interactivemm.com">support@</a></li>
-          </ul>
-        </div>
-
-        <div class="md:col-span-3">
-          <p class="mono" style="color:#c9c1ad;">Located</p>
-          <p class="serif-body mt-3" style="color: var(--paper);">
-            Cincinnati, Ohio<br />
-            Available remote, US-wide.
-          </p>
         </div>
       </div>
-
-      <div class="mt-12 pt-6 border-t flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between text-xs" style="border-color: rgba(241, 236, 225, 0.18); color: #c9c1ad;">
-        <p class="mono">© <span id="year"></span> Interactive MM — All rights reserved</p>
-        <p class="mono" id="build-tag" data-repo="developer-imm/imm-website">Build loading…</p>
+      <div class="footer-base">
+        <p>© <span id="year">2026</span> Interactive MM LLC</p>
+        <p>Made in Cincinnati, Ohio</p>
       </div>
     </div>
   </footer>
